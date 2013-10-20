@@ -43,7 +43,8 @@ public:
 	
 	// CV images for debug
 	ofxCvColorImage colorImage;
-	ofxCvGrayscaleImage grayImage;
+	ofxCvGrayscaleImage grayImage, grayImagePrev, grayImageDiff;
+	ofxCvContourFinder contourFinder;
 	
 	// optical flow solver & scale
     ofxOpticalFlowLK flowSolver;
@@ -53,11 +54,14 @@ public:
 	bool useLiveVideo;
 	bool mirrorVideo;
 	bool drawVideoDebug;
-	float particleMaxCount;
-	float particleCount;
 	bool drawFlowSolver;
 	bool drawVectorField;
+	bool drawImageDiff;
 	bool drawParticles;
+	float particleMaxCount;
+	float particleCount;
+	bool particleColorBasedOnDirection;
+	bool particleFade;
 	
 	// gui related
 	ofxUICanvas *gui;

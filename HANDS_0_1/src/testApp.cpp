@@ -42,10 +42,13 @@ void testApp::setup(){
 	useLiveVideo = true;
 	mirrorVideo = true;
 	drawVideoDebug = true;
-	particleMaxCount = 5000;
 	drawFlowSolver = true;
 	drawVectorField = false;
+	drawImageDiff = false;
 	drawParticles = true;
+	particleMaxCount = 5000;
+	particleColorBasedOnDirection = true;
+	particleFade = true;
 
 	// set up scaling factors for flow solver & vector field
 	flowSolverScale.set(0.5, 0.5);
@@ -99,10 +102,14 @@ void testApp::setupSolverAndField() {
 	particles.clear();
 	
 	colorImage.clear();
-	colorImage.allocate(videoWidth, videoHeight);
-
 	grayImage.clear();
+	grayImagePrev.clear();
+	grayImageDiff.clear();
+	
+	colorImage.allocate(videoWidth, videoHeight);
 	grayImage.allocate(videoWidth, videoHeight);
+	grayImagePrev.allocate(videoWidth, videoHeight);
+	grayImageDiff.allocate(videoWidth, videoHeight);
 }
 
 void testApp::setupGUI() {
@@ -122,12 +129,15 @@ void testApp::setupGUI() {
 	gui->addToggle("Draw Video Debug", &drawVideoDebug);
 	gui->addToggle("Draw Flow Solver", &drawFlowSolver);
 	gui->addToggle("Draw Vector Field", &drawVectorField);
+	gui->addToggle("Draw Image Diff", &drawImageDiff);
 	gui->addToggle("Draw Particles", &drawParticles);
     gui->addSpacer();
 
 	gui->addLabel("Particle Settings");
 	gui->addSlider("Particle Max Count", 3000, 10000, &particleMaxCount);
 	gui->addSlider("Particle Count", 0, 10000, &particleCount);
+	gui->addToggle("Color Based on Direction", &particleColorBasedOnDirection);
+	gui->addToggle("Fade Brightness", &particleFade);
 	gui->addSpacer();
 
 	gui->addLabel("Press 'g' to toggle GUI");
@@ -165,22 +175,46 @@ void testApp::update(){
 		vidGrabber.update();
 		
 		if (vidGrabber.isFrameNew()){
+			flowSolver.update(vidGrabber);
+			
 			colorImage.setFromPixels(vidGrabber.getPixels(), videoWidth, videoHeight);
 			grayImage = colorImage;
 			grayImage.mirror(false, mirrorVideo);
 			
-			flowSolver.update(vidGrabber);
+			if (drawImageDiff) {
+				grayImageDiff.absDiff(grayImage, grayImagePrev);
+				grayImageDiff.threshold(30);
+				
+				grayImageDiff.blur();
+				grayImagePrev = grayImage;
+			}
+			
+			//contourFinder.findContours(grayImageDiff, 5, 76800, 4, false);
+			//cout << contourFinder.nBlobs << endl;
+			
+
 		}
 	} else {
 		
 		vidPlayer.update();
 		
 		if (vidPlayer.isFrameNew()){
+			flowSolver.update(vidPlayer);
+			
 			colorImage.setFromPixels(vidPlayer.getPixels(), videoWidth, videoHeight);
 			grayImage = colorImage;
 			grayImage.mirror(false, mirrorVideo);
 			
-			flowSolver.update(vidPlayer);
+			if (drawImageDiff) {
+				grayImageDiff.absDiff(grayImage, grayImagePrev);
+				grayImageDiff.threshold(30);
+				
+				grayImageDiff.blur();
+				grayImagePrev = grayImage;
+			}
+			
+			//contourFinder.findContours(grayImageDiff, 5, 76800, 1, false);
+			//cout << contourFinder.nBlobs << endl;
 		}
 	}
 	
@@ -254,17 +288,46 @@ void testApp::draw(){
 		field.draw();
 	}
 	
+	if (drawImageDiff) {
+		ofSetColor(255);
+		grayImageDiff.draw(0, 0, ofGetWidth(), ofGetHeight());
+		//contourFinder.draw(0, 0, ofGetWidth(), ofGetHeight());
+		
+		/*
+		for (int i = 0; i < contourFinder.nBlobs; i++) {
+			ofSetColor(255, 255, 0);
+			ofBeginShape();
+			for (int j = 0; j < contourFinder.blobs.at(i).nPts; j++) {
+				ofVertex(contourFinder.blobs.at(i).pts[j].x, contourFinder.blobs.at(i).pts[j].y);
+			}
+			ofEndShape();
+			ofSetColor(255);
+		}
+		 */
+	}
+	
 	if (drawParticles) {
 		
 		//ofNoFill();
 		//ofBeginShape();
 		
 		for (int i = 0; i < particles.size(); i++){
-			// set color based on particle position
-			//ofSetColor(ofColor::fromHsb(ofMap(particles[i].pos.x * particles[i].pos.y, 0, screenPixelCount, 0, 255), 225, 255));
-			// set color based on particle direction
-
-			ofSetColor(ofColor::fromHsb(ofMap(atan2(particles[i].vel.y, particles[i].vel.x), -PI, PI, 0, 255), 225, 255));
+			
+			float hue, bri;
+			
+			if (particleColorBasedOnDirection) {
+				hue = ofMap(atan2(particles[i].vel.y, particles[i].vel.x), -PI, PI, 0, 255);
+			} else {
+				hue = ofMap(particles[i].pos.x * particles[i].pos.y, 0, ofGetWidth() * ofGetHeight(), 0, 255);
+			}
+			
+			if (particleFade) {
+				bri = (1 - powf(particles[i].age / (float) particles[i].lifespan, 2)) * 255;
+			} else {
+				bri = 255;
+			}
+			
+			ofSetColor(ofColor::fromHsb(hue, 225, bri));
 			particles[i].draw();
 
 			//ofVertex(particles[i].pos.x, particles[i].pos.y);
