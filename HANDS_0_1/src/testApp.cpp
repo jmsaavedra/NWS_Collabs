@@ -49,6 +49,7 @@ void testApp::setup(){
 	particleMaxCount = 5000;
 	particleColorBasedOnDirection = true;
 	particleFade = true;
+	minimumVelocity = 1;
 
 	// set up scaling factors for flow solver & vector field
 	flowSolverScale.set(0.5, 0.5);
@@ -82,14 +83,14 @@ void testApp::setupGrabber() {
 
 void testApp::setupPlayer() {
 	// define size for video file
-	videoWidth = 640;
-	videoHeight = 360;
+	videoWidth = 480;
+	videoHeight = 270;
 	
 	// set up video player
 	if (!vidPlayer.isLoaded()) {
-		vidPlayer.loadMovie("violin.mov");
+		vidPlayer.loadMovie("sideview2.mov");
 	}
-	vidPlayer.setVolume(0);
+	//vidPlayer.setVolume(0);
 }
 
 void testApp::setupSolverAndField() {
@@ -110,6 +111,7 @@ void testApp::setupSolverAndField() {
 	grayImage.allocate(videoWidth, videoHeight);
 	grayImagePrev.allocate(videoWidth, videoHeight);
 	grayImageDiff.allocate(videoWidth, videoHeight);
+	grayImageDiffHistory.allocate(videoWidth, videoHeight);
 }
 
 void testApp::setupGUI() {
@@ -138,6 +140,7 @@ void testApp::setupGUI() {
 	gui->addSlider("Particle Count", 0, 10000, &particleCount);
 	gui->addToggle("Color Based on Direction", &particleColorBasedOnDirection);
 	gui->addToggle("Fade Brightness", &particleFade);
+	gui->addSlider("Minimum Velocity", 0, 5, &minimumVelocity);
 	gui->addSpacer();
 
 	gui->addLabel("Press 'g' to toggle GUI");
@@ -187,6 +190,10 @@ void testApp::update(){
 				
 				grayImageDiff.blur();
 				grayImagePrev = grayImage;
+
+				grayImageDiffHistory -= 30;
+				grayImageDiffHistory += grayImageDiff;
+				grayImageDiffHistory.blur(9);
 			}
 			
 			//contourFinder.findContours(grayImageDiff, 5, 76800, 4, false);
@@ -211,6 +218,10 @@ void testApp::update(){
 				
 				grayImageDiff.blur();
 				grayImagePrev = grayImage;
+				
+				grayImageDiffHistory -= 30;
+				grayImageDiffHistory += grayImageDiff;
+				grayImageDiffHistory.blur(9);
 			}
 			
 			//contourFinder.findContours(grayImageDiff, 5, 76800, 1, false);
@@ -228,7 +239,7 @@ void testApp::update(){
 			vel = flowSolver.getVelAtNorm(x / (float)videoWidth, y / (float)videoHeight);
 			
 			// skip if the values are too small
-			if(vel.length() < 1) {
+			if(vel.length() < minimumVelocity) {
 				continue;
             }
 			
@@ -289,8 +300,9 @@ void testApp::draw(){
 	}
 	
 	if (drawImageDiff) {
-		ofSetColor(255);
-		grayImageDiff.draw(0, 0, ofGetWidth(), ofGetHeight());
+		ofSetColor(100);
+		//grayImageDiff.draw(0, 0, ofGetWidth(), ofGetHeight());
+		grayImageDiffHistory.draw(0, 0, ofGetWidth(), ofGetHeight());
 		//contourFinder.draw(0, 0, ofGetWidth(), ofGetHeight());
 		
 		/*

@@ -43,7 +43,7 @@ public:
 	
 	// CV images for debug
 	ofxCvColorImage colorImage;
-	ofxCvGrayscaleImage grayImage, grayImagePrev, grayImageDiff;
+	ofxCvGrayscaleImage grayImage, grayImagePrev, grayImageDiff, grayImageDiffHistory;
 	ofxCvContourFinder contourFinder;
 	
 	// optical flow solver & scale
@@ -62,6 +62,7 @@ public:
 	float particleCount;
 	bool particleColorBasedOnDirection;
 	bool particleFade;
+	float minimumVelocity;
 	
 	// gui related
 	ofxUICanvas *gui;
