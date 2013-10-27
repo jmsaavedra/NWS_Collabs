@@ -39,23 +39,29 @@ void testApp::setup(){
 	ofEnableBlendMode(OF_BLENDMODE_ADD);
 	
 	// set program defaults
-	useLiveVideo = true;
-	mirrorVideo = true;
-	drawVideoDebug = true;
-	drawFlowSolver = true;
+	useLiveVideo = false;
+	mirrorVideo = false;
+	drawVideo = true;
+	drawVideoFullscreen = true;
+	drawFlowSolver = false;
+	drawFlowSolverFullscreen = false;
 	drawVectorField = false;
-	drawImageDiff = false;
+	drawImageDiff = true;
 	drawParticles = true;
 	particleMaxCount = 5000;
 	particleColorBasedOnDirection = true;
 	particleFade = true;
-	minimumVelocity = 1;
+	minimumVelocity = 1.0;
+	videoBlurAmount = 0.0;
+	backgroundTransparency = 0.0;
+	increaseBlurAndDim = true;
 
 	// set up scaling factors for flow solver & vector field
 	flowSolverScale.set(0.5, 0.5);
 	vectorFieldScale.set(0.1, 0.1);
 	
 	// set up cam or video player
+	videoPlayerIndex = 0;
 	if (useLiveVideo) {
 		setupGrabber();
 	} else {
@@ -81,16 +87,65 @@ void testApp::setupGrabber() {
 	}
 }
 
-void testApp::setupPlayer() {
+//void testApp::setupPlayer(string filename) {
+void testApp::setupPlayer(int index) {
+	
+	// most of this code was removed after move from one vidPlayer to a vector
+	// of players to simulate multiple camera angles in development
+	
 	// define size for video file
-	videoWidth = 480;
-	videoHeight = 270;
+	//videoWidth = 480;
+	//videoHeight = 360;
+	
+	/*
+	if (vidPlayer.isLoaded()) {
+		if (vidPlayer.getMoviePath() != filename) {
+			vidPlayer.close();
+		}
+	}
 	
 	// set up video player
 	if (!vidPlayer.isLoaded()) {
-		vidPlayer.loadMovie("sideview2.mov");
+		//vidPlayer.loadMovie("topview.mp4");
+		//vidPlayer.loadMovie("sideview.mov");
+		vidPlayer.loadMovie(filename);
+		//cout << vidPlayer.getMoviePath() << endl;
 	}
-	//vidPlayer.setVolume(0);
+
+	 videoWidth = vidPlayer.width;
+	 videoHeight = vidPlayer.height;
+	 
+	 vidPlayer.setVolume(0);
+	 
+	 */
+
+	if (vidPlayers.size() == 0) {
+		p1.loadMovie("sideview.mov");
+		p1.setVolume(0);
+		vidPlayers.push_back(p1);
+		
+		p2.loadMovie("topview.mp4");
+		p2.setVolume(0);
+		vidPlayers.push_back(p2);
+	}
+	
+	videoPlayerIndex = index;
+	
+	videoWidth = vidPlayers[videoPlayerIndex].width;
+	videoHeight = vidPlayers[videoPlayerIndex].height;
+	
+	// play current video & pause others
+	for (int i = 0; i < vidPlayers.size(); i++) {
+		if (i == videoPlayerIndex) {
+			if (vidPlayers[i].isPaused()) {
+				vidPlayers[i].play();
+			}
+		} else {
+			if (vidPlayers[i].isPlaying()) {
+				vidPlayers[i].stop();
+			}
+		}
+	}
 }
 
 void testApp::setupSolverAndField() {
@@ -103,11 +158,13 @@ void testApp::setupSolverAndField() {
 	particles.clear();
 	
 	colorImage.clear();
+	colorImageBlurred.clear();
 	grayImage.clear();
 	grayImagePrev.clear();
 	grayImageDiff.clear();
 	
 	colorImage.allocate(videoWidth, videoHeight);
+	colorImageBlurred.allocate(videoWidth, videoHeight);
 	grayImage.allocate(videoWidth, videoHeight);
 	grayImagePrev.allocate(videoWidth, videoHeight);
 	grayImageDiff.allocate(videoWidth, videoHeight);
@@ -116,6 +173,12 @@ void testApp::setupSolverAndField() {
 
 void testApp::setupGUI() {
 
+	// set up file names for video toggle
+	vector <string> files;
+	files.push_back("sideview.mov");
+	files.push_back("topview.mp4");
+	
+	// build the gui
 	gui = new ofxUICanvas();
     gui->addLabel("HANDS CONTROL");
     gui->addSpacer();
@@ -124,12 +187,15 @@ void testApp::setupGUI() {
 
 	gui->addLabel("Video Input");
 	gui->addToggle("Use Live Video", &useLiveVideo);
+	gui->addRadio("Video File", files);
 	gui->addToggle("Mirror Video", &mirrorVideo);
     gui->addSpacer();
 
 	gui->addLabel("Debug View Drawing");
-	gui->addToggle("Draw Video Debug", &drawVideoDebug);
+	gui->addToggle("Draw Video", &drawVideo);
+	gui->addToggle("Draw Video Fullscreen", &drawVideoFullscreen);
 	gui->addToggle("Draw Flow Solver", &drawFlowSolver);
+	gui->addToggle("Draw Flow Fullscreen", &drawFlowSolverFullscreen);
 	gui->addToggle("Draw Vector Field", &drawVectorField);
 	gui->addToggle("Draw Image Diff", &drawImageDiff);
 	gui->addToggle("Draw Particles", &drawParticles);
@@ -141,6 +207,9 @@ void testApp::setupGUI() {
 	gui->addToggle("Color Based on Direction", &particleColorBasedOnDirection);
 	gui->addToggle("Fade Brightness", &particleFade);
 	gui->addSlider("Minimum Velocity", 0, 5, &minimumVelocity);
+	gui->addSlider("Video Blur Amount", 0, 200, &videoBlurAmount);
+	gui->addSlider("Background Transparency", 0, 1, &backgroundTransparency);
+	gui->addToggle("Auto Increase Blur/Dim", &increaseBlurAndDim);
 	gui->addSpacer();
 
 	gui->addLabel("Press 'g' to toggle GUI");
@@ -172,62 +241,78 @@ void testApp::addParticle(float x, float y, float vx, float vy) {
 //--------------------------------------------------------------
 void testApp::update(){
 	
-	// update flow solver from new video frame
+	bool isFrameNew = false;
+	
+	// slowly increase blur amount & set background brightness/dimming to
+	// half of that value
+	if (increaseBlurAndDim) {
+		videoBlurAmount += 0.05;
+		backgroundTransparency = ofMap(videoBlurAmount, 0, 200, 0, 0.5);
+	}
+	
+	// update flow solver & cv color image from new video frame, whether from
+	// video camera or video player
 	if (useLiveVideo) {
 		
 		vidGrabber.update();
 		
 		if (vidGrabber.isFrameNew()){
+			isFrameNew = true;
+			
 			flowSolver.update(vidGrabber);
-			
 			colorImage.setFromPixels(vidGrabber.getPixels(), videoWidth, videoHeight);
-			grayImage = colorImage;
-			grayImage.mirror(false, mirrorVideo);
-			
-			if (drawImageDiff) {
-				grayImageDiff.absDiff(grayImage, grayImagePrev);
-				grayImageDiff.threshold(30);
-				
-				grayImageDiff.blur();
-				grayImagePrev = grayImage;
 
-				grayImageDiffHistory -= 30;
-				grayImageDiffHistory += grayImageDiff;
-				grayImageDiffHistory.blur(9);
-			}
-			
 			//contourFinder.findContours(grayImageDiff, 5, 76800, 4, false);
-			//cout << contourFinder.nBlobs << endl;
-			
-
 		}
 	} else {
 		
-		vidPlayer.update();
+		//vidPlayer.update();
+		vidPlayers[videoPlayerIndex].update();
 		
-		if (vidPlayer.isFrameNew()){
-			flowSolver.update(vidPlayer);
+		//if (vidPlayer.isFrameNew()){
+		if (vidPlayers[videoPlayerIndex].isFrameNew()){
+			isFrameNew = true;
 			
-			colorImage.setFromPixels(vidPlayer.getPixels(), videoWidth, videoHeight);
-			grayImage = colorImage;
-			grayImage.mirror(false, mirrorVideo);
+			//flowSolver.update(vidPlayer);
+			flowSolver.update(vidPlayers[videoPlayerIndex]);
 			
-			if (drawImageDiff) {
-				grayImageDiff.absDiff(grayImage, grayImagePrev);
-				grayImageDiff.threshold(30);
-				
-				grayImageDiff.blur();
-				grayImagePrev = grayImage;
-				
-				grayImageDiffHistory -= 30;
-				grayImageDiffHistory += grayImageDiff;
-				grayImageDiffHistory.blur(9);
-			}
+			//colorImage.setFromPixels(vidPlayer.getPixels(), videoWidth, videoHeight);
+			colorImage.setFromPixels(vidPlayers[videoPlayerIndex].getPixels(), videoWidth, videoHeight);
 			
 			//contourFinder.findContours(grayImageDiff, 5, 76800, 1, false);
-			//cout << contourFinder.nBlobs << endl;
 		}
 	}
+	
+	// do some processing if we've got a new frame
+	if (isFrameNew) {
+		// flip image horizontally if the mirroVideo checkbox is ticked
+		colorImage.mirror(false, mirrorVideo);
+		grayImage = colorImage;
+		
+		// blur the color image
+		if (videoBlurAmount) colorImage.blur(videoBlurAmount);
+		
+		// dim the image based on the background transparency setting
+		if (backgroundTransparency) {
+			colorImage -= 255 * backgroundTransparency;
+		}
+		
+		// take difference of current & previous frames in order to get
+		// white contour lines. blur it so it's nice & soft and add it
+		// to the history image so we get some nice ghosting/motion blur
+		if (drawImageDiff) {
+			grayImageDiff.absDiff(grayImage, grayImagePrev);
+			grayImageDiff.threshold(30);
+			
+			grayImageDiff.blur();
+			grayImagePrev = grayImage;
+			
+			grayImageDiffHistory -= 30;
+			grayImageDiffHistory += grayImageDiff;
+			grayImageDiffHistory.blur(9);
+		}
+	}
+	
 	
 	// update vector field from optical flow solver
 	// there's some scaling going on between the sizes of the video, flow solver, and vector field
@@ -284,21 +369,32 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 	
-	if (drawVideoDebug) {
+	// draw the video image
+	if (drawVideo) {
 		ofSetColor(255);
-		grayImage.draw(0, 0, videoWidth * 0.5, videoHeight * 0.5);
-		//grayImage.draw(0, 0, ofGetWidth(), ofGetHeight());
-	}
-
-	if (drawFlowSolver) {
-		flowSolver.drawColored(videoWidth * 0.5, videoHeight * 0.5, 5, 3);
-		//flowSolver.drawColored(ofGetWidth(), ofGetHeight(), 10, 3);
+		if (!drawVideoFullscreen) {
+			grayImage.draw(0, 0, videoWidth * 0.5, videoHeight * 0.5);
+		} else {
+			//grayImage.draw(0, 0, ofGetWidth(), ofGetHeight());
+			colorImage.draw(0, 0, ofGetWidth(), ofGetHeight());
+		}
 	}
 	
+	// draw the optical flow solver
+	if (drawFlowSolver) {
+		if (!drawFlowSolverFullscreen) {
+			flowSolver.drawColored(videoWidth * 0.5, videoHeight * 0.5, 5, 3);
+		} else {
+			flowSolver.drawColored(ofGetWidth(), ofGetHeight(), 20, 5);
+		}
+	}
+	
+	// draw the vector field
 	if (drawVectorField) {
 		field.draw();
 	}
 	
+	// draw the image diff (white blurred contour lines)
 	if (drawImageDiff) {
 		ofSetColor(100);
 		//grayImageDiff.draw(0, 0, ofGetWidth(), ofGetHeight());
@@ -318,6 +414,7 @@ void testApp::draw(){
 		 */
 	}
 	
+	// draw the particles
 	if (drawParticles) {
 		
 		//ofNoFill();
@@ -327,12 +424,18 @@ void testApp::draw(){
 			
 			float hue, bri;
 			
+			// calculate the particle's color either based on its direction or
+			// based on its position on the screen
 			if (particleColorBasedOnDirection) {
 				hue = ofMap(atan2(particles[i].vel.y, particles[i].vel.x), -PI, PI, 0, 255);
 			} else {
 				hue = ofMap(particles[i].pos.x * particles[i].pos.y, 0, ofGetWidth() * ofGetHeight(), 0, 255);
 			}
 			
+			// calculate the particle's brightness as either fully bright or fading based on
+			// its age. for fading, a percentage of its age vs. its lifespan is calculated and
+			// then squared so it stays brighter for longer, and then fades quicker instead of
+			// gradually across its entire life
 			if (particleFade) {
 				bri = (1 - powf(particles[i].age / (float) particles[i].lifespan, 2)) * 255;
 			} else {
@@ -379,26 +482,30 @@ void testApp::draw(){
 void testApp::guiEvent(ofxUIEventArgs &e)
 {
 	string name = e.widget->getName();
+	int kind = e.widget->getKind();
 	
 	if (name == "Use Live Video") {
 		
 		// if live video is off, switch to video player
 		if (!useLiveVideo) {
-			
-			// close the camera stream
-			//vidGrabber.close();
-
-			setupPlayer();
-			if (!vidPlayer.isPlaying()) {
-				vidPlayer.play();
-			}
+						
+//			if (!vidPlayer.isPlaying()) {
+//				vidPlayer.play();
+//			}
+			setupPlayer(videoPlayerIndex);
+//			if (!vidPlayers[videoPlayerIndex].isPlaying()) {
+//				vidPlayers[videoPlayerIndex].play();
+//			}
 		}
 		
 		// if live video is on, stop player and switch to cam
 		if (useLiveVideo) {
 			
-			if (vidPlayer.isPlaying()) {
-				vidPlayer.stop();
+//			if (vidPlayer.isPlaying()) {
+//				vidPlayer.stop();
+//			}
+			if (vidPlayers[videoPlayerIndex].isPlaying()) {
+				vidPlayers[videoPlayerIndex].stop();
 			}
 			
 			setupGrabber();
@@ -410,6 +517,17 @@ void testApp::guiEvent(ofxUIEventArgs &e)
 	if (name == "Mirror Video") {
 		flowSolver.setMirror(mirrorVideo, false);
 	}
+	
+	if (name == "sideview.mov") {
+		useLiveVideo = false;
+		setupPlayer(0);
+		setupSolverAndField();
+	}
+	if (name == "topview.mp4") {
+		useLiveVideo = false;
+		setupPlayer(1);
+		setupSolverAndField();
+	}
 }
 
 //--------------------------------------------------------------
@@ -417,8 +535,8 @@ void testApp::keyPressed(int key){
 	
 	// play/pause video
 	if (key == ' '){
-		if (vidPlayer.isPlaying()) vidPlayer.stop();
-		else vidPlayer.play();
+		if (vidPlayers[videoPlayerIndex].isPlaying()) vidPlayers[videoPlayerIndex].stop();
+		else vidPlayers[videoPlayerIndex].play();
 	}
 	
 	if (key == 'g') {

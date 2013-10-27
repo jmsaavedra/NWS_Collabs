@@ -34,15 +34,18 @@ public:
 	
 	// CV or video player-related
 	ofVideoGrabber vidGrabber;
-	ofVideoPlayer vidPlayer;
+	ofVideoPlayer vidPlayer, p1, p2;
+	vector <ofVideoPlayer> vidPlayers;
+	int videoPlayerIndex;
 	int videoWidth;
 	int videoHeight;
 	void setupGrabber();
-	void setupPlayer();
+	//void setupPlayer(string filename = "topview.mp4");
+	void setupPlayer(int index = 0);
 	void setupSolverAndField();
 	
 	// CV images for debug
-	ofxCvColorImage colorImage;
+	ofxCvColorImage colorImage, colorImageBlurred;
 	ofxCvGrayscaleImage grayImage, grayImagePrev, grayImageDiff, grayImageDiffHistory;
 	ofxCvContourFinder contourFinder;
 	
@@ -53,8 +56,10 @@ public:
 	// program related
 	bool useLiveVideo;
 	bool mirrorVideo;
-	bool drawVideoDebug;
+	bool drawVideo;
+	bool drawVideoFullscreen;
 	bool drawFlowSolver;
+	bool drawFlowSolverFullscreen;
 	bool drawVectorField;
 	bool drawImageDiff;
 	bool drawParticles;
@@ -63,6 +68,9 @@ public:
 	bool particleColorBasedOnDirection;
 	bool particleFade;
 	float minimumVelocity;
+	float videoBlurAmount;
+	float backgroundTransparency;
+	bool increaseBlurAndDim;
 	
 	// gui related
 	ofxUICanvas *gui;
