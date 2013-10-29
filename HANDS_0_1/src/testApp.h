@@ -67,10 +67,13 @@ public:
 	float particleCount;
 	bool particleColorBasedOnDirection;
 	bool particleFade;
+	float particleSaturation;
 	float minimumVelocity;
 	float videoBlurAmount;
 	float backgroundTransparency;
 	bool increaseBlurAndDim;
+	float imageDiffThreshold;
+	float imageDiffBlur;
 	
 	// gui related
 	ofxUICanvas *gui;

@@ -50,11 +50,14 @@ void testApp::setup(){
 	drawParticles = true;
 	particleMaxCount = 5000;
 	particleColorBasedOnDirection = true;
+	particleSaturation = 225.0;
 	particleFade = true;
 	minimumVelocity = 1.0;
 	videoBlurAmount = 0.0;
 	backgroundTransparency = 0.0;
 	increaseBlurAndDim = true;
+	imageDiffThreshold = 30.0;
+	imageDiffBlur = 9.0;
 
 	// set up scaling factors for flow solver & vector field
 	flowSolverScale.set(0.5, 0.5);
@@ -121,11 +124,11 @@ void testApp::setupPlayer(int index) {
 
 	if (vidPlayers.size() == 0) {
 		p1.loadMovie("sideview.mov");
-		p1.setVolume(0);
+		//p1.setVolume(0);
 		vidPlayers.push_back(p1);
 		
 		p2.loadMovie("topview.mp4");
-		p2.setVolume(0);
+		//p2.setVolume(0);
 		vidPlayers.push_back(p2);
 	}
 	
@@ -205,11 +208,14 @@ void testApp::setupGUI() {
 	gui->addSlider("Particle Max Count", 3000, 10000, &particleMaxCount);
 	gui->addSlider("Particle Count", 0, 10000, &particleCount);
 	gui->addToggle("Color Based on Direction", &particleColorBasedOnDirection);
+	gui->addSlider("Color Saturation", 0, 255, &particleSaturation);
 	gui->addToggle("Fade Brightness", &particleFade);
 	gui->addSlider("Minimum Velocity", 0, 5, &minimumVelocity);
 	gui->addSlider("Video Blur Amount", 0, 200, &videoBlurAmount);
 	gui->addSlider("Background Transparency", 0, 1, &backgroundTransparency);
 	gui->addToggle("Auto Increase Blur/Dim", &increaseBlurAndDim);
+	gui->addSlider("Image Diff Threshold", 0, 100, &imageDiffThreshold);
+	gui->addSlider("Image Diff Blur", 0, 100, &imageDiffBlur);
 	gui->addSpacer();
 
 	gui->addLabel("Press 'g' to toggle GUI");
@@ -302,14 +308,14 @@ void testApp::update(){
 		// to the history image so we get some nice ghosting/motion blur
 		if (drawImageDiff) {
 			grayImageDiff.absDiff(grayImage, grayImagePrev);
-			grayImageDiff.threshold(30);
+			grayImageDiff.threshold(imageDiffThreshold);
 			
 			grayImageDiff.blur();
 			grayImagePrev = grayImage;
 			
 			grayImageDiffHistory -= 30;
 			grayImageDiffHistory += grayImageDiff;
-			grayImageDiffHistory.blur(9);
+			grayImageDiffHistory.blur(imageDiffBlur);
 		}
 	}
 	
@@ -442,7 +448,7 @@ void testApp::draw(){
 				bri = 255;
 			}
 			
-			ofSetColor(ofColor::fromHsb(hue, 225, bri));
+			ofSetColor(ofColor::fromHsb(hue, particleSaturation, bri));
 			particles[i].draw();
 
 			//ofVertex(particles[i].pos.x, particles[i].pos.y);
@@ -541,6 +547,15 @@ void testApp::keyPressed(int key){
 	
 	if (key == 'g') {
 		gui->toggleVisible();
+	}
+	
+	if (key == '1') {
+		setupPlayer(0);
+		setupSolverAndField();
+	}
+	if (key == '2') {
+		setupPlayer(1);
+		setupSolverAndField();
 	}
 
 	// settings for optical flow solver
