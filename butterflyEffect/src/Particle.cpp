@@ -47,26 +47,26 @@ void Particle::update(){
         vel.y = vel.y * -1.0;
     }
 
-//    angleX+=0.1;
-//    angleY+=0.1;
+    angleX+=0.1;
+    angleY+=0.1;
     //angleZ+=0.01;
-//    if (angleX>360) {
-//        angleX=0;
-//    }
-//    if (angleY>360) {
-//        angleY=0;
-//    }
+    if (angleX>360) {
+        angleX=0;
+   }
+   if (angleY>360) {
+       angleY=0;
+   }
 //    if (angleZ>360) {
-//        angleZ=0;
-//    }
+//       angleZ=0;
+//   }
     
 }
 
 void Particle::draw(){
     
-    ofRotateX(angleX);
-    ofRotateY(angleY);
-    ofRotateZ(angleZ);
+   ofRotateX(angleX);
+  ofRotateY(angleY);
+  //ofRotateZ(angleZ);
     for (int i=0; i<butterflyList.size(); i++) {
         butterflyList[setPicture].draw(pos, flySize, flySize);
     }
