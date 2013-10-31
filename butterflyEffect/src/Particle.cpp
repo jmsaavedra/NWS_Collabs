@@ -13,6 +13,7 @@ Particle::Particle(){
 }
 
 void Particle::setup(){
+    setPicture=int(ofRandom(5));
     flySize=ofRandom(30,50);
     pos.x=ofRandomWidth();
     pos.y=ofRandomHeight();
@@ -21,13 +22,15 @@ void Particle::setup(){
     angleX=ofRandom(360);
     angleY=ofRandom(360);
     angleZ=ofRandom(360);
-    stringList[0]="0.png";
-    stringList[1]="1.png";
-    stringList[2]="2.png";
-    stringList[3]="3.png";
-    stringList[4]="4.png";
+    
+    
     for (int i=0; i<5; i++) {
-           butterflyList[i].loadImage(stringList[i]);
+        string result = "";
+        stringstream currentCombo;
+        currentCombo << i;
+        result = currentCombo.str();
+        butterflyList.push_back(ofImage());
+           butterflyList[i].loadImage(ofToDataPath(result + ".png"));
     
 }
 }
@@ -65,7 +68,7 @@ void Particle::draw(){
     ofRotateY(angleY);
     ofRotateZ(angleZ);
     for (int i=0; i<butterflyList.size(); i++) {
-        butterflyList[int(ofRandom(5))].draw(pos, flySize, flySize);
+        butterflyList[setPicture].draw(pos, flySize, flySize);
     }
     
   

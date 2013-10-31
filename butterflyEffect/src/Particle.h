@@ -12,6 +12,6 @@ class Particle{
     float flySize;
     float angleX,angleY,angleZ;
     vector<ofImage> butterflyList;
-    string stringList[5];
+    int setPicture;
     
 };
