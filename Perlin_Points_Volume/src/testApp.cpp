@@ -69,7 +69,7 @@ void testApp::update(){
 
     for ( vector<Particle>::iterator it = pList.begin(); it!=pList.end(); ) {
         
-                it->update(1.5 * *FFTanalyzer.peaks);
+                it->update(1.5 * *FFTanalyzer.peaks); //adjust 1.5 based on overall volume level
         
         
         if ( it->isDead==TRUE ) {
