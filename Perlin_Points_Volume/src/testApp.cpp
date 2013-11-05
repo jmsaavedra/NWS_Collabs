@@ -25,7 +25,7 @@ void testApp::setup(){
     yNoiseScale=10;
     xAngleOffset=0;
     yAngleOffset=0;
-
+    speedScale = 0.2;
 
     
     setupGUI();
@@ -56,7 +56,11 @@ void testApp::setupGUI(){
     gui -> addSlider("y", 0, TWO_PI, &yAngleOffset);
     gui ->addSpacer();
     
+    gui -> addSlider("Speed Scale", 0, 3, speedScale);
+    
     gui ->autoSizeToFitWidgets();
+    
+    ofAddListener(gui->newGUIEvent,this,&testApp::guiEvent);
     
 }
 
@@ -69,7 +73,8 @@ void testApp::update(){
 
     for ( vector<Particle>::iterator it = pList.begin(); it!=pList.end(); ) {
         
-                it->update(1.5 * *FFTanalyzer.peaks); //adjust 1.5 based on overall volume level
+                it->update(speedScale * *FFTanalyzer.peaks); //adjust 1.5 based on overall volume level
+       
         
         
         if ( it->isDead==TRUE ) {
@@ -79,7 +84,9 @@ void testApp::update(){
             it++;
         }
         }
-    cout<< *FFTanalyzer.peaks<<endl;
+//    cout<< *FFTanalyzer.peaks<<endl;
+   // cout<< speedScale<<endl;
+
     
 }
 
@@ -121,6 +128,20 @@ void testApp::draw(){
     }
     
 
+
+}
+
+void testApp::guiEvent(ofxUIEventArgs &e){
+    
+    string name = e.widget->getName();
+	int kind = e.widget->getKind();
+
+    if(name == "Speed Scale")
+	{
+		ofxUISlider *slider = (ofxUISlider *) e.widget;
+		speedScale = slider->getScaledValue();
+        cout << "value: " << slider->getScaledValue() << endl;
+	}
 
 }
 

@@ -41,6 +41,8 @@ class testApp : public ofBaseApp{
     float xNoiseScale,yNoiseScale;
     float xAngleOffset,yAngleOffset;
     
+    float speedScale;
+    
     //fft
     void audioReceived 	(float * input, int bufferSize, int nChannels);
 
