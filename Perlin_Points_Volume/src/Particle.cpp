@@ -53,7 +53,7 @@ void Particle::update(float vecScale){
     vel += noiseVec;
     vel *=0.8;
     pos += vel;
-    if(1.0-(age/lifeTime) == 0){
+    if(1.0-(age/lifeTime) <= 0){
         isDead = true;
     }
     
@@ -67,6 +67,6 @@ void Particle::update(float vecScale){
 
 void Particle::draw(){
     ofSetColor(c,100);
-    ofCircle(pos.x, pos.y, 1.5-(age/lifeTime));
+    ofCircle(pos.x, pos.y, 1.5*(1-(age/lifeTime)));
     
 }
