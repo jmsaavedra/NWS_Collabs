@@ -63,10 +63,25 @@ void testApp::update(){
     pos.x=ofRandom(ofGetWindowWidth());
     pos.y=ofRandom(ofGetWindowHeight());
     vel=ofRandom(5,7.5);
-    hue=ofRandom(255);
-
+	
+	float rand = ofRandom(1);
+	
+	if (rand > 0.5) {
+		hue=ofRandom(100, 130);
+	} else {
+		hue=ofRandom(230, 250);
+	}
+	
+    
+	int i = 0;
     for ( vector<Particle>::iterator it = pList.begin(); it!=pList.end(); ) {
         it->update();
+		
+		if (i == 0) {
+			cout << 1-(it->age/it->lifeTime) << endl;
+		}
+		
+		i++;
         
         if ( it->isDead==TRUE ) {
             it = pList.erase(it);
@@ -76,8 +91,8 @@ void testApp::update(){
         }
     }
 
-    xNoiseValue = ofMap(cos(ofGetElapsedTimef()/15), -1, 1, 0.005, 0.001);
-	yNoiseValue = ofMap(sin(ofGetElapsedTimef()/15 + PI/4), -1, 1, 0.005, 0.001);
+    //xNoiseValue = ofMap(cos(ofGetElapsedTimef()/15), -1, 1, 0.005, 0.001);
+	//yNoiseValue = ofMap(sin(ofGetElapsedTimef()/15 + PI/4), -1, 1, 0.005, 0.001);
 
 }
 

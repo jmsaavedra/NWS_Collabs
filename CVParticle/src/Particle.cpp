@@ -15,8 +15,8 @@ Particle::Particle(){
 void Particle::setup(){
     pos.x=ofRandom(ofGetWindowWidth());
     pos.y=ofRandom(ofGetWindowHeight());
-    vel.x=ofRandom(-2, 2);
-    vel.y=ofRandom(-2, 2);
+    vel.x=ofRandom(-1, 1);
+    vel.y=ofRandom(-1, 1);
     
 }
 

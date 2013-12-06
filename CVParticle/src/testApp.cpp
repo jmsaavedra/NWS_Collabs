@@ -7,9 +7,9 @@ void testApp::setup(){
     width = video.width;
     height = video.height;
     videoColorCvImage.allocate(width, height);
-    ofBackground(255);
+    ofBackground(0);
     
-    for (int i=0; i<2000; i++) {
+    for (int i=0; i<20000; i++) {
         addParticle();
     }
     
@@ -24,7 +24,7 @@ void testApp::update(){
         ofTexture texture;
         texture = video.getTextureReference();
         texture.readToPixels(pixels);
-        videoColorCvImage.setFromPixels(video.getPixels(),width,height);
+//        videoColorCvImage.setFromPixels(video.getPixels(),width,height);
         
     }
     

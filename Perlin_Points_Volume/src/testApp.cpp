@@ -8,7 +8,7 @@ void testApp::setup(){
     FFTanalyzer.setup(44100, BUFFER_SIZE/2, 2);
 	
 	FFTanalyzer.peakHoldTime = 15; // hold longer
-	FFTanalyzer.peakDecayRate = 0.95f; // decay slower
+	FFTanalyzer.peakDecayRate = 0.8f; // decay slower
 	FFTanalyzer.linearEQIntercept = 0.9f; // reduced gain at lowest frequency
 	FFTanalyzer.linearEQSlope = 0.01f; // increasing gain at higher frequencies
 
@@ -165,7 +165,9 @@ void testApp::audioReceived 	(float * input, int bufferSize, int nChannels){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-
+	if (key == 'g') {
+		gui->toggleVisible();
+	}
 }
 
 //--------------------------------------------------------------

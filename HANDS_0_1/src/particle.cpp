@@ -8,7 +8,8 @@ particle::particle(){
 	damping = 0.08f;
 
     age = 0;
-    lifespan = floor( ofRandom(10,40) );
+    lifespan = floor( ofRandom(50,100) );
+	dead = false;
 }
 
 //------------------------------------------------------------
@@ -18,6 +19,7 @@ particle::particle(ofVec2f pos, ofVec2f vel) {
 	
     age = 0;
     lifespan = floor( ofRandom(10,40) );
+	dead = false;
 }
 
 //------------------------------------------------------------
@@ -67,13 +69,26 @@ void particle::update(){
 //------------------------------------------------------------
 void particle::draw(){
 	//ofSetColor(255);
-    ofCircle(pos.x, pos.y, 1.5);
+    ofCircle(pos.x, pos.y, 1.5);//
 }
 
 //------------------------------------------------------------
 void particle::draw(ofImage *image){
 	//ofSetColor(255);
-	image->draw(pos.x, pos.y);
+	//image->draw(pos.x, pos.y);
+
+	float angle = atan2(vel.x, vel.y) + PI;
+	
+	ofPushMatrix();
+	{
+		ofTranslate(pos.x, pos.y);
+		ofRotate(-1 * ofRadToDeg(angle));
+		
+		image->draw(0, 0, 13, 13);
+	}
+	ofPopMatrix();
+	
+	
 }
 
 

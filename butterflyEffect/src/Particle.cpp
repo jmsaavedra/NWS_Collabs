@@ -13,7 +13,7 @@ Particle::Particle(){
 }
 
 void Particle::setup(){
-    setPicture=int(ofRandom(5));
+    setPicture=int(ofRandom(4));
     flySize=ofRandom(30,50);
     pos.x=ofRandomWidth();
     pos.y=ofRandomHeight();
@@ -30,14 +30,14 @@ void Particle::setup(){
         currentCombo << i;
         result = currentCombo.str();
         butterflyList.push_back(ofImage());
-           butterflyList[i].loadImage(ofToDataPath(result + ".png"));
-    
-}
+		butterflyList[i].loadImage(ofToDataPath(result + ".png"));
+		
+	}
 }
 
 void Particle::update(){
-    pos.x += vel.x*10.0;
-    pos.y += vel.y*10.0;
+    pos.x += vel.x*5.0;
+    pos.y += vel.y*5.0;
     
     if( pos.x < 0.0 || pos.x > ofGetWidth() ){
         vel.x = vel.x * -1.0;
@@ -46,34 +46,44 @@ void Particle::update(){
     if( pos.y < 0.0 || pos.y > ofGetHeight() ){
         vel.y = vel.y * -1.0;
     }
-
+	
     angleX+=0.1;
     angleY+=0.1;
     //angleZ+=0.01;
     if (angleX>360) {
         angleX=0;
-   }
-   if (angleY>360) {
-       angleY=0;
-   }
-//    if (angleZ>360) {
-//       angleZ=0;
-//   }
+	}
+	if (angleY>360) {
+		angleY=0;
+	}
+	//    if (angleZ>360) {
+	//       angleZ=0;
+	//   }
     
 }
 
 void Particle::draw(){
     
-   ofRotateX(angleX);
-  ofRotateY(angleY);
-  //ofRotateZ(angleZ);
+	ofSetColor(255, 225);
+	
+	
+	ofRotateX(angleX);
+	ofRotateY(angleY);
+	//ofRotateZ(angleZ);
     for (int i=0; i<butterflyList.size(); i++) {
-        butterflyList[setPicture].draw(pos, flySize, flySize);
+		ofPushMatrix();
+		{
+			ofTranslate(pos);
+			//ofRotateX(ofRadToDeg(angleX));;
+			ofRotateY(ofRadToDeg(angleY*1.5));
+			butterflyList[setPicture].draw(0, 0, flySize, flySize);
+		}
+		ofPopMatrix();
     }
     
-  
+	
 }
 
-    
+
 
 

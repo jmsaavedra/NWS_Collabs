@@ -67,5 +67,4 @@ void Particle::update(){
 void Particle::draw(){
     ofSetColor(c,100);
     ofCircle(pos.x, pos.y, 1-(age/lifeTime));
-    
 }

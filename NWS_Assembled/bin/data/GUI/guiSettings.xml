@@ -1,0 +1,41 @@
+<Widget>
+    <Kind>4</Kind>
+    <Name>FPS</Name>
+    <Value>59.818584442</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>RADIUS</Name>
+    <Value>100.492607117</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>RED</Name>
+    <Value>56.527091980</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>GREEN</Name>
+    <Value>69.088668823</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>BLUE</Name>
+    <Value>167.068969727</Value>
+</Widget>
+<Widget>
+    <Kind>4</Kind>
+    <Name>ALPHA</Name>
+    <Value>91.699508667</Value>
+</Widget>
+<Widget>
+    <Kind>11</Kind>
+    <Name>CENTER</Name>
+    <XValue>457.773376465</XValue>
+    <YValue>171.507385254</YValue>
+</Widget>
+<Widget>
+    <Kind>17</Kind>
+    <Name>DRAWFILL</Name>
+    <Value>1</Value>
+</Widget>

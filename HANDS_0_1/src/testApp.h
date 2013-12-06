@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxOpticalFlowFarneback.h"
 #include "ofxUI.h"
+#include "ofxSyphon.h"
 
 #include "particle.h"
 #include "vectorField.h"
@@ -31,8 +32,10 @@ public:
 	vector <particle> particles;
 	vectorField field;
 	ofVec2f vectorFieldScale;
+	ofImage particleImage;
 	
 	// CV or video player-related
+	ofPtr<ofQTKitGrabber> vidRecorder;
 	ofVideoGrabber vidGrabber;
 	ofVideoPlayer vidPlayer, p1, p2;
 	vector <ofVideoPlayer> vidPlayers;
@@ -79,5 +82,8 @@ public:
 	ofxUICanvas *gui;
 	void setupGUI();
 	void guiEvent(ofxUIEventArgs &e);
+	
+	// syphon
+	ofxSyphonServer syphon;
 	
 };

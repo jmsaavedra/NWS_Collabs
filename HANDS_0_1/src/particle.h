@@ -10,6 +10,8 @@ public:
 	ofVec2f vel;
 	ofVec2f frc;   // frc is also know as acceleration (newton says "f=ma")
 	
+	ofImage *image;
+	
 	particle();
 	particle(ofVec2f pos, ofVec2f vel);
 	virtual ~particle(){};

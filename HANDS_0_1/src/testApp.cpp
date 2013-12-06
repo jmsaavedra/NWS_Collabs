@@ -39,23 +39,23 @@ void testApp::setup(){
 	ofEnableBlendMode(OF_BLENDMODE_ADD);
 	
 	// set program defaults
-	useLiveVideo = false;
-	mirrorVideo = false;
+	useLiveVideo = true;
+	mirrorVideo = true;
 	drawVideo = true;
 	drawVideoFullscreen = true;
 	drawFlowSolver = false;
 	drawFlowSolverFullscreen = false;
 	drawVectorField = false;
-	drawImageDiff = true;
-	drawParticles = true;
-	particleMaxCount = 5000;
+	drawImageDiff = false;
+	drawParticles = false;
+	particleMaxCount = 3000;
 	particleColorBasedOnDirection = true;
-	particleSaturation = 225.0;
+	particleSaturation = 0.0;
 	particleFade = true;
 	minimumVelocity = 1.0;
 	videoBlurAmount = 0.0;
 	backgroundTransparency = 0.0;
-	increaseBlurAndDim = true;
+	increaseBlurAndDim = false;
 	imageDiffThreshold = 30.0;
 	imageDiffBlur = 9.0;
 
@@ -76,17 +76,27 @@ void testApp::setup(){
 	
 	// set up gui
 	setupGUI();
+	
+	// load image for particles
+	particleImage.loadImage("butterfly.png");
+	
+	// set up syphon server
+	syphon.setName("hands");
 
 }
 
 void testApp::setupGrabber() {
+
 	// define size for input video
 	videoWidth = 640;
 	videoHeight = 480;
 	
 	// set up video camera
 	if (!vidGrabber.isInitialized()) {
+		vidRecorder = ofPtr<ofQTKitGrabber>( new ofQTKitGrabber() );
+		vidGrabber.setGrabber(vidRecorder);
 		vidGrabber.initGrabber(videoWidth, videoHeight);
+		vidRecorder->setVideoDeviceID(vidRecorder->getVideoDeviceID() + 0);
 	}
 }
 
@@ -124,11 +134,11 @@ void testApp::setupPlayer(int index) {
 
 	if (vidPlayers.size() == 0) {
 		p1.loadMovie("sideview.mov");
-		//p1.setVolume(0);
+		p1.setVolume(0);
 		vidPlayers.push_back(p1);
 		
 		p2.loadMovie("topview.mp4");
-		//p2.setVolume(0);
+		p2.setVolume(0);
 		vidPlayers.push_back(p2);
 	}
 	
@@ -205,7 +215,7 @@ void testApp::setupGUI() {
     gui->addSpacer();
 
 	gui->addLabel("Particle Settings");
-	gui->addSlider("Particle Max Count", 3000, 10000, &particleMaxCount);
+	gui->addSlider("Particle Max Count", 1000, 10000, &particleMaxCount);
 	gui->addSlider("Particle Count", 0, 10000, &particleCount);
 	gui->addToggle("Color Based on Direction", &particleColorBasedOnDirection);
 	gui->addSlider("Color Saturation", 0, 255, &particleSaturation);
@@ -252,7 +262,7 @@ void testApp::update(){
 	// slowly increase blur amount & set background brightness/dimming to
 	// half of that value
 	if (increaseBlurAndDim) {
-		videoBlurAmount += 0.05;
+		videoBlurAmount += 0.025;
 		backgroundTransparency = ofMap(videoBlurAmount, 0, 200, 0, 0.5);
 	}
 	
@@ -347,6 +357,8 @@ void testApp::update(){
 		}
 	}
 	
+	particleCount = particles.size();
+	
 	// check for particles that have reached the end of their lifetime and remove them
     for (vector<particle>::iterator p=particles.begin(); p!=particles.end(); ) {
         if (p->dead) {
@@ -355,7 +367,7 @@ void testApp::update(){
             p++;
         }
     }
-	particleCount = particles.size();
+	
 	
 	// update not-dead particle forces from field
 	for (vector<particle>::iterator p=particles.begin(); p!=particles.end(); p++) {
@@ -450,6 +462,7 @@ void testApp::draw(){
 			
 			ofSetColor(ofColor::fromHsb(hue, particleSaturation, bri));
 			particles[i].draw();
+			//particles[i].draw(&particleImage);
 
 			//ofVertex(particles[i].pos.x, particles[i].pos.y);
 			//ofCurveVertex(particles[i].pos.x, particles[i].pos.y);
@@ -465,6 +478,8 @@ void testApp::draw(){
 		
 		//ofEndShape();
 	}
+	
+	syphon.publishScreen();
 	
 	
 	// debug for optical flow solver
@@ -549,15 +564,63 @@ void testApp::keyPressed(int key){
 		gui->toggleVisible();
 	}
 	
-	if (key == '1') {
+	if (key == '=') {
 		setupPlayer(0);
 		setupSolverAndField();
 	}
-	if (key == '2') {
+	if (key == '-') {
 		setupPlayer(1);
 		setupSolverAndField();
 	}
-
+	
+	if (key == '1') {
+		minimumVelocity = 0.5;
+		videoBlurAmount = 30;
+		backgroundTransparency = ofMap(videoBlurAmount, 0, 200, 0, 0.5);
+	}
+	if (key == '2') {
+		minimumVelocity = 1.0;
+		videoBlurAmount = 70;
+		backgroundTransparency = ofMap(videoBlurAmount, 0, 200, 0, 0.5);
+	}
+	if (key == '3') {
+		minimumVelocity = 2.0;
+		videoBlurAmount = 100;
+		backgroundTransparency = ofMap(videoBlurAmount, 0, 200, 0, 0.5);
+	}
+	
+	if (key == 's') {
+		imageDiffThreshold = 4;
+		imageDiffBlur = 4;
+	}
+	if (key == 'n') {
+		imageDiffThreshold = 30;
+		imageDiffBlur = 9;
+	}
+	
+	if (key == 'd') {
+		drawImageDiff = !drawImageDiff;
+	}
+	if (key == 'p') {
+		drawParticles = !drawParticles;
+	}
+	if (key == 'a') {
+		increaseBlurAndDim = !increaseBlurAndDim;
+	}
+	
+//	if (key == '3') {
+//		vidGrabber.setDeviceID(0);
+//		vidGrabber.initGrabber(videoWidth, videoHeight);
+//	}
+//	if (key == '4') {
+//		vidGrabber.setDeviceID(1);
+//		vidGrabber.initGrabber(videoWidth, videoHeight);
+//	}
+//	if (key == '5') {
+//		vidGrabber.setDeviceID(2);
+//		vidGrabber.initGrabber(videoWidth, videoHeight);
+//	}
+	
 	// settings for optical flow solver
 	/*
 	 if(key == 'p') { flowSolver.setPyramidScale(ofClamp(flowSolver.getPyramidScale() - 0.01,0.0,1.0)); }
