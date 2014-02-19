@@ -1,4 +1,4 @@
-##New World Symphony    + ##
+New World Symphony + 
 Parsons MFA DT
 ------
 
