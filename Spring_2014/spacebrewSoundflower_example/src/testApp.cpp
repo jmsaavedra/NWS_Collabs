@@ -25,7 +25,7 @@ void testApp::setup(){
     
     //spacebrew magic configs
     Spacebrew::Config config;
-    config.clientName = "Spacebrew OF custom object example";
+    config.clientName = "Spacebrew-OF iPhone Data";
     config.addSubscribe("acceleration", "ofvec3f");
     config.addSubscribe("rotation", "ofvec3f");
     
