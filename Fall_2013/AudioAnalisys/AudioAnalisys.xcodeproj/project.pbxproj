@@ -812,6 +812,7 @@
 					"\"$(SRCROOT)/src/aubio\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -899,6 +900,7 @@
 					"\"$(SRCROOT)/src/aubio\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
