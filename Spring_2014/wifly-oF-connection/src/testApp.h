@@ -23,7 +23,7 @@ public:
     
     ofxUDPManager udpConnection;
     
-    vector<ofPoint> accel;
-    vector<ofPoint> magne;
+    vector<ofVec3f> accel;
+    vector<ofVec3f> magne;
 };
 

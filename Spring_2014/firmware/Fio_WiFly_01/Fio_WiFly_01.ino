@@ -29,11 +29,18 @@ int analogData;
 void setup()
 {
     char buf[32];
+    
+    
 
     Serial.begin(9600); //start up the USB serial port for debugging
     Serial.println("Starting");
 //    Serial.print("Free memory: ");
 //    Serial.println(wifly.getFreeMemory(),DEC);
+
+    //FOR DEBUG -- WILL WAIT FOR SERIAL MONITOR TO OPEN BEFORE CONTINUING
+    while(!Serial){
+      ;
+    }
 
     Serial1.begin(9600); //start up the Serial1 port for communication with WiFly
     //TODO: set the WiFly to run at 115200 baud. we'll get faster (higher res) 

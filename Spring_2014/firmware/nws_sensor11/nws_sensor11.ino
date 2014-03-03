@@ -17,6 +17,10 @@
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
 Adafruit_LSM303_Mag_Unified mag = Adafruit_LSM303_Mag_Unified(12345);
 
+#define ID "1" //THIS UNIT'S ID! EACH WILL NEED A UNIQUE ONE, THEY ARE LABELED
+#define HOST "10.0.1.14"
+#define PORT 11999
+
 
 // Accelerometer Variables
 float rawAccelX;                      
@@ -42,8 +46,6 @@ const int magneLow = -20;               // Constrained Magnetometer Values
 const int magneHigh = abs(magneLow);
 int mapValue = 255;                     // Maximum output value (Set to byte data type)
 
-String id = "0";
-
 /* Change these to match your WiFi network */
 const char mySSID[] = "internetz";
 const char myPassword[] = "1nt3rn3tz";
@@ -62,7 +64,15 @@ void setup()
   Serial.print("Free memory: ");
   Serial.println(wifly.getFreeMemory(),DEC);
 
-  Serial1.begin(9600);
+  Serial1.begin(9600); //IF NEVER SET BEFORE TO 57600
+//  
+//  Serial.println("setting to 57600");
+//  wifly.setBaud(57600);
+//  wifly.save();
+//  wifly.reboot(); 
+//  wifly.setBaud(57600);  
+//  Serial.println("DONE setting to 57600");
+  
   if (!wifly.begin(&Serial1, &Serial)) {
     Serial.println("Failed to start wifly");
     terminal();
@@ -98,7 +108,7 @@ void setup()
   /* Setup for UDP packets, sent automatically */
   wifly.setIpProtocol(WIFLY_PROTOCOL_UDP);
   /* Set UDP packet to server and port */
-  wifly.setHost("10.0.1.11", 11999);    
+  wifly.setHost(HOST, PORT);    
 
   Serial.print("MAC: ");
   Serial.println(wifly.getMAC(buf, sizeof(buf)));
@@ -129,7 +139,9 @@ void loop()
   sensors_event_t event;
   
   String data;
-  data = id + "\t";
+  data = "/";
+  data += ID;
+  data += "\t";
   
   // GET, MAP, AND PRINT ACCELEROMETER READINGS
   accel.getEvent(&event);
@@ -161,12 +173,10 @@ void loop()
   data += MagneY;
   data += "\t";
   data += MagneZ;
-  data += "\t";
   
-  data += "[/p]";
-  delay(10);
+//  data += "/";
   wifly.print(data);
-  delay(100); //for now!
+  delay(35); //for now!
   
  }
  
