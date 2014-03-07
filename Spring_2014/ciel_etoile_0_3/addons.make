@@ -1,0 +1,4 @@
+ofxNetwork
+ofxXmlSettings
+ofxSyphon
+ofxUI
