@@ -6,20 +6,19 @@
 //
 //
 
-#include "Particle.h"
+#include "ParticleEmitter.h"
 
-void Particle::setup(ofVec2f _pos, ofVec2f _vel) {
+void ParticleEmitter::setup(ofVec2f _pos, ofVec2f _vel) {
     
     pos = _pos;
     vel = _vel;
     life = 255;
-    inc = 100/vel.y;
     
 }
 
-void Particle::update() {
+void ParticleEmitter::update() {
     
-    
+    //making particles shake using noise
     float noise = ofNoise(pos.x * 0.005, pos.y*0.005, ofGetElapsedTimef() * 1.0) * 10.0;
     
     float agePct;
@@ -38,10 +37,7 @@ void Particle::update() {
     
 }
 
-//we're not even using this
-void Particle::draw() {
-    
-    ofSetColor(255, life);
-    ofCircle(pos, 3);
-    
+//we're not using this. Images are being draw from the modeOne class
+//using ofVboMesh.
+void ParticleEmitter::draw() {
 }
