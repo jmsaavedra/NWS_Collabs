@@ -12,7 +12,7 @@
 #define HOST "localhost"
 #define PORT 12345
 
-#define NCHAN 1 //---- NUMBER OF CHANNELS OF INPUT !!
+#define NCHAN 2 //---- NUMBER OF CHANNELS OF INPUT !!
 
 class testApp : public ofBaseApp{
 
