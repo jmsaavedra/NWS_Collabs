@@ -64,37 +64,17 @@ void ofApp::draw(){
     // draw the fft resutls:
     ofSetColor(255,255,255,255);
     
-    //float width = (float)(nBandsToGet) / nBandsToGet*4;
-    //float width = (float)(nBandsToUse) / nBandsToGet;
     float width = 3;
     for (int i = 0;i < nBandsToUse; i++){
         //cout << i << "\t"<<fftSmoothed[i] << endl;
-        ofRect(25+i*width,250,width,-(receivedFft[i] * 200));
+        ofRect(25+i*width,250,width,-(receivedFft[i] * 750));
         if(i%10 == 0){
             ofDrawBitmapString(ofToString(i), 25+i*width, 265);
         }
     }
-    ofDrawBitmapString("listening on PORT "+ofToString(PORT), 25, ofGetHeight()-50);
-//	string buf;
-//	buf = "listening for osc messages on port" + ofToString(PORT);
-//	ofDrawBitmapString(buf, 10, 20);
-//    
-//    if(receivedImage.getWidth() > 0){
-//        ofDrawBitmapString("Image:", 10, 160);
-//        receivedImage.draw(10, 180);
-//    }
-//
-//	// draw mouse state
-//	buf = "mouse: " + ofToString(mouseX, 4) +  " " + ofToString(mouseY, 4);
-//	ofDrawBitmapString(buf, 430, 20);
-//	ofDrawBitmapString(mouseButtonState, 580, 20);
-//
-//	for(int i = 0; i < NUM_MSG_STRINGS; i++){
-//		ofDrawBitmapString(msg_strings[i], 10, 40 + 15 * i);
-//	}
-
-
-
+//    ofDrawBitmapString("listening on PORT "+ofToString(PORT), 25, ofGetHeight()-80);
+    
+    ofDrawBitmapString("THIS IS YOUR APP, DO WHATEVER YOU WANT WITH THIS DATA!!"+ofToString(PORT), 25, ofGetHeight()-50);
 }
 
 //--------------------------------------------------------------

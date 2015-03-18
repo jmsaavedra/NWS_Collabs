@@ -83,6 +83,11 @@ void ofApp::draw(){
         
         string timeStr ="current time  "+ofToString(audioFile.getPositionMS()/1000/60)+ ":"+ofToString((audioFile.getPositionMS()/1000)%60);
         ofDrawBitmapString(timeStr, 25,ofGetHeight()-50);
+        ofDrawBitmapString("THIS MODULE WILL RUN BEHIND YOUR APP, SERVING FFT DATA VIA OSC.", 25,ofGetHeight()-25);
+        ofDrawBitmapString("SPACE BAR    to  pause music", 25,ofGetHeight()-100);
+        ofDrawBitmapString("LEFT ARROW   to  skip forward 10 seconds", 25,ofGetHeight()-120);
+        ofDrawBitmapString("RIGHT ARROW  to  skip forward 10 seconds", 25,ofGetHeight()-140);
+        
     }
 }
 
