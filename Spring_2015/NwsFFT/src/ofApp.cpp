@@ -7,7 +7,7 @@ void ofApp::setup(){
     setupComplete = false;
     oscSender.setup(HOST,PORT);
     
-    crumb.loadSound("first.m4a");
+    crumb.loadSound("crumb.mp3");
     crumb.setVolume(0.7);
     crumb.play();
     crumb.setPositionMS(120000); //starting at 1 min into the song.
