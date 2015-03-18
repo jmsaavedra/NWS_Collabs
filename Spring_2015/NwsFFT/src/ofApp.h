@@ -25,7 +25,7 @@ class ofApp : public ofBaseApp{
     
     void sendOsc();
     
-    ofSoundPlayer crumb;
+    ofSoundPlayer audioFile;
     ofxOscSender  oscSender;
     
     float         * fftSmoothed;

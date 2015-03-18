@@ -7,13 +7,20 @@ void ofApp::setup(){
     setupComplete = false;
     oscSender.setup(HOST,PORT);
     
-    crumb.loadSound("first.m4a");
-    crumb.setVolume(0.7);
-    crumb.play();
-    crumb.setPositionMS(120000); //starting at 1 min into the song.
-    crumb.setLoop(true);
+//*** CHOOSE WHICH AUDIO FILE TO LOAD HERE ***//
+    audioFile.loadSound("surinach/1_opening.mp3");
+//    audioFile.loadSound("surinach/2_charlie_chaplin.mp3");
+//    audioFile.loadSound("surinach/3_parade_of_beauties.mp3");
+//    audioFile.loadSound("surinach/4_epitaph_silent_movies.mp3");
+//    audioFile.loadSound("surinach/5_stereophonism.mp3");
+//    audioFile.loadSound("surinach/6_pasodoble.mp3");
+//    audioFile.loadSound("crumb/idyll.mp3");
+    audioFile.setVolume(1.4);
+    audioFile.play();
+    audioFile.setPositionMS(120000); //starting at 1 min into the song.
+    audioFile.setLoop(true);
+    
     // the fft needs to be smoothed out, so we create an array of floats
-    // for that purpose:
     nBandsToGet = 2048;
     nBandsToUse = nBandsToGet/4;
     
@@ -22,7 +29,7 @@ void ofApp::setup(){
         fftSmoothed[i] = 0;
     }
     
-    if(crumb.isLoaded()){
+    if(audioFile.isLoaded()){
      setupComplete = true;
     }
 }
@@ -68,13 +75,13 @@ void ofApp::draw(){
         float width = 3;
         for (int i = 0;i < nBandsToUse; i++){
             //cout << i << "\t"<<fftSmoothed[i] << endl;
-            ofRect(25+i*width,250,width,-(fftSmoothed[i] * 200));
+            ofRect(25+i*width,250,width,-(fftSmoothed[i] * 750)); //multiplying by 750 to make the numbers BIGGER
             if(i%10 == 0){
                 ofDrawBitmapString(ofToString(i), 25+i*width, 265);
             }
         }
         
-        string timeStr ="current time  "+ofToString(crumb.getPositionMS()/1000/60)+ ":"+ofToString((crumb.getPositionMS()/1000)%60);
+        string timeStr ="current time  "+ofToString(audioFile.getPositionMS()/1000/60)+ ":"+ofToString((audioFile.getPositionMS()/1000)%60);
         ofDrawBitmapString(timeStr, 25,ofGetHeight()-50);
     }
 }
@@ -85,17 +92,17 @@ void ofApp::keyPressed  (int key){
     
     switch (key){
         case ' ':
-            if(crumb.getIsPlaying()){
-                crumb.setPaused(true);
-            } else crumb.setPaused(false);
+            if(audioFile.getIsPlaying()){
+                audioFile.setPaused(true);
+            } else audioFile.setPaused(false);
             break;
             
         case OF_KEY_RIGHT:
-            crumb.setPositionMS( crumb.getPositionMS() + 10000);
+            audioFile.setPositionMS( audioFile.getPositionMS() + 10000);
             break;
             
         case OF_KEY_LEFT:
-            crumb.setPositionMS( crumb.getPositionMS() - 10000);
+            audioFile.setPositionMS( audioFile.getPositionMS() - 10000);
             break;
             
     }
