@@ -19,7 +19,7 @@ void ofApp::setup(){
     audioFile.play();
     audioFile.setPositionMS(120000); //starting at 1 min into the song.
     audioFile.setLoop(true);
-    
+
     // the fft needs to be smoothed out, so we create an array of floats
     nBandsToGet = 2048;
     nBandsToUse = nBandsToGet/4;
