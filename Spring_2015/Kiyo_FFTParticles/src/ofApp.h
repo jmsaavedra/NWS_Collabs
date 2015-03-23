@@ -36,6 +36,7 @@ public:
     ofxFFTLive fftLive;
     ofxFFTFile fftFile;
     
+    
     //GUI
     bool display = false;
     ofxPanel gui;
