@@ -70,6 +70,7 @@ void ofApp::draw(){
         // draw the fft resutls:
         ofSetColor(255,255,255,255);
         
+        
         //float width = (float)(nBandsToGet) / nBandsToGet*4;
         //float width = (float)(nBandsToUse) / nBandsToGet;
         float width = 3;
