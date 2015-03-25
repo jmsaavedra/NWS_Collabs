@@ -9,7 +9,7 @@ void ofApp::setup(){
     
     //my_stream.setup(this, 0, 2, 44100, 256, 4);
     
-    soundPlayer.loadSound("3_parade_of_beauties.mp3");
+    soundPlayer.loadSound("1_opening.mp3");
     soundPlayer.setLoop(true);
     soundPlayer.play();
     

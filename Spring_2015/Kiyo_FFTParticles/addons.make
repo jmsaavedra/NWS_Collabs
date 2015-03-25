@@ -1,9 +1,0 @@
-ofxGui
-ofxKinect
-ofxNetwork
-ofxOpenCv
-ofxOsc
-ofxSvg
-ofxVectorGraphics
-ofxBox2d
-ofxFFT

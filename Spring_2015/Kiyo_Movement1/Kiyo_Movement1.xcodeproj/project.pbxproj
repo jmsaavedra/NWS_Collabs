@@ -19,7 +19,7 @@
 		B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 802251BAF1B35B1D67B32FD0 /* ofxSliderGroup.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		D75776B1465EF369BB2B19CD /* ofxFFTLive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 803F1723C773514ECB0B2603 /* ofxFFTLive.cpp */; };
-		DB5346BC1AB8E58A00056D5F /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB5346BA1AB8E58A00056D5F /* Particle.cpp */; };
+		DB633EE71AC23C41003F5071 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB633EE51AC23C41003F5071 /* Particle.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -94,8 +94,8 @@
 		C70D8946940288799E82131E /* ofxSliderGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSliderGroup.h; path = ../../../addons/ofxGui/src/ofxSliderGroup.h; sourceTree = SOURCE_ROOT; };
 		C88333E71C9457E441C33474 /* ofxButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxButton.cpp; path = ../../../addons/ofxGui/src/ofxButton.cpp; sourceTree = SOURCE_ROOT; };
 		DAA70A50F276525E63A25DC6 /* fft.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fft.h; path = ../../../addons/ofxFFT/libs/fft.h; sourceTree = SOURCE_ROOT; };
-		DB5346BA1AB8E58A00056D5F /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
-		DB5346BB1AB8E58A00056D5F /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		DB633EE51AC23C41003F5071 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		DB633EE61AC23C41003F5071 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
 		E112B3AEBEA2C091BF2B40AE /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPanel.cpp; path = ../../../addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -107,7 +107,7 @@
 		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		E46178EF30865CB0CE4D372D /* ofxFFTLive.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxFFTLive.h; path = ../../../addons/ofxFFT/src/ofxFFTLive.h; sourceTree = SOURCE_ROOT; };
-		E4B69B5B0A3A1756003C02F2 /* FFTParticlesDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFTParticlesDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69B5B0A3A1756003C02F2 /* Kiyo_Movement1Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiyo_Movement1Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
@@ -278,7 +278,7 @@
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				E45BE5980E8CC70C009D7055 /* frameworks */,
-				E4B69B5B0A3A1756003C02F2 /* FFTParticlesDebug.app */,
+				E4B69B5B0A3A1756003C02F2 /* Kiyo_Movement1Debug.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,8 +288,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				DB5346BA1AB8E58A00056D5F /* Particle.cpp */,
-				DB5346BB1AB8E58A00056D5F /* Particle.h */,
+				DB633EE51AC23C41003F5071 /* Particle.cpp */,
+				DB633EE61AC23C41003F5071 /* Particle.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -306,9 +306,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* FFTParticles */ = {
+		E4B69B5A0A3A1756003C02F2 /* Kiyo_Movement1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "FFTParticles" */;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "Kiyo_Movement1" */;
 			buildPhases = (
 				E4B69B580A3A1756003C02F2 /* Sources */,
 				E4B69B590A3A1756003C02F2 /* Frameworks */,
@@ -320,9 +320,9 @@
 			dependencies = (
 				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
 			);
-			name = FFTParticles;
+			name = Kiyo_Movement1;
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* FFTParticlesDebug.app */;
+			productReference = E4B69B5B0A3A1756003C02F2 /* Kiyo_Movement1Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -333,7 +333,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "FFTParticles" */;
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "Kiyo_Movement1" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -354,7 +354,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				E4B69B5A0A3A1756003C02F2 /* FFTParticles */,
+				E4B69B5A0A3A1756003C02F2 /* Kiyo_Movement1 */,
 			);
 		};
 /* End PBXProject section */
@@ -391,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				DB633EE71AC23C41003F5071 /* Particle.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */,
 				5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */,
@@ -400,7 +401,6 @@
 				837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */,
 				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
 				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,
-				DB5346BC1AB8E58A00056D5F /* Particle.cpp in Sources */,
 				1711FD836260FE025DDDF8C9 /* ofxFFTBase.cpp in Sources */,
 				34B0EA6FA9243CC336D4713A /* ofxFFTFile.cpp in Sources */,
 				D75776B1465EF369BB2B19CD /* ofxFFTLive.cpp in Sources */,
@@ -443,83 +443,14 @@
 					"$(OF_CORE_HEADERS)",
 					../../../addons/ofxGui/libs,
 					../../../addons/ofxGui/src,
-					../../../addons/ofxKinect/libs,
-					../../../addons/ofxKinect/libs/libfreenect,
-					../../../addons/ofxKinect/libs/libfreenect/include,
-					../../../addons/ofxKinect/libs/libfreenect/platform,
-					../../../addons/ofxKinect/libs/libfreenect/src,
-					"../../../addons/ofxKinect/libs/libusb-1.0",
-					"../../../addons/ofxKinect/libs/libusb-1.0/include",
-					"../../../addons/ofxKinect/libs/libusb-1.0/include/libusb-1.0",
-					"../../../addons/ofxKinect/libs/libusb-1.0/lib",
-					"../../../addons/ofxKinect/libs/libusb-1.0/lib/osx",
-					"../../../addons/ofxKinect/libs/libusb-win32",
-					../../../addons/ofxKinect/src,
-					../../../addons/ofxKinect/src/extra,
-					../../../addons/ofxNetwork/libs,
-					../../../addons/ofxNetwork/src,
-					../../../addons/ofxOpenCv/libs,
-					../../../addons/ofxOpenCv/libs/opencv,
-					../../../addons/ofxOpenCv/libs/opencv/include,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video,
-					../../../addons/ofxOpenCv/libs/opencv/lib,
-					../../../addons/ofxOpenCv/libs/opencv/lib/osx,
-					../../../addons/ofxOpenCv/src,
-					../../../addons/ofxOsc/libs,
-					../../../addons/ofxOsc/libs/oscpack,
-					../../../addons/ofxOsc/libs/oscpack/src,
-					../../../addons/ofxOsc/libs/oscpack/src/ip,
-					../../../addons/ofxOsc/libs/oscpack/src/ip/posix,
-					../../../addons/ofxOsc/libs/oscpack/src/ip/win32,
-					../../../addons/ofxOsc/libs/oscpack/src/osc,
-					../../../addons/ofxOsc/src,
-					../../../addons/ofxSvg/libs,
-					../../../addons/ofxSvg/libs/svgTiny,
-					../../../addons/ofxSvg/libs/svgTiny/src,
-					../../../addons/ofxSvg/src,
-					../../../addons/ofxVectorGraphics/libs,
-					../../../addons/ofxVectorGraphics/src,
-					../../../addons/ofxBox2d/libs,
-					../../../addons/ofxBox2d/src,
-					../../../addons/ofxBox2d/src/lib,
-					../../../addons/ofxBox2d/src/lib/Box2D,
-					../../../addons/ofxBox2d/src/lib/Box2D/Include,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Collision,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Collision/Shapes,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Common,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Dynamics,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Dynamics/Contacts,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Dynamics/Controllers,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Dynamics/Joints,
 					../../../addons/ofxFFT/libs,
 					../../../addons/ofxFFT/src,
-					src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
 					"-mtune=native",
-				);
-				OTHER_LDFLAGS = (
-					"$(OF_CORE_LIBS)",
-					"../../../addons/ofxKinect/libs/libusb-1.0/lib/osx/usb-1.0.a",
-					../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a,
 				);
 				SDKROOT = macosx;
 			};
@@ -550,83 +481,14 @@
 					"$(OF_CORE_HEADERS)",
 					../../../addons/ofxGui/libs,
 					../../../addons/ofxGui/src,
-					../../../addons/ofxKinect/libs,
-					../../../addons/ofxKinect/libs/libfreenect,
-					../../../addons/ofxKinect/libs/libfreenect/include,
-					../../../addons/ofxKinect/libs/libfreenect/platform,
-					../../../addons/ofxKinect/libs/libfreenect/src,
-					"../../../addons/ofxKinect/libs/libusb-1.0",
-					"../../../addons/ofxKinect/libs/libusb-1.0/include",
-					"../../../addons/ofxKinect/libs/libusb-1.0/include/libusb-1.0",
-					"../../../addons/ofxKinect/libs/libusb-1.0/lib",
-					"../../../addons/ofxKinect/libs/libusb-1.0/lib/osx",
-					"../../../addons/ofxKinect/libs/libusb-win32",
-					../../../addons/ofxKinect/src,
-					../../../addons/ofxKinect/src/extra,
-					../../../addons/ofxNetwork/libs,
-					../../../addons/ofxNetwork/src,
-					../../../addons/ofxOpenCv/libs,
-					../../../addons/ofxOpenCv/libs/opencv,
-					../../../addons/ofxOpenCv/libs/opencv/include,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts,
-					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video,
-					../../../addons/ofxOpenCv/libs/opencv/lib,
-					../../../addons/ofxOpenCv/libs/opencv/lib/osx,
-					../../../addons/ofxOpenCv/src,
-					../../../addons/ofxOsc/libs,
-					../../../addons/ofxOsc/libs/oscpack,
-					../../../addons/ofxOsc/libs/oscpack/src,
-					../../../addons/ofxOsc/libs/oscpack/src/ip,
-					../../../addons/ofxOsc/libs/oscpack/src/ip/posix,
-					../../../addons/ofxOsc/libs/oscpack/src/ip/win32,
-					../../../addons/ofxOsc/libs/oscpack/src/osc,
-					../../../addons/ofxOsc/src,
-					../../../addons/ofxSvg/libs,
-					../../../addons/ofxSvg/libs/svgTiny,
-					../../../addons/ofxSvg/libs/svgTiny/src,
-					../../../addons/ofxSvg/src,
-					../../../addons/ofxVectorGraphics/libs,
-					../../../addons/ofxVectorGraphics/src,
-					../../../addons/ofxBox2d/libs,
-					../../../addons/ofxBox2d/src,
-					../../../addons/ofxBox2d/src/lib,
-					../../../addons/ofxBox2d/src/lib/Box2D,
-					../../../addons/ofxBox2d/src/lib/Box2D/Include,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Collision,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Collision/Shapes,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Common,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Dynamics,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Dynamics/Contacts,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Dynamics/Controllers,
-					../../../addons/ofxBox2d/src/lib/Box2D/Source/Dynamics/Joints,
 					../../../addons/ofxFFT/libs,
 					../../../addons/ofxFFT/src,
-					src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
 					"-mtune=native",
-				);
-				OTHER_LDFLAGS = (
-					"$(OF_CORE_LIBS)",
-					"../../../addons/ofxKinect/libs/libusb-1.0/lib/osx/usb-1.0.a",
-					../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a,
 				);
 				SDKROOT = macosx;
 			};
@@ -806,7 +668,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "FFTParticles" */ = {
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "Kiyo_Movement1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B4E0A3A1720003C02F2 /* Debug */,
@@ -815,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "FFTParticles" */ = {
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "Kiyo_Movement1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,

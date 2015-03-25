@@ -12,7 +12,7 @@ void soundizeMeApp::setup(){
     // Fixed framerate
     ofSetFrameRate(30);
     
-    m_audio.loadSound("3_parade_of_beauties.mp3");
+    m_audio.loadSound("1_opening.mp3");
     m_audio.setLoop(true);
     m_audio.play();
     
