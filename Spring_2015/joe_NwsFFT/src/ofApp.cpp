@@ -8,11 +8,11 @@ void ofApp::setup(){
     oscSender.setup(HOST,PORT);
     
 //*** CHOOSE WHICH AUDIO FILE TO LOAD HERE ***//
-    audioFile.loadSound("surinach/1_opening.mp3");
+//    audioFile.loadSound("surinach/1_opening.mp3");
 //    audioFile.loadSound("surinach/2_charlie_chaplin.mp3");
 //    audioFile.loadSound("surinach/3_parade_of_beauties.mp3");
 //    audioFile.loadSound("surinach/4_epitaph_silent_movies.mp3");
-//    audioFile.loadSound("surinach/5_stereophonism.mp3");
+    audioFile.loadSound("surinach/5_stereophonism.mp3");
 //    audioFile.loadSound("surinach/6_pasodoble.mp3");
 //    audioFile.loadSound("crumb/idyll.mp3");
     audioFile.setVolume(1.4);
