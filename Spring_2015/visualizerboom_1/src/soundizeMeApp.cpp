@@ -6,7 +6,7 @@
 //--------------------------------------------------------------
 void soundizeMeApp::setup(){
 
-    ofSetCircleResolution(100);
+    
     ofEnableSmoothing();
 
     ofSetFrameRate(30);

@@ -18,11 +18,11 @@
 
 
 
-#define FFT_MAP_RADIUS      0.33
+#define FFT_MAP_RADIUS      0.40
 
-#define RADIUS_MIN          0.5
+#define RADIUS_MIN          1
 
-#define RADIUS_MAX          300
+#define RADIUS_MAX          200
 
 
 
