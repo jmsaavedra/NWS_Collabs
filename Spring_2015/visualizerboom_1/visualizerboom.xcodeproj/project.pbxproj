@@ -17,7 +17,6 @@
 		E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9770E8CC7DD009D7055 /* CoreServices.framework */; };
 		E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
 		E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
-		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
 		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
 		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
@@ -25,9 +24,10 @@
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
-		F142A10D1A2CE471002CEF82 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F142A1071A2CE471002CEF82 /* ball.cpp */; };
-		F142A10E1A2CE471002CEF82 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F142A1091A2CE471002CEF82 /* main.cpp */; };
-		F142A10F1A2CE471002CEF82 /* soundizeMeApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F142A10B1A2CE471002CEF82 /* soundizeMeApp.cpp */; };
+		F1BDF9E41AC1FC8900F4D165 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BDF9DC1AC1FC8900F4D165 /* ball.cpp */; };
+		F1BDF9E51AC1FC8900F4D165 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BDF9DE1AC1FC8900F4D165 /* main.cpp */; };
+		F1BDF9E61AC1FC8900F4D165 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BDF9DF1AC1FC8900F4D165 /* ofApp.cpp */; };
+		F1BDF9E71AC1FC8900F4D165 /* soundizeMeApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BDF9E21AC1FC8900F4D165 /* soundizeMeApp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +72,6 @@
 		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		E4B69B5B0A3A1756003C02F2 /* visualizerboomDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visualizerboomDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -83,12 +81,14 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
-		F142A1071A2CE471002CEF82 /* ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ball.cpp; path = "../../soundizeme-master 2/src/ball.cpp"; sourceTree = "<group>"; };
-		F142A1081A2CE471002CEF82 /* ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ball.h; path = "../../soundizeme-master 2/src/ball.h"; sourceTree = "<group>"; };
-		F142A1091A2CE471002CEF82 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../soundizeme-master 2/src/main.cpp"; sourceTree = "<group>"; };
-		F142A10A1A2CE471002CEF82 /* ofGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofGui.h; path = "../../soundizeme-master 2/src/ofGui.h"; sourceTree = "<group>"; };
-		F142A10B1A2CE471002CEF82 /* soundizeMeApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = soundizeMeApp.cpp; path = "../../soundizeme-master 2/src/soundizeMeApp.cpp"; sourceTree = "<group>"; };
-		F142A10C1A2CE471002CEF82 /* soundizeMeApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soundizeMeApp.h; path = "../../soundizeme-master 2/src/soundizeMeApp.h"; sourceTree = "<group>"; };
+		F1BDF9DC1AC1FC8900F4D165 /* ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ball.cpp; sourceTree = "<group>"; };
+		F1BDF9DD1AC1FC8900F4D165 /* ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ball.h; sourceTree = "<group>"; };
+		F1BDF9DE1AC1FC8900F4D165 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F1BDF9DF1AC1FC8900F4D165 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		F1BDF9E01AC1FC8900F4D165 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		F1BDF9E11AC1FC8900F4D165 /* ofGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofGui.h; sourceTree = "<group>"; };
+		F1BDF9E21AC1FC8900F4D165 /* soundizeMeApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soundizeMeApp.cpp; sourceTree = "<group>"; };
+		F1BDF9E31AC1FC8900F4D165 /* soundizeMeApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundizeMeApp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,14 +187,14 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				F142A1071A2CE471002CEF82 /* ball.cpp */,
-				F142A1081A2CE471002CEF82 /* ball.h */,
-				F142A1091A2CE471002CEF82 /* main.cpp */,
-				F142A10A1A2CE471002CEF82 /* ofGui.h */,
-				F142A10B1A2CE471002CEF82 /* soundizeMeApp.cpp */,
-				F142A10C1A2CE471002CEF82 /* soundizeMeApp.h */,
-				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
-				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				F1BDF9DC1AC1FC8900F4D165 /* ball.cpp */,
+				F1BDF9DD1AC1FC8900F4D165 /* ball.h */,
+				F1BDF9DE1AC1FC8900F4D165 /* main.cpp */,
+				F1BDF9DF1AC1FC8900F4D165 /* ofApp.cpp */,
+				F1BDF9E01AC1FC8900F4D165 /* ofApp.h */,
+				F1BDF9E11AC1FC8900F4D165 /* ofGui.h */,
+				F1BDF9E21AC1FC8900F4D165 /* soundizeMeApp.cpp */,
+				F1BDF9E31AC1FC8900F4D165 /* soundizeMeApp.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -295,10 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
-				F142A10E1A2CE471002CEF82 /* main.cpp in Sources */,
-				F142A10F1A2CE471002CEF82 /* soundizeMeApp.cpp in Sources */,
-				F142A10D1A2CE471002CEF82 /* ball.cpp in Sources */,
+				F1BDF9E61AC1FC8900F4D165 /* ofApp.cpp in Sources */,
+				F1BDF9E51AC1FC8900F4D165 /* main.cpp in Sources */,
+				F1BDF9E41AC1FC8900F4D165 /* ball.cpp in Sources */,
+				F1BDF9E71AC1FC8900F4D165 /* soundizeMeApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
