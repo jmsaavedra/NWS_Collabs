@@ -26,7 +26,7 @@
 
 
 
-#define MAX_VELOCITY        9
+#define MAX_VELOCITY        10
 
 #define MAX_FORCE           9
 
@@ -42,7 +42,7 @@
 
 #define MIN_BRIGHTNESS      300
 
-#define NOISE_STEP          0.06
+#define NOISE_STEP          0.02
 
 
 

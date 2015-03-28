@@ -5,10 +5,7 @@
 
 //--------------------------------------------------------------
 void soundizeMeApp::setup(){
-    
 
-    
-    
     ofSetCircleResolution(100);
     
     ofEnableSmoothing();
@@ -52,15 +49,13 @@ void soundizeMeApp::setup(){
         m_balls.push_back(Ball(location,velocity,color,20,FFTids));
     }
 
-   
   
 }
 
 //--------------------------------------------------------------
 void soundizeMeApp::update(){
 
-     
-    
+
     
     float * val = ofSoundGetSpectrum(m_nBandsToGet * 2);        // request 1024 values for fft
     for (int i = 0;i < m_nBandsToGet; i++){
@@ -88,11 +83,7 @@ void soundizeMeApp::update(){
 
 //--------------------------------------------------------------
 void soundizeMeApp::draw(){
-    
-    
-    
-    ofBackground(0,0,50);
-    
+    ofBackgroundGradient(ofColor::grey,ofColor(ofRandom(1),ofRandom(1),ofRandom(1)), OF_GRADIENT_LINEAR);
     for (int i = 0; i < m_balls.size(); i++){
         m_balls.at(i).draw();
     }

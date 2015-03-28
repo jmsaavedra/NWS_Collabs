@@ -22,6 +22,8 @@
 		ADE367465D2A8EBAD4C7A8D9 /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADD194746185E2DA11468377 /* IpEndpointName.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		C4782ECC372420ACE0615B74 /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8881B3C8C0A1C45F042E7A /* OscPrintReceivedElements.cpp */; };
+		DCCC546B1AC5CB07001B8121 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCCC54671AC5CB07001B8121 /* ball.cpp */; };
+		DCCC546C1AC5CB07001B8121 /* soundizeMeApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCCC54691AC5CB07001B8121 /* soundizeMeApp.cpp */; };
 		E27EB0F51AC5C01E00DF39B2 /* kai_01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E27EB0F31AC5C01E00DF39B2 /* kai_01.cpp */; };
 		E27EB1091AC5C02D00DF39B2 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E27EB0F81AC5C02D00DF39B2 /* ofxBaseGui.cpp */; };
 		E27EB10A1AC5C02D00DF39B2 /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E27EB0FA1AC5C02D00DF39B2 /* ofxButton.cpp */; };
@@ -113,6 +115,10 @@
 		C58862C6D212C8E8A83810F4 /* ofxOscMessage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOscMessage.h; path = ../../../addons/ofxOsc/src/ofxOscMessage.h; sourceTree = SOURCE_ROOT; };
 		C6937888E126BADC8777423B /* OscTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscTypes.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h; sourceTree = SOURCE_ROOT; };
 		D9BFFBBF4CC43DEE890B3C3E /* OscTypes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = OscTypes.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp; sourceTree = SOURCE_ROOT; };
+		DCCC54671AC5CB07001B8121 /* ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ball.cpp; sourceTree = "<group>"; };
+		DCCC54681AC5CB07001B8121 /* ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ball.h; sourceTree = "<group>"; };
+		DCCC54691AC5CB07001B8121 /* soundizeMeApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soundizeMeApp.cpp; sourceTree = "<group>"; };
+		DCCC546A1AC5CB07001B8121 /* soundizeMeApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundizeMeApp.h; sourceTree = "<group>"; };
 		DF49D76C45D5DB505A234880 /* ofxOscMessage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscMessage.cpp; path = ../../../addons/ofxOsc/src/ofxOscMessage.cpp; sourceTree = SOURCE_ROOT; };
 		E27EB0F31AC5C01E00DF39B2 /* kai_01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kai_01.cpp; sourceTree = "<group>"; };
 		E27EB0F41AC5C01E00DF39B2 /* kai_01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kai_01.h; sourceTree = "<group>"; };
@@ -372,6 +378,10 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				DCCC54671AC5CB07001B8121 /* ball.cpp */,
+				DCCC54681AC5CB07001B8121 /* ball.h */,
+				DCCC54691AC5CB07001B8121 /* soundizeMeApp.cpp */,
+				DCCC546A1AC5CB07001B8121 /* soundizeMeApp.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
@@ -511,6 +521,7 @@
 				640279EE111671BD026CB013 /* ofxOscReceiver.cpp in Sources */,
 				C4782ECC372420ACE0615B74 /* OscPrintReceivedElements.cpp in Sources */,
 				62545D179C94265CA1389D4A /* OscOutboundPacketStream.cpp in Sources */,
+				DCCC546B1AC5CB07001B8121 /* ball.cpp in Sources */,
 				879A251454401BC0B6E4F238 /* OscTypes.cpp in Sources */,
 				0546D1A38E13BD319CC9755B /* OscReceivedElements.cpp in Sources */,
 				E27EB1101AC5C02D00DF39B2 /* ofxToggle.cpp in Sources */,
@@ -525,6 +536,7 @@
 				67FE4C7B15C2F0478C8126C2 /* NetworkingUtils.cpp in Sources */,
 				E27EB10C1AC5C02D00DF39B2 /* ofxLabel.cpp in Sources */,
 				E27EB0F51AC5C01E00DF39B2 /* kai_01.cpp in Sources */,
+				DCCC546C1AC5CB07001B8121 /* soundizeMeApp.cpp in Sources */,
 				E27EB10B1AC5C02D00DF39B2 /* ofxGuiGroup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
