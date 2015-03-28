@@ -32,6 +32,8 @@ void ofApp::setup(){
     if(audioFile.isLoaded()){
      setupComplete = true;
     }
+    
+    
 }
 
 

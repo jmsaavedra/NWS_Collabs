@@ -339,6 +339,15 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		E2A4F3A21AC65142002414F1 /* kai */ = {
+			isa = PBXGroup;
+			children = (
+				E27EB0F31AC5C01E00DF39B2 /* kai_01.cpp */,
+				E27EB0F41AC5C01E00DF39B2 /* kai_01.h */,
+			);
+			name = kai;
+			sourceTree = "<group>";
+		};
 		E4328144138ABC890047C5CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,8 +384,7 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				E27EB0F31AC5C01E00DF39B2 /* kai_01.cpp */,
-				E27EB0F41AC5C01E00DF39B2 /* kai_01.h */,
+				E2A4F3A21AC65142002414F1 /* kai */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;

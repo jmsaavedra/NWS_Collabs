@@ -9,13 +9,20 @@ float mass = 2;             //Mass of the particles
 ofPoint initPos;            //Initial position of particle systems
 
 
+
+
 //--------------------------------------------------------------
 void ofApp::setup(){
+
+    currMovieIdx = 0;
     
     ofSetFrameRate(60);
     
     //Load Image for particle
     ofLoadImage(image, "particle.png");
+    
+    myPlayer.loadMovie(movies[currMovieIdx]);
+    myPlayer.play();
     
     //Color Palette
     colors.push_back( ofColor(0, 242, 255) );
@@ -66,6 +73,8 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
+    if(myPlayer.isLoaded())myPlayer.update(); // get all the new frames
     
     float time = ofGetElapsedTimef();
     float dt = time - time0;
@@ -158,7 +167,11 @@ void ofApp::draw(){
     
     
     //Set a black background
-    ofBackground(0);
+    //ofBackground(0);
+    cout << spectrum[0] << endl;
+    float col = ofMap(spectrum[0], 0.0, 0.001, 0, 255);
+    ofSetColor(col, 255-col, col);
+    if(myPlayer.isLoaded())myPlayer.draw(0,0, ofGetWidth(), ofGetHeight());
     
     //Draw the particle systems
     ofSetColor(255, 255, 255);
@@ -173,8 +186,27 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     
-    //track.play();
+    switch (key) {
+        case 'f':
+            ofToggleFullscreen();
+            break;
+            
+        case OF_KEY_RIGHT:
+            nextMovie();
+            break;
+            
+        default:
+            break;
+    }
     
+}
+
+//--------------------------------------------------------------
+void ofApp::nextMovie(){
+    myPlayer.closeMovie();
+    currMovieIdx++;
+    if(currMovieIdx > 18) currMovieIdx = 0;
+    myPlayer.loadMovie(movies[currMovieIdx]);
 }
 
 //--------------------------------------------------------------

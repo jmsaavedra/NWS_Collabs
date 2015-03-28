@@ -32,4 +32,5 @@ class ofApp : public ofBaseApp{
     int           nBandsToGet;
     int           nBandsToUse;
     bool          setupComplete;
+    
 };
