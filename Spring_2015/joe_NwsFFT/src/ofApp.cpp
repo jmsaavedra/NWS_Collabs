@@ -6,7 +6,6 @@ void ofApp::setup(){
     
     setupComplete = false;
     oscSender.setup(HOST,PORT);
-    
 //*** CHOOSE WHICH AUDIO FILE TO LOAD HERE ***//
 //    audioFile.loadSound("surinach/1_opening.mp3");
     audioFile.loadSound("surinach/2_charlie_chaplin.mp3");
