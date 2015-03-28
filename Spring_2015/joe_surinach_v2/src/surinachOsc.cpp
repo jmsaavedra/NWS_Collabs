@@ -1,16 +1,17 @@
 //
-//  oscReceiver.cpp
+//  surinachOsc.cpp
 //  surinach_v2
 //
 //  Created by Joseph Saavedra on 3/28/15.
 //
 //
 
-#include "oscReceiver.h"
+#include "surinachOsc.h"
 
-//--------------------------------------------------------------
-void oscReceiver::setup(){
-    // listen on the given port
+//-----------------------------------------------------------
+void surinachOsc::setup(){
+    
+    cout << "hit surinach OSC setup" << endl;
     cout << "listening for osc messages on port " << PORT << "\n";
     receiver.setup(PORT);
     
@@ -22,10 +23,9 @@ void oscReceiver::setup(){
     }
 }
 
-//--------------------------------------------------------------
-void oscReceiver::update(){
+//-----------------------------------------------------------
+void surinachOsc::update(){
     
-    //========== OSC METHODS ===============
     while(receiver.hasWaitingMessages()){
         // get the next message
         ofxOscMessage m;
@@ -44,10 +44,4 @@ void oscReceiver::update(){
             cout << "unrecognized message" << msg_string << endl;
         }
     }
-}
-
-
-//--------------------------------------------------------------
-void oscReceiver::draw(){
-
 }

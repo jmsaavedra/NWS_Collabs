@@ -85,7 +85,7 @@ class kai_01 {
     
 public:
     void setup();
-    void update(float Fft);
+    void update(float Fft[]);
     void draw();
     
     void keyPressed(int key);

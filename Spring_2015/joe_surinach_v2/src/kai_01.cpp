@@ -1,4 +1,4 @@
-//
+
 //  kai_01.cpp
 //  surinach_v1
 //
@@ -132,10 +132,10 @@ void kai_01::setup(){
     ofBackground(0, 0, 0);
     
     nBandsToUse = 1024;
-    receivedFft = new float[nBandsToUse];
-    for (int i = 0; i < nBandsToUse; i++){
-        receivedFft[i] = 0;
-    }
+//    receivedFft = new float[nBandsToUse];
+//    for (int i = 0; i < nBandsToUse; i++){
+//        receivedFft[i] = 0;
+//    }
     //***********************************************
     //***********************************************
     
@@ -178,17 +178,17 @@ void kai_01::setup(){
 }
 
 //--------------------------------------------------------------
-void kai_01::update(float Fft){
-    
+void kai_01::update(float Fft[] ){
+    receivedFft = Fft;
     //audio stuff
     //***********************************************
     //***********************************************
     // hide old messages
-    for(int i = 0; i < NUM_MSG_STRINGS; i++){
-        if(timers[i] < ofGetElapsedTimef()){
-            msg_strings[i] = "";
-        }
-    }
+//    for(int i = 0; i < NUM_MSG_STRINGS; i++){
+//        if(timers[i] < ofGetElapsedTimef()){
+//            msg_strings[i] = "";
+//        }
+//    }
     
     // check for waiting messages
 //    while(receiver.hasWaitingMessages()){
@@ -210,8 +210,8 @@ void kai_01::update(float Fft){
 //        }
 //    }
     
-    //keyValue = receivedFft[50]*5;
-    keyValue = Fft*5;
+    keyValue = receivedFft[50]*5;
+//    keyValue = Fft*5;
     keyValue = ofMap(keyValue, 0.0, 1.0, 0.0, 8.0);
     keyValue *= 0.95;
     //***********************************************
