@@ -1,14 +1,16 @@
 #pragma once
 
+
 #include "ofMain.h"
-#include "ofxOsc.h"
+#include "oscReceiver.h"
 
 //all other classes
 #include "kai_01.h"
+#include "soundizeMeApp.h"
 
 // listen on port 12345
-#define PORT 9001
-#define NUM_MSG_STRINGS 4
+//#define PORT 9001
+//#define NUM_MSG_STRINGS 4
 
 class ofApp : public ofBaseApp {
 	public:
@@ -27,22 +29,16 @@ class ofApp : public ofBaseApp {
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-		ofTrueTypeFont font;
-		ofxOscReceiver receiver;
-    
+
+    ofxOscReceiver receiver;
     float * receivedFft;
     int nBandsToUse;
-		int current_msg_string;
-		string msg_strings[NUM_MSG_STRINGS];
-		float timers[NUM_MSG_STRINGS];
-
-		int mouseX, mouseY;
-		string mouseButtonState;
-    
-        ofImage receivedImage;
+    //oscReceiver myOsc;
     
     int movementNumber;
     
-    kai_01 movement_01;
-    //santi_vis movement_02;
+    kai_01 kai;
+    santiSoundize santi;
+
+
 };

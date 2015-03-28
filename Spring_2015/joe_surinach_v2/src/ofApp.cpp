@@ -4,38 +4,29 @@
 void ofApp::setup(){
 	// listen on the given port
 	cout << "listening for osc messages on port " << PORT << "\n";
+    //myOsc.setup();
 	receiver.setup(PORT);
 
-	current_msg_string = 0;
-	mouseX = 0;
-	mouseY = 0;
-	mouseButtonState = "";
-
 	ofBackground(30, 30, 130);
-    
+//    
     nBandsToUse = 1024;
     receivedFft = new float[nBandsToUse];
     for (int i = 0; i < nBandsToUse; i++){
         receivedFft[i] = 0;
     }
+
+    movementNumber = 2;
     
-    
-    movementNumber = 1;
-    
-    movement_01.setup();
+//    kai.setup();
+    santi.setup();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
 
-	// hide old messages
-//	for(int i = 0; i < NUM_MSG_STRINGS; i++){
-//		if(timers[i] < ofGetElapsedTimef()){
-//			msg_strings[i] = "";
-//		}
-//	}
-
-	// check for waiting messages
+    //========== OSC METHODS ===============
+    //    myOsc.update();
 	while(receiver.hasWaitingMessages()){
 		// get the next message
 		ofxOscMessage m;
@@ -55,11 +46,14 @@ void ofApp::update(){
         }
 	}
     
+    //========== MOVEMENT UPDATE METHODS ===============
     switch (movementNumber) {
         case 1:
-            movement_01.update(receivedFft[50]);
+            kai.update(receivedFft[50]);
             break;
-            
+        case 2:
+            santi.update(receivedFft);
+            break;
         default:
             break;
     }
@@ -68,12 +62,14 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    
+    //========== MOVEMENT DRAW METHODS ===============
     switch (movementNumber) {
         case 1:
-            movement_01.draw();
+            kai.draw();
             break;
-            
+        case 2:
+            santi.draw();
+            break;
         default:
             break;
     }
@@ -81,6 +77,26 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+    
+    if(key == OF_KEY_LEFT){
+        movementNumber++;
+        
+        if(movementNumber == 2){
+            santi.setup();
+        }
+        
+    } else {
+        switch (movementNumber){
+            case 1:
+                kai.keyPressed(key);
+                break;
+            case 2:
+                santi.keyPressed(key);
+                break;
+            default:
+                break;
+        }
+    }
 
 }
 

@@ -1,14 +1,15 @@
 #pragma once
 
-#include "ofMain.h"
+//#include "ofMain.h"
 #include "ball.h"
 //include "ofgui.h"
 #include <vector>
 
-class soundizeMeApp : public ofBaseApp{
+//class soundizeMeApp : public ofBaseApp{
+class santiSoundize {
     public:
         void setup();
-        void update();
+        void update(float receivedFft[]);
         void draw();
 
         void keyPressed(int key);

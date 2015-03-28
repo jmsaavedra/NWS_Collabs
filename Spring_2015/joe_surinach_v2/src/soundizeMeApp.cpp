@@ -1,10 +1,12 @@
+
+
 #include "soundizeMeApp.h"
 #include <algorithm>
 
 
 
 //--------------------------------------------------------------
-void soundizeMeApp::setup(){
+void santiSoundize::setup(){
 
     ofSetCircleResolution(100);
     
@@ -53,9 +55,9 @@ void soundizeMeApp::setup(){
 }
 
 //--------------------------------------------------------------
-void soundizeMeApp::update(){
+void santiSoundize::update(float receivedFft[] ){
 
-
+    m_fftSmoothed = receivedFft;
     
     float * val = ofSoundGetSpectrum(m_nBandsToGet * 2);        // request 1024 values for fft
     for (int i = 0;i < m_nBandsToGet; i++){
@@ -64,7 +66,7 @@ void soundizeMeApp::update(){
         m_fftSmoothed[i] *= (m_isPlaying) ? 0.96f : 0.5f;
 
        
-        if (m_fftSmoothed[i] < val[i]) m_fftSmoothed[i] = val[i];
+//        if (m_fftSmoothed[i] < val[i]) m_fftSmoothed[i] = val[i];
 
     }
 
@@ -82,7 +84,7 @@ void soundizeMeApp::update(){
 }
 
 //--------------------------------------------------------------
-void soundizeMeApp::draw(){
+void santiSoundize::draw(){
     ofBackgroundGradient(ofColor::grey,ofColor(ofRandom(1),ofRandom(1),ofRandom(1)), OF_GRADIENT_LINEAR);
     for (int i = 0; i < m_balls.size(); i++){
         m_balls.at(i).draw();
@@ -93,7 +95,7 @@ void soundizeMeApp::draw(){
 }
 
 //--------------------------------------------------------------
-void soundizeMeApp::keyPressed(int key){
+void santiSoundize::keyPressed(int key){
     switch(key){
         case 'f':
             ofToggleFullscreen();
@@ -123,13 +125,13 @@ void soundizeMeApp::keyPressed(int key){
 }
 
 //--------------------------------------------------------------
-void soundizeMeApp::keyReleased(int key){}
+void santiSoundize::keyReleased(int key){}
 
 //--------------------------------------------------------------
-void soundizeMeApp::mouseMoved(int x, int y){}
+void santiSoundize::mouseMoved(int x, int y){}
 
 //--------------------------------------------------------------
-void soundizeMeApp::mouseDragged(int x, int y, int button){
+void santiSoundize::mouseDragged(int x, int y, int button){
     float theta         = ofRandom(0,360);
     ofVec2f location    = ofVec2f(x,y);
     ofVec2f velocity    = ofVec2f(sin(theta),cos(theta));
@@ -143,19 +145,19 @@ void soundizeMeApp::mouseDragged(int x, int y, int button){
 }
 
 //--------------------------------------------------------------
-void soundizeMeApp::mousePressed(int x, int y, int button){}
+void santiSoundize::mousePressed(int x, int y, int button){}
 
 //--------------------------------------------------------------
-void soundizeMeApp::mouseReleased(int x, int y, int button){}
+void santiSoundize::mouseReleased(int x, int y, int button){}
 
 //--------------------------------------------------------------
-void soundizeMeApp::windowResized(int w, int h){}
+void santiSoundize::windowResized(int w, int h){}
 
 //--------------------------------------------------------------
-void soundizeMeApp::gotMessage(ofMessage msg){}
+void santiSoundize::gotMessage(ofMessage msg){}
 
 //--------------------------------------------------------------
-void soundizeMeApp::dragEvent(ofDragInfo dragInfo){
+void santiSoundize::dragEvent(ofDragInfo dragInfo){
     if (dragInfo.files.size()){
         m_audio.loadSound(dragInfo.files.at(0),true);
         m_audio.play();
