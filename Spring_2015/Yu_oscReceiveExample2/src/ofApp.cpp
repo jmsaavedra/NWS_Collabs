@@ -13,6 +13,8 @@ void ofApp::setup(){
 	mouseX = 0;
 	mouseY = 0;
 	mouseButtonState = "";
+    
+//    ofSetFrameRate(100);
 
 	ofBackground(30, 30, 130);
     
@@ -23,15 +25,6 @@ void ofApp::setup(){
     }
 
     /***** YU start here *****/
-    
-    // image
-//    ofEnableAlphaBlending();
-//    img.setAnchorPercent(0.8, 0.8);
-//    ofBackground(0);
-//    img.loadImage("colorful-background.jpg");
-//    w = img.width;
-//    h = img.height;
-//    img.allocate(w, h,OF_IMAGE_COLOR);
     
     alpha = 100;
     pixelSize = 10;
@@ -81,7 +74,7 @@ void ofApp::update(){
         
     }
     else if (theme == 2) {
-        img.loadImage("2.jpeg");
+        img.loadImage("2.jpg");
         
     }
     else if (theme == 3) {
@@ -89,13 +82,13 @@ void ofApp::update(){
         
     }
     else if (theme == 4) {
-        img.loadImage("4.jpeg");
+        img.loadImage("4.jpg");
         
     }
     
     w = img.width;
     h = img.height;
-    img.allocate(w, h,OF_IMAGE_COLOR);
+    img.allocate(w, h, OF_IMAGE_COLOR);
     
     
     alpha = ofMap(receivedFft[BandAlpha], 0,0.2, 200, 255);
