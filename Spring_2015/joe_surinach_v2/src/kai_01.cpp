@@ -210,7 +210,7 @@ void kai_01::update(float Fft[] ){
 //        }
 //    }
     
-    keyValue = receivedFft[0]*5;
+    keyValue = receivedFft[1]*2;
 //    keyValue = Fft*5;
     keyValue = ofMap(keyValue, 0.0, 1.0, 0.0, 8.0);
     keyValue *= 0.95;

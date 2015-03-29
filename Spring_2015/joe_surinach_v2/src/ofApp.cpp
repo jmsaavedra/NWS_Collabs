@@ -3,31 +3,36 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-    osc.setup();
+    oscRMS.setup();
 
-    movementNumber = 1;
+
+    movementNumber = 0;
     ofSetCircleResolution(180);
     ofSetCurveResolution(180);
     
-    kai.setup();
-    santi.setup();
+//    angela.setup();
+//    kai.setup();
+//    santi.setup();
+    
+    oscFFT.setup();
+
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    
-    osc.update();
+    oscRMS.update();
+    oscFFT.update();
     
     //========== MOVEMENT UPDATE METHODS ===============
     switch (movementNumber) {
         case 1:
-            kai.update(osc.receivedFft);
+            angela.update(oscFFT.chan2_fft);
             break;
         case 2:
-            santi.update(osc.receivedFft);
+            santi.update(oscFFT.chan2_fft);
             break;
         case 3:
-            
+            kai.update(oscRMS.receivedRms);
             break;
         case 4:
             
@@ -41,6 +46,7 @@ void ofApp::update(){
         default:
             break;
     }
+    ofSetWindowTitle(ofToString(ofGetFrameRate()));
 }
 
 
@@ -49,13 +55,13 @@ void ofApp::draw(){
     //========== MOVEMENT DRAW METHODS ===============
     switch (movementNumber) {
         case 1:
-            kai.draw();
+            angela.draw();
             break;
         case 2:
             santi.draw();
             break;
         case 3:
-            
+            kai.draw();
             break;
         case 4:
             
@@ -101,13 +107,13 @@ void ofApp::keyPressed(int key){
     else {
         switch (movementNumber){
             case 1:
-                kai.keyPressed(key);
+                angela.keyPressed(key);
                 break;
             case 2:
                 santi.keyPressed(key);
                 break;
             case 3:
-                
+                kai.keyPressed(key);
                 break;
             case 4:
                 

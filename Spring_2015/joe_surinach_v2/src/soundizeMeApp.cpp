@@ -61,13 +61,8 @@ void santiSoundize::update(float receivedFft[] ){
     
     float * val = ofSoundGetSpectrum(m_nBandsToGet * 2);        // request 1024 values for fft
     for (int i = 0;i < m_nBandsToGet; i++){
-
-        
         m_fftSmoothed[i] *= (m_isPlaying) ? 0.96f : 0.5f;
-
-       
 //        if (m_fftSmoothed[i] < val[i]) m_fftSmoothed[i] = val[i];
-
     }
 
    
@@ -88,10 +83,7 @@ void santiSoundize::draw(){
     ofBackgroundGradient(ofColor::grey,ofColor(ofRandom(1),ofRandom(1),ofRandom(1)), OF_GRADIENT_LINEAR);
     for (int i = 0; i < m_balls.size(); i++){
         m_balls.at(i).draw();
-    }
-
-  
-
+    }   
 }
 
 //--------------------------------------------------------------

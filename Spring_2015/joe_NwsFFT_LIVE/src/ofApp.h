@@ -6,7 +6,8 @@
 #define HOST "localhost"
 #define PORT 9001
 
-#define BUFFER_SIZE 512
+//#define BUFFER_SIZE 512
+#define BUFFER_SIZE 1024
 #define NUM_CHANNELS 8
 
 class ofApp : public ofBaseApp{
@@ -33,9 +34,12 @@ class ofApp : public ofBaseApp{
     ofSoundStream AudioIn;
     ofxOscSender  oscSender;
 
+
     int nBandsToGet;
     int nBandsToUse;
-    float         * fftSmoothed;
+//    float         * fftSmoothed;
+    float fftSmoothed[NUM_CHANNELS][BUFFER_SIZE];
+    vector<float> audioBuffer;
     
     float channel[NUM_CHANNELS][BUFFER_SIZE];
     float volume[NUM_CHANNELS];

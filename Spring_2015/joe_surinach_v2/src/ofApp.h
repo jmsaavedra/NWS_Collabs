@@ -3,10 +3,12 @@
 
 #include "ofMain.h"
 #include "surinachOsc.h"
+#include "oscFFT.h"
 
 //all other classes
 #include "kai_01.h"
 #include "soundizeMeApp.h"
+#include "Angela.h"
 
 
 class ofApp : public ofBaseApp {
@@ -30,7 +32,9 @@ class ofApp : public ofBaseApp {
     
     kai_01 kai;
     santiSoundize santi;
+    Angela angela;
     
-    surinachOsc osc;
+    surinachOsc oscRMS;
+    surinachOscFft oscFFT;
 
 };
