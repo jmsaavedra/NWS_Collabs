@@ -25,6 +25,7 @@ public:
     float time;                //Time of living
     float lifeTime;            //Allowed lifetime
     bool live;                 //Is particle live
+    int colorMode;
 };
 
 //Control parameters class
@@ -133,6 +134,7 @@ public:
     //GUI
     Interface interf;
     bool drawInterface;
+    
     
     
 };

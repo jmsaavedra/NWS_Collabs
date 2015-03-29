@@ -8,11 +8,11 @@ void Yu::setup(){
 	// listen on the given port
 //	cout << "listening for osc messages on port " << PORT << "\n";
 //	receiver.setup(PORT);
-
+    ofSetBackgroundAuto(true);
 	current_msg_string = 0;
 	mouseX = 0;
 	mouseY = 0;
-	mouseButtonState = "";
+//	mouseButtonState = "";
 
 	ofBackground(30, 30, 130);
     
@@ -41,7 +41,8 @@ void Yu::setup(){
     ofEnableAlphaBlending();
     img.setAnchorPercent(0.8, 0.8);
     ofBackground(0);
-    
+    ofSetColor(0);
+    ofRect(0,0,ofGetWidth(), ofGetHeight());
     img.loadImage("1.jpg");
     
     w = img.width;
@@ -89,7 +90,9 @@ void Yu::update(float amp){
 //    alpha = ofMap(receivedFft[BandAlpha], 0,0.2, 200, 255);
 //    pixelSize = ofMap(receivedFft[BandSize],0, 0.8, 2, 30);
     alpha = ofMap(amp, 0,0.2, 200, 255);
-    pixelSize = ofMap(amp,0, 0.8, 2, 30);
+    pixelSize = ofMap(amp,0, 5.0, 2, 20);
+//    cout << amp << endl;
+    if(pixelSize > 20) pixelSize = 20;
 //    alpha = 80;
 //    pixelSize = 3;
 }
@@ -98,7 +101,7 @@ void Yu::update(float amp){
 //--------------------------------------------------------------
 void Yu::draw(float fft[]){
     receivedFft = fft;
-    
+    cout << receivedFft[BandAlpha]<< endl;
 //    ofEnableAlphaBlending();
 //    ofSetColor(255,255,255,100);
 ////    ofRect(25,25,ofGetWidth()-50,225);
@@ -144,7 +147,7 @@ void Yu::draw(float fft[]){
             float brightness = sampleColor.getBrightness();
             float pct = 1.0 - brightness / 255.0f;  //get dark value
             
-            pct += ofMap(ofNoise(i, j, ofGetFrameNum()*0.01)*receivedFft[BandAlpha]*10, 0, 1, -3, 3);
+            pct += ofMap(ofNoise(i, j, ofGetFrameNum()*0.01)*receivedFft[BandAlpha]/5, 0, 1, -3, 3);
             
             
             ofSetColor(r, g, b,alpha);

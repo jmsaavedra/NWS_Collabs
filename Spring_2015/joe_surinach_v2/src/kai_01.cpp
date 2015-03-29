@@ -50,6 +50,7 @@ void Particle::setup() {
     time = 0;
     lifeTime = param.lifeTime;
     live = true;
+    colorMode = 0;
 }
 
 //--------------------------------------------------------------
@@ -91,16 +92,27 @@ void Particle::draw( float a ){
         //Compute size
         //put the audio input in as "a"
         float size = ofMap(
-                           fabs(time - lifeTime/2), 0, lifeTime/2, 3, 4*a );
+                           fabs(time - lifeTime/2), 0, lifeTime/2, 3, 8*a );
         
         //Compute color
-        ofColor color = ofColor::red;
-        float hue = ofMap( time, 0, lifeTime, 0, 255 );
-        color.setHue( hue );
-        ofSetColor( color );
+        if(colorMode == 2){
+            ofColor color = ofColor::red;
+            float hue = ofMap( time, 0, lifeTime, 0, 255 );
+            color.setHue( hue );
+            ofSetColor( color );
+        }
+        else if(colorMode == 1){
+            ofSetColor(255, time, lifeTime);
+        }
+        
+        else if(colorMode == 0){
+            ofSetColor(time, lifeTime, 255);
+        }
+        
         
         //        ofCircle( pos, size );  //Draw particle
         ofRect(pos, size*2, size*2);
+//        ofEllipse(pos.x, pos.y, size*2, size*2);
         //        ofDrawIcoSphere(pos, size);
         //        ofDrawPlane(pos, size, size);
         
@@ -465,6 +477,13 @@ void kai_01::keyPressed(int key){
     if ( key == '&' ) { interf.save( 7 ); }
     if ( key == '*' ) { interf.save( 8 ); }
     if ( key == '(' ) { interf.save( 9 ); }
+    
+    if ( key == 'c' ){
+        for (int i=0; i<p.size(); i++) {
+            p[i].colorMode++;
+            if(p[i].colorMode>2) p[i].colorMode =0;
+        }
+    }
 }
 
 //--------------------------------------------------------------

@@ -17,7 +17,7 @@ void testApp::setup(){
 	
     ofSoundStreamListDevices();
     
-	AudioIn.setDeviceID(3); // !!! watch print for list of devices !!!
+	AudioIn.setDeviceID(2); // !!! watch print for list of devices !!!
     AudioIn.setup(this, 0, 8, 44100, BUFFER_SIZE, 1);
     AudioIn.start();
     

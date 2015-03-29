@@ -12,6 +12,105 @@
 		A3352D301815DD3B003EAC80 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3352D2A1815DD3B003EAC80 /* tinyxmlparser.cpp */; };
 		A3352D311815DD3B003EAC80 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3352D2C1815DD3B003EAC80 /* ofxXmlSettings.cpp */; };
 		A3F2D1FE1815AAEE0030A715 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3F2D1FC1815AAEE0030A715 /* Particle.cpp */; };
+		B941B45C1AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B21E1AC7D7AF005A92C0 /* Makefile */; };
+		B941B45D1AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2221AC7D7AF005A92C0 /* main.cpp */; };
+		B941B45E1AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2231AC7D7AF005A92C0 /* ofApp.cpp */; };
+		B941B45F1AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B23D1AC7D7B0005A92C0 /* Makefile */; };
+		B941B4601AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2411AC7D7B0005A92C0 /* main.cpp */; };
+		B941B4611AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2421AC7D7B0005A92C0 /* ofApp.cpp */; };
+		B941B4621AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B25D1AC7D7B0005A92C0 /* Makefile */; };
+		B941B4631AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2611AC7D7B0005A92C0 /* main.cpp */; };
+		B941B4641AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2621AC7D7B0005A92C0 /* ofApp.cpp */; };
+		B941B4651AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B2771AC7D7B0005A92C0 /* Makefile */; };
+		B941B4661AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B27B1AC7D7B1005A92C0 /* main.cpp */; };
+		B941B4671AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B27C1AC7D7B1005A92C0 /* ofApp.cpp */; };
+		B941B4681AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B2911AC7D7B1005A92C0 /* Makefile */; };
+		B941B4691AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2951AC7D7B1005A92C0 /* main.cpp */; };
+		B941B46A1AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2961AC7D7B1005A92C0 /* ofApp.cpp */; };
+		B941B46B1AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B2A91AC7D7B1005A92C0 /* Makefile */; };
+		B941B46C1AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2AD1AC7D7B1005A92C0 /* main.cpp */; };
+		B941B46D1AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2AE1AC7D7B1005A92C0 /* ofApp.cpp */; };
+		B941B46E1AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B2C11AC7D7B1005A92C0 /* Makefile */; };
+		B941B46F1AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2C51AC7D7B1005A92C0 /* main.cpp */; };
+		B941B4701AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2C61AC7D7B1005A92C0 /* ofApp.cpp */; };
+		B941B4711AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B2DC1AC7D7B2005A92C0 /* Makefile */; };
+		B941B4721AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2E01AC7D7B2005A92C0 /* main.cpp */; };
+		B941B4731AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2E11AC7D7B2005A92C0 /* ofApp.cpp */; };
+		B941B4741AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B2F41AC7D7B2005A92C0 /* Makefile */; };
+		B941B4751AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2F81AC7D7B2005A92C0 /* main.cpp */; };
+		B941B4761AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B2F91AC7D7B2005A92C0 /* ofApp.cpp */; };
+		B941B4771AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B3191AC7D7B2005A92C0 /* Makefile */; };
+		B941B4781AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B31D1AC7D7B2005A92C0 /* main.cpp */; };
+		B941B4791AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B31E1AC7D7B2005A92C0 /* ofApp.cpp */; };
+		B941B47A1AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B3311AC7D7B2005A92C0 /* Makefile */; };
+		B941B47B1AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3351AC7D7B3005A92C0 /* main.cpp */; };
+		B941B47C1AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3361AC7D7B3005A92C0 /* ofApp.cpp */; };
+		B941B47D1AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B34A1AC7D7B3005A92C0 /* Makefile */; };
+		B941B47E1AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B34E1AC7D7B3005A92C0 /* main.cpp */; };
+		B941B47F1AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B34F1AC7D7B3005A92C0 /* ofApp.cpp */; };
+		B941B4801AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B36A1AC7D7B3005A92C0 /* Makefile */; };
+		B941B4811AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B36E1AC7D7B3005A92C0 /* main.cpp */; };
+		B941B4821AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B36F1AC7D7B3005A92C0 /* ofApp.cpp */; };
+		B941B4831AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B3831AC7D7B3005A92C0 /* Makefile */; };
+		B941B4841AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3871AC7D7B3005A92C0 /* main.cpp */; };
+		B941B4851AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3881AC7D7B3005A92C0 /* ofApp.cpp */; };
+		B941B4861AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B3AA1AC7D7B4005A92C0 /* Makefile */; };
+		B941B4871AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3AE1AC7D7B4005A92C0 /* main.cpp */; };
+		B941B4881AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3AF1AC7D7B4005A92C0 /* ofApp.cpp */; };
+		B941B4891AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B3C21AC7D7B4005A92C0 /* Makefile */; };
+		B941B48A1AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3C61AC7D7B4005A92C0 /* main.cpp */; };
+		B941B48B1AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3C71AC7D7B4005A92C0 /* ofApp.cpp */; };
+		B941B48C1AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B3DC1AC7D7B4005A92C0 /* Makefile */; };
+		B941B48D1AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3E01AC7D7B4005A92C0 /* main.cpp */; };
+		B941B48E1AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3E11AC7D7B4005A92C0 /* ofApp.cpp */; };
+		B941B48F1AC7D7B5005A92C0 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B941B3F41AC7D7B4005A92C0 /* Makefile */; };
+		B941B4901AC7D7B5005A92C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3F81AC7D7B4005A92C0 /* main.cpp */; };
+		B941B4911AC7D7B5005A92C0 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3F91AC7D7B4005A92C0 /* ofApp.cpp */; };
+		B941B4921AC7D7B5005A92C0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B941B3FC1AC7D7B5005A92C0 /* README.md */; };
+		B941B4931AC7D7B5005A92C0 /* ofxUI2DGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B3FF1AC7D7B5005A92C0 /* ofxUI2DGraph.cpp */; };
+		B941B4941AC7D7B5005A92C0 /* ofxUI2DPad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4011AC7D7B5005A92C0 /* ofxUI2DPad.cpp */; };
+		B941B4951AC7D7B5005A92C0 /* ofxUIBaseDraws.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4031AC7D7B5005A92C0 /* ofxUIBaseDraws.cpp */; };
+		B941B4961AC7D7B5005A92C0 /* ofxUIBiLabelSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4051AC7D7B5005A92C0 /* ofxUIBiLabelSlider.cpp */; };
+		B941B4971AC7D7B5005A92C0 /* ofxUIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4071AC7D7B5005A92C0 /* ofxUIButton.cpp */; };
+		B941B4981AC7D7B5005A92C0 /* ofxUICanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4091AC7D7B5005A92C0 /* ofxUICanvas.cpp */; };
+		B941B4991AC7D7B5005A92C0 /* ofxUICircleSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B40B1AC7D7B5005A92C0 /* ofxUICircleSlider.cpp */; };
+		B941B49A1AC7D7B5005A92C0 /* ofxUIDragableLabelButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B40E1AC7D7B5005A92C0 /* ofxUIDragableLabelButton.cpp */; };
+		B941B49B1AC7D7B5005A92C0 /* ofxUIDropDownList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4101AC7D7B5005A92C0 /* ofxUIDropDownList.cpp */; };
+		B941B49C1AC7D7B5005A92C0 /* ofxUIEventArgs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4121AC7D7B5005A92C0 /* ofxUIEventArgs.cpp */; };
+		B941B49D1AC7D7B5005A92C0 /* ofxUIFPS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4141AC7D7B5005A92C0 /* ofxUIFPS.cpp */; };
+		B941B49E1AC7D7B5005A92C0 /* ofxUIFPSSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4161AC7D7B5005A92C0 /* ofxUIFPSSlider.cpp */; };
+		B941B49F1AC7D7B5005A92C0 /* ofxUIImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4181AC7D7B5005A92C0 /* ofxUIImage.cpp */; };
+		B941B4A01AC7D7B5005A92C0 /* ofxUIImageButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B41A1AC7D7B5005A92C0 /* ofxUIImageButton.cpp */; };
+		B941B4A11AC7D7B5005A92C0 /* ofxUIImageSampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B41C1AC7D7B5005A92C0 /* ofxUIImageSampler.cpp */; };
+		B941B4A21AC7D7B5005A92C0 /* ofxUIImageSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B41E1AC7D7B5005A92C0 /* ofxUIImageSlider.cpp */; };
+		B941B4A31AC7D7B5005A92C0 /* ofxUIImageToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4201AC7D7B5005A92C0 /* ofxUIImageToggle.cpp */; };
+		B941B4A41AC7D7B5005A92C0 /* ofxUILabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4221AC7D7B5005A92C0 /* ofxUILabel.cpp */; };
+		B941B4A51AC7D7B5005A92C0 /* ofxUILabelButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4241AC7D7B5005A92C0 /* ofxUILabelButton.cpp */; };
+		B941B4A61AC7D7B5005A92C0 /* ofxUILabelToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4261AC7D7B5005A92C0 /* ofxUILabelToggle.cpp */; };
+		B941B4A71AC7D7B5005A92C0 /* ofxUIMinimalSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4281AC7D7B5005A92C0 /* ofxUIMinimalSlider.cpp */; };
+		B941B4A81AC7D7B5005A92C0 /* ofxUIMovingGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B42A1AC7D7B5005A92C0 /* ofxUIMovingGraph.cpp */; };
+		B941B4A91AC7D7B5005A92C0 /* ofxUIMultiImageButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B42C1AC7D7B5005A92C0 /* ofxUIMultiImageButton.cpp */; };
+		B941B4AA1AC7D7B5005A92C0 /* ofxUIMultiImageToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B42E1AC7D7B5005A92C0 /* ofxUIMultiImageToggle.cpp */; };
+		B941B4AB1AC7D7B5005A92C0 /* ofxUINumberDialer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4301AC7D7B5005A92C0 /* ofxUINumberDialer.cpp */; };
+		B941B4AC1AC7D7B5005A92C0 /* ofxUIRadio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4331AC7D7B5005A92C0 /* ofxUIRadio.cpp */; };
+		B941B4AD1AC7D7B5005A92C0 /* ofxUIRangeSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4351AC7D7B5005A92C0 /* ofxUIRangeSlider.cpp */; };
+		B941B4AE1AC7D7B5005A92C0 /* ofxUIRectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4371AC7D7B5005A92C0 /* ofxUIRectangle.cpp */; };
+		B941B4AF1AC7D7B5005A92C0 /* ofxUIRotarySlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4391AC7D7B5005A92C0 /* ofxUIRotarySlider.cpp */; };
+		B941B4B01AC7D7B5005A92C0 /* ofxUIScrollableCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B43B1AC7D7B5005A92C0 /* ofxUIScrollableCanvas.cpp */; };
+		B941B4B11AC7D7B5005A92C0 /* ofxUISlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B43D1AC7D7B5005A92C0 /* ofxUISlider.cpp */; };
+		B941B4B21AC7D7B5005A92C0 /* ofxUISortableList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B43F1AC7D7B5005A92C0 /* ofxUISortableList.cpp */; };
+		B941B4B31AC7D7B5005A92C0 /* ofxUISpacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4411AC7D7B5005A92C0 /* ofxUISpacer.cpp */; };
+		B941B4B41AC7D7B5005A92C0 /* ofxUISpectrum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4431AC7D7B5005A92C0 /* ofxUISpectrum.cpp */; };
+		B941B4B51AC7D7B5005A92C0 /* ofxUISuperCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4451AC7D7B5005A92C0 /* ofxUISuperCanvas.cpp */; };
+		B941B4B61AC7D7B5005A92C0 /* ofxUITabBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4471AC7D7B5005A92C0 /* ofxUITabBar.cpp */; };
+		B941B4B71AC7D7B5005A92C0 /* ofxUITextArea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4491AC7D7B5005A92C0 /* ofxUITextArea.cpp */; };
+		B941B4B81AC7D7B5005A92C0 /* ofxUITextInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B44B1AC7D7B5005A92C0 /* ofxUITextInput.cpp */; };
+		B941B4B91AC7D7B5005A92C0 /* ofxUIToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B44D1AC7D7B5005A92C0 /* ofxUIToggle.cpp */; };
+		B941B4BA1AC7D7B5005A92C0 /* ofxUIToggleMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B44F1AC7D7B5005A92C0 /* ofxUIToggleMatrix.cpp */; };
+		B941B4BB1AC7D7B5005A92C0 /* ofxUIValuePlotter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4521AC7D7B5005A92C0 /* ofxUIValuePlotter.cpp */; };
+		B941B4BC1AC7D7B5005A92C0 /* ofxUIWaveform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4541AC7D7B5005A92C0 /* ofxUIWaveform.cpp */; };
+		B941B4BD1AC7D7B5005A92C0 /* ofxUIWidget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4561AC7D7B5005A92C0 /* ofxUIWidget.cpp */; };
+		B941B4BE1AC7D7B5005A92C0 /* ofxUIWidgetWithLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B941B4591AC7D7B5005A92C0 /* ofxUIWidgetWithLabel.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -35,6 +134,132 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B941B4C01AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B2191AC7D7AF005A92C0 /* example-AllWidgets.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-AllWidgets";
+		};
+		B941B4C31AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B2381AC7D7B0005A92C0 /* example-Buttons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-Buttons";
+		};
+		B941B4C61AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B2581AC7D7B0005A92C0 /* example-CanvasMapVector.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-CanvasMapVector";
+		};
+		B941B4C91AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B2721AC7D7B0005A92C0 /* example-ContextualMenu.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-ContextualMenu";
+		};
+		B941B4CC1AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B28C1AC7D7B1005A92C0 /* example-CustomFont.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-CustomFont";
+		};
+		B941B4CF1AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B2A41AC7D7B1005A92C0 /* example-Customization.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-Customization";
+		};
+		B941B4D21AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B2BC1AC7D7B1005A92C0 /* example-CustomPlacement.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-CustomPlacement";
+		};
+		B941B4D51AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B2D71AC7D7B2005A92C0 /* example-CustomWidgets.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-CustomWidgets";
+		};
+		B941B4D81AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B2EF1AC7D7B2005A92C0 /* example-DynamicDropDown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-DynamicDropDown";
+		};
+		B941B4DB1AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B3141AC7D7B2005A92C0 /* example-SaveLoadSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-SaveLoadSettings";
+		};
+		B941B4DE1AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B32C1AC7D7B2005A92C0 /* example-Scrollable.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-Scrollable";
+		};
+		B941B4E11AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B3451AC7D7B3005A92C0 /* example-SimpleExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-SimpleExample";
+		};
+		B941B4E41AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B3651AC7D7B3005A92C0 /* example-Sliders.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-Sliders";
+		};
+		B941B4E71AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B37E1AC7D7B3005A92C0 /* example-SuperCanvas.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-SuperCanvas";
+		};
+		B941B4EA1AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B3A51AC7D7B3005A92C0 /* example-SwappableFontRenderer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-SwappableFontRenderer";
+		};
+		B941B4ED1AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B3BD1AC7D7B4005A92C0 /* example-TabBar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-TabBar";
+		};
+		B941B4F01AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B3D71AC7D7B4005A92C0 /* example-Tutorial.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-Tutorial";
+		};
+		B941B4F31AC7D7B5005A92C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B941B3EF1AC7D7B4005A92C0 /* example-VariableBinding.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B69B5B0A3A1756003C02F2;
+			remoteInfo = "example-VariableBinding";
+		};
 		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
@@ -65,53 +290,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A3352C8A1815D643003EAC80 /* ofxUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI.h; sourceTree = "<group>"; };
-		A3352C8B1815D643003EAC80 /* ofxUI2DGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI2DGraph.h; sourceTree = "<group>"; };
-		A3352C8C1815D643003EAC80 /* ofxUI2DPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI2DPad.h; sourceTree = "<group>"; };
-		A3352C8D1815D643003EAC80 /* ofxUIBaseDraws.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIBaseDraws.h; sourceTree = "<group>"; };
-		A3352C8E1815D643003EAC80 /* ofxUIBiLabelSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIBiLabelSlider.h; sourceTree = "<group>"; };
-		A3352C8F1815D643003EAC80 /* ofxUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIButton.h; sourceTree = "<group>"; };
-		A3352C901815D643003EAC80 /* ofxUICanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUICanvas.h; sourceTree = "<group>"; };
-		A3352C911815D643003EAC80 /* ofxUICircleSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUICircleSlider.h; sourceTree = "<group>"; };
-		A3352C921815D643003EAC80 /* ofxUICustomImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUICustomImageButton.h; sourceTree = "<group>"; };
-		A3352C931815D643003EAC80 /* ofxUIDropDownList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIDropDownList.h; sourceTree = "<group>"; };
-		A3352C941815D643003EAC80 /* ofxUIEventArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIEventArgs.h; sourceTree = "<group>"; };
-		A3352C951815D643003EAC80 /* ofxUIFPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIFPS.h; sourceTree = "<group>"; };
-		A3352C961815D643003EAC80 /* ofxUIFPSSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIFPSSlider.h; sourceTree = "<group>"; };
-		A3352C971815D643003EAC80 /* ofxUIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIImage.h; sourceTree = "<group>"; };
-		A3352C981815D643003EAC80 /* ofxUIImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIImageButton.h; sourceTree = "<group>"; };
-		A3352C991815D643003EAC80 /* ofxUIImageSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIImageSampler.h; sourceTree = "<group>"; };
-		A3352C9A1815D643003EAC80 /* ofxUIImageSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIImageSlider.h; sourceTree = "<group>"; };
-		A3352C9B1815D643003EAC80 /* ofxUIImageToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIImageToggle.h; sourceTree = "<group>"; };
-		A3352C9C1815D643003EAC80 /* ofxUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUILabel.h; sourceTree = "<group>"; };
-		A3352C9D1815D643003EAC80 /* ofxUILabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUILabelButton.h; sourceTree = "<group>"; };
-		A3352C9E1815D643003EAC80 /* ofxUILabelToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUILabelToggle.h; sourceTree = "<group>"; };
-		A3352C9F1815D643003EAC80 /* ofxUIMinimalSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIMinimalSlider.h; sourceTree = "<group>"; };
-		A3352CA01815D643003EAC80 /* ofxUIMovingGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIMovingGraph.h; sourceTree = "<group>"; };
-		A3352CA11815D643003EAC80 /* ofxUIMultiImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIMultiImageButton.h; sourceTree = "<group>"; };
-		A3352CA21815D643003EAC80 /* ofxUIMultiImageSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIMultiImageSlider.h; sourceTree = "<group>"; };
-		A3352CA31815D643003EAC80 /* ofxUIMultiImageToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIMultiImageToggle.h; sourceTree = "<group>"; };
-		A3352CA41815D643003EAC80 /* ofxUINumberDialer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUINumberDialer.h; sourceTree = "<group>"; };
-		A3352CA51815D643003EAC80 /* ofxUIOFWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIOFWrapper.h; sourceTree = "<group>"; };
-		A3352CA61815D643003EAC80 /* ofxUIRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIRadio.h; sourceTree = "<group>"; };
-		A3352CA71815D643003EAC80 /* ofxUIRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIRangeSlider.h; sourceTree = "<group>"; };
-		A3352CA81815D643003EAC80 /* ofxUIRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIRectangle.h; sourceTree = "<group>"; };
-		A3352CA91815D643003EAC80 /* ofxUIRotarySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIRotarySlider.h; sourceTree = "<group>"; };
-		A3352CAA1815D643003EAC80 /* ofxUIScrollableCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIScrollableCanvas.h; sourceTree = "<group>"; };
-		A3352CAB1815D643003EAC80 /* ofxUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUISlider.h; sourceTree = "<group>"; };
-		A3352CAC1815D643003EAC80 /* ofxUISpacer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUISpacer.h; sourceTree = "<group>"; };
-		A3352CAD1815D643003EAC80 /* ofxUISpectrum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUISpectrum.h; sourceTree = "<group>"; };
-		A3352CAE1815D643003EAC80 /* ofxUISuperCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUISuperCanvas.h; sourceTree = "<group>"; };
-		A3352CAF1815D643003EAC80 /* ofxUITabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUITabBar.h; sourceTree = "<group>"; };
-		A3352CB01815D643003EAC80 /* ofxUITextArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUITextArea.h; sourceTree = "<group>"; };
-		A3352CB11815D643003EAC80 /* ofxUITextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUITextInput.h; sourceTree = "<group>"; };
-		A3352CB21815D643003EAC80 /* ofxUIToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIToggle.h; sourceTree = "<group>"; };
-		A3352CB31815D643003EAC80 /* ofxUIToggleMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIToggleMatrix.h; sourceTree = "<group>"; };
-		A3352CB41815D643003EAC80 /* ofxUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIUtils.h; sourceTree = "<group>"; };
-		A3352CB51815D643003EAC80 /* ofxUIValuePlotter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIValuePlotter.h; sourceTree = "<group>"; };
-		A3352CB61815D643003EAC80 /* ofxUIWaveform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWaveform.h; sourceTree = "<group>"; };
-		A3352CB71815D643003EAC80 /* ofxUIWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWidget.h; sourceTree = "<group>"; };
-		A3352CB81815D643003EAC80 /* ofxUIWidgetWithLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWidgetWithLabel.h; sourceTree = "<group>"; };
 		A3352D271815DD3B003EAC80 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
 		A3352D281815DD3B003EAC80 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
 		A3352D291815DD3B003EAC80 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
@@ -120,6 +298,475 @@
 		A3352D2D1815DD3B003EAC80 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
 		A3F2D1FC1815AAEE0030A715 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		A3F2D1FD1815AAEE0030A715 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		B941B1FE1AC7D7AF005A92C0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B941B2001AC7D7AF005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B2011AC7D7AF005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B2041AC7D7AF005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B2071AC7D7AF005A92C0 /* App.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App.png; sourceTree = "<group>"; };
+		B941B2081AC7D7AF005A92C0 /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
+		B941B2091AC7D7AF005A92C0 /* toggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggle.png; sourceTree = "<group>"; };
+		B941B20A1AC7D7AF005A92C0 /* toggledown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggledown.png; sourceTree = "<group>"; };
+		B941B20B1AC7D7AF005A92C0 /* toggleon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggleon.png; sourceTree = "<group>"; };
+		B941B20C1AC7D7AF005A92C0 /* toggleover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggleover.png; sourceTree = "<group>"; };
+		B941B20D1AC7D7AF005A92C0 /* gui1Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui1Settings.xml; sourceTree = "<group>"; };
+		B941B20E1AC7D7AF005A92C0 /* gui2Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui2Settings.xml; sourceTree = "<group>"; };
+		B941B20F1AC7D7AF005A92C0 /* gui3Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui3Settings.xml; sourceTree = "<group>"; };
+		B941B2101AC7D7AF005A92C0 /* gui4Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui4Settings.xml; sourceTree = "<group>"; };
+		B941B2111AC7D7AF005A92C0 /* gui5Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui5Settings.xml; sourceTree = "<group>"; };
+		B941B2121AC7D7AF005A92C0 /* nerd_me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nerd_me.png; sourceTree = "<group>"; };
+		B941B2131AC7D7AF005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B2141AC7D7AF005A92C0 /* example-AllWidgets.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-AllWidgets.cbp"; sourceTree = "<group>"; };
+		B941B2151AC7D7AF005A92C0 /* example-AllWidgets.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-AllWidgets.sln"; sourceTree = "<group>"; };
+		B941B2161AC7D7AF005A92C0 /* example-AllWidgets.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-AllWidgets.vcxproj"; sourceTree = "<group>"; };
+		B941B2171AC7D7AF005A92C0 /* example-AllWidgets.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-AllWidgets.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B2181AC7D7AF005A92C0 /* example-AllWidgets.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-AllWidgets.workspace"; sourceTree = "<group>"; };
+		B941B2191AC7D7AF005A92C0 /* example-AllWidgets.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-AllWidgets.xcodeproj"; sourceTree = "<group>"; };
+		B941B21D1AC7D7AF005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B21E1AC7D7AF005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B21F1AC7D7AF005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B2201AC7D7AF005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B2221AC7D7AF005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B2231AC7D7AF005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B2241AC7D7AF005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B2261AC7D7B0005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B2271AC7D7B0005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B22A1AC7D7B0005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B22C1AC7D7B0005A92C0 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		B941B22D1AC7D7B0005A92C0 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		B941B22E1AC7D7B0005A92C0 /* toggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggle.png; sourceTree = "<group>"; };
+		B941B22F1AC7D7B0005A92C0 /* toggledown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggledown.png; sourceTree = "<group>"; };
+		B941B2301AC7D7B0005A92C0 /* toggleon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggleon.png; sourceTree = "<group>"; };
+		B941B2311AC7D7B0005A92C0 /* toggleover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggleover.png; sourceTree = "<group>"; };
+		B941B2321AC7D7B0005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B2331AC7D7B0005A92C0 /* example-Buttons.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Buttons.cbp"; sourceTree = "<group>"; };
+		B941B2341AC7D7B0005A92C0 /* example-Buttons.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-Buttons.sln"; sourceTree = "<group>"; };
+		B941B2351AC7D7B0005A92C0 /* example-Buttons.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Buttons.vcxproj"; sourceTree = "<group>"; };
+		B941B2361AC7D7B0005A92C0 /* example-Buttons.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Buttons.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B2371AC7D7B0005A92C0 /* example-Buttons.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Buttons.workspace"; sourceTree = "<group>"; };
+		B941B2381AC7D7B0005A92C0 /* example-Buttons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-Buttons.xcodeproj"; sourceTree = "<group>"; };
+		B941B23C1AC7D7B0005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B23D1AC7D7B0005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B23E1AC7D7B0005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B23F1AC7D7B0005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B2411AC7D7B0005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B2421AC7D7B0005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B2431AC7D7B0005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B2451AC7D7B0005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B2461AC7D7B0005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B2491AC7D7B0005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B24B1AC7D7B0005A92C0 /* gui1Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui1Settings.xml; sourceTree = "<group>"; };
+		B941B24C1AC7D7B0005A92C0 /* gui2Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui2Settings.xml; sourceTree = "<group>"; };
+		B941B24D1AC7D7B0005A92C0 /* gui3Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui3Settings.xml; sourceTree = "<group>"; };
+		B941B24E1AC7D7B0005A92C0 /* gui4Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui4Settings.xml; sourceTree = "<group>"; };
+		B941B24F1AC7D7B0005A92C0 /* gui5Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui5Settings.xml; sourceTree = "<group>"; };
+		B941B2501AC7D7B0005A92C0 /* gui6Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui6Settings.xml; sourceTree = "<group>"; };
+		B941B2511AC7D7B0005A92C0 /* guiSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = guiSettings.xml; sourceTree = "<group>"; };
+		B941B2521AC7D7B0005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B2531AC7D7B0005A92C0 /* example-CanvasMapVector.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CanvasMapVector.cbp"; sourceTree = "<group>"; };
+		B941B2541AC7D7B0005A92C0 /* example-CanvasMapVector.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-CanvasMapVector.sln"; sourceTree = "<group>"; };
+		B941B2551AC7D7B0005A92C0 /* example-CanvasMapVector.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CanvasMapVector.vcxproj"; sourceTree = "<group>"; };
+		B941B2561AC7D7B0005A92C0 /* example-CanvasMapVector.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CanvasMapVector.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B2571AC7D7B0005A92C0 /* example-CanvasMapVector.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CanvasMapVector.workspace"; sourceTree = "<group>"; };
+		B941B2581AC7D7B0005A92C0 /* example-CanvasMapVector.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-CanvasMapVector.xcodeproj"; sourceTree = "<group>"; };
+		B941B25C1AC7D7B0005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B25D1AC7D7B0005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B25E1AC7D7B0005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B25F1AC7D7B0005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B2611AC7D7B0005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B2621AC7D7B0005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B2631AC7D7B0005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B2651AC7D7B0005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B2661AC7D7B0005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B2691AC7D7B0005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B26B1AC7D7B0005A92C0 /* guiSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = guiSettings.xml; sourceTree = "<group>"; };
+		B941B26C1AC7D7B0005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B26D1AC7D7B0005A92C0 /* example-ContextualMenu.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-ContextualMenu.cbp"; sourceTree = "<group>"; };
+		B941B26E1AC7D7B0005A92C0 /* example-ContextualMenu.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-ContextualMenu.sln"; sourceTree = "<group>"; };
+		B941B26F1AC7D7B0005A92C0 /* example-ContextualMenu.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-ContextualMenu.vcxproj"; sourceTree = "<group>"; };
+		B941B2701AC7D7B0005A92C0 /* example-ContextualMenu.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-ContextualMenu.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B2711AC7D7B0005A92C0 /* example-ContextualMenu.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-ContextualMenu.workspace"; sourceTree = "<group>"; };
+		B941B2721AC7D7B0005A92C0 /* example-ContextualMenu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-ContextualMenu.xcodeproj"; sourceTree = "<group>"; };
+		B941B2761AC7D7B0005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B2771AC7D7B0005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B2781AC7D7B0005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B2791AC7D7B0005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B27B1AC7D7B1005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B27C1AC7D7B1005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B27D1AC7D7B1005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B27F1AC7D7B1005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B2801AC7D7B1005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B2831AC7D7B1005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B2851AC7D7B1005A92C0 /* faucet.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faucet.ttf; sourceTree = "<group>"; };
+		B941B2861AC7D7B1005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B2871AC7D7B1005A92C0 /* example-CustomFont.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomFont.cbp"; sourceTree = "<group>"; };
+		B941B2881AC7D7B1005A92C0 /* example-CustomFont.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-CustomFont.sln"; sourceTree = "<group>"; };
+		B941B2891AC7D7B1005A92C0 /* example-CustomFont.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomFont.vcxproj"; sourceTree = "<group>"; };
+		B941B28A1AC7D7B1005A92C0 /* example-CustomFont.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomFont.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B28B1AC7D7B1005A92C0 /* example-CustomFont.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomFont.workspace"; sourceTree = "<group>"; };
+		B941B28C1AC7D7B1005A92C0 /* example-CustomFont.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-CustomFont.xcodeproj"; sourceTree = "<group>"; };
+		B941B2901AC7D7B1005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B2911AC7D7B1005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B2921AC7D7B1005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B2931AC7D7B1005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B2951AC7D7B1005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B2961AC7D7B1005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B2971AC7D7B1005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B2991AC7D7B1005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B29A1AC7D7B1005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B29D1AC7D7B1005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B29E1AC7D7B1005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B29F1AC7D7B1005A92C0 /* example-Customization.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Customization.cbp"; sourceTree = "<group>"; };
+		B941B2A01AC7D7B1005A92C0 /* example-Customization.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-Customization.sln"; sourceTree = "<group>"; };
+		B941B2A11AC7D7B1005A92C0 /* example-Customization.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Customization.vcxproj"; sourceTree = "<group>"; };
+		B941B2A21AC7D7B1005A92C0 /* example-Customization.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Customization.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B2A31AC7D7B1005A92C0 /* example-Customization.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Customization.workspace"; sourceTree = "<group>"; };
+		B941B2A41AC7D7B1005A92C0 /* example-Customization.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-Customization.xcodeproj"; sourceTree = "<group>"; };
+		B941B2A81AC7D7B1005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B2A91AC7D7B1005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B2AA1AC7D7B1005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B2AB1AC7D7B1005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B2AD1AC7D7B1005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B2AE1AC7D7B1005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B2AF1AC7D7B1005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B2B11AC7D7B1005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B2B21AC7D7B1005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B2B51AC7D7B1005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B2B61AC7D7B1005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B2B71AC7D7B1005A92C0 /* example-CustomPlacement.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomPlacement.cbp"; sourceTree = "<group>"; };
+		B941B2B81AC7D7B1005A92C0 /* example-CustomPlacement.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-CustomPlacement.sln"; sourceTree = "<group>"; };
+		B941B2B91AC7D7B1005A92C0 /* example-CustomPlacement.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomPlacement.vcxproj"; sourceTree = "<group>"; };
+		B941B2BA1AC7D7B1005A92C0 /* example-CustomPlacement.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomPlacement.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B2BB1AC7D7B1005A92C0 /* example-CustomPlacement.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomPlacement.workspace"; sourceTree = "<group>"; };
+		B941B2BC1AC7D7B1005A92C0 /* example-CustomPlacement.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-CustomPlacement.xcodeproj"; sourceTree = "<group>"; };
+		B941B2C01AC7D7B1005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B2C11AC7D7B1005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B2C21AC7D7B1005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B2C31AC7D7B1005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B2C51AC7D7B1005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B2C61AC7D7B1005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B2C71AC7D7B1005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B2C91AC7D7B1005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B2CA1AC7D7B1005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B2CD1AC7D7B1005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B2CE1AC7D7B2005A92C0 /* of1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = of1.jpg; sourceTree = "<group>"; };
+		B941B2CF1AC7D7B2005A92C0 /* of2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = of2.jpg; sourceTree = "<group>"; };
+		B941B2D01AC7D7B2005A92C0 /* settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = settings.xml; sourceTree = "<group>"; };
+		B941B2D11AC7D7B2005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B2D21AC7D7B2005A92C0 /* example-CustomWidgets.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomWidgets.cbp"; sourceTree = "<group>"; };
+		B941B2D31AC7D7B2005A92C0 /* example-CustomWidgets.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-CustomWidgets.sln"; sourceTree = "<group>"; };
+		B941B2D41AC7D7B2005A92C0 /* example-CustomWidgets.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomWidgets.vcxproj"; sourceTree = "<group>"; };
+		B941B2D51AC7D7B2005A92C0 /* example-CustomWidgets.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomWidgets.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B2D61AC7D7B2005A92C0 /* example-CustomWidgets.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-CustomWidgets.workspace"; sourceTree = "<group>"; };
+		B941B2D71AC7D7B2005A92C0 /* example-CustomWidgets.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-CustomWidgets.xcodeproj"; sourceTree = "<group>"; };
+		B941B2DB1AC7D7B2005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B2DC1AC7D7B2005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B2DD1AC7D7B2005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B2DE1AC7D7B2005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B2E01AC7D7B2005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B2E11AC7D7B2005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B2E21AC7D7B2005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B2E41AC7D7B2005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B2E51AC7D7B2005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B2E81AC7D7B2005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B2E91AC7D7B2005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B2EA1AC7D7B2005A92C0 /* example-DynamicDropDown.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-DynamicDropDown.cbp"; sourceTree = "<group>"; };
+		B941B2EB1AC7D7B2005A92C0 /* example-DynamicDropDown.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-DynamicDropDown.sln"; sourceTree = "<group>"; };
+		B941B2EC1AC7D7B2005A92C0 /* example-DynamicDropDown.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-DynamicDropDown.vcxproj"; sourceTree = "<group>"; };
+		B941B2ED1AC7D7B2005A92C0 /* example-DynamicDropDown.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-DynamicDropDown.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B2EE1AC7D7B2005A92C0 /* example-DynamicDropDown.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-DynamicDropDown.workspace"; sourceTree = "<group>"; };
+		B941B2EF1AC7D7B2005A92C0 /* example-DynamicDropDown.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-DynamicDropDown.xcodeproj"; sourceTree = "<group>"; };
+		B941B2F31AC7D7B2005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B2F41AC7D7B2005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B2F51AC7D7B2005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B2F61AC7D7B2005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B2F81AC7D7B2005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B2F91AC7D7B2005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B2FA1AC7D7B2005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B2FC1AC7D7B2005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B2FF1AC7D7B2005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B3021AC7D7B2005A92C0 /* App.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App.png; sourceTree = "<group>"; };
+		B941B3031AC7D7B2005A92C0 /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
+		B941B3041AC7D7B2005A92C0 /* toggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggle.png; sourceTree = "<group>"; };
+		B941B3051AC7D7B2005A92C0 /* toggledown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggledown.png; sourceTree = "<group>"; };
+		B941B3061AC7D7B2005A92C0 /* toggleon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggleon.png; sourceTree = "<group>"; };
+		B941B3071AC7D7B2005A92C0 /* toggleover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggleover.png; sourceTree = "<group>"; };
+		B941B3081AC7D7B2005A92C0 /* gui1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui1.xml; sourceTree = "<group>"; };
+		B941B3091AC7D7B2005A92C0 /* gui2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui2.xml; sourceTree = "<group>"; };
+		B941B30A1AC7D7B2005A92C0 /* gui3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui3.xml; sourceTree = "<group>"; };
+		B941B30B1AC7D7B2005A92C0 /* gui4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui4.xml; sourceTree = "<group>"; };
+		B941B30C1AC7D7B2005A92C0 /* gui5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui5.xml; sourceTree = "<group>"; };
+		B941B30D1AC7D7B2005A92C0 /* nerd_me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nerd_me.png; sourceTree = "<group>"; };
+		B941B30E1AC7D7B2005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B30F1AC7D7B2005A92C0 /* example-SaveLoadSettings.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SaveLoadSettings.cbp"; sourceTree = "<group>"; };
+		B941B3101AC7D7B2005A92C0 /* example-SaveLoadSettings.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-SaveLoadSettings.sln"; sourceTree = "<group>"; };
+		B941B3111AC7D7B2005A92C0 /* example-SaveLoadSettings.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SaveLoadSettings.vcxproj"; sourceTree = "<group>"; };
+		B941B3121AC7D7B2005A92C0 /* example-SaveLoadSettings.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SaveLoadSettings.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B3131AC7D7B2005A92C0 /* example-SaveLoadSettings.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SaveLoadSettings.workspace"; sourceTree = "<group>"; };
+		B941B3141AC7D7B2005A92C0 /* example-SaveLoadSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-SaveLoadSettings.xcodeproj"; sourceTree = "<group>"; };
+		B941B3181AC7D7B2005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B3191AC7D7B2005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B31A1AC7D7B2005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B31B1AC7D7B2005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B31D1AC7D7B2005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B31E1AC7D7B2005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B31F1AC7D7B2005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B3211AC7D7B2005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B3221AC7D7B2005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B3251AC7D7B2005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B3261AC7D7B2005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B3271AC7D7B2005A92C0 /* example-Scrollable.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Scrollable.cbp"; sourceTree = "<group>"; };
+		B941B3281AC7D7B2005A92C0 /* example-Scrollable.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-Scrollable.sln"; sourceTree = "<group>"; };
+		B941B3291AC7D7B2005A92C0 /* example-Scrollable.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Scrollable.vcxproj"; sourceTree = "<group>"; };
+		B941B32A1AC7D7B2005A92C0 /* example-Scrollable.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Scrollable.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B32B1AC7D7B2005A92C0 /* example-Scrollable.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Scrollable.workspace"; sourceTree = "<group>"; };
+		B941B32C1AC7D7B2005A92C0 /* example-Scrollable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-Scrollable.xcodeproj"; sourceTree = "<group>"; };
+		B941B3301AC7D7B2005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B3311AC7D7B2005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B3321AC7D7B2005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B3331AC7D7B3005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B3351AC7D7B3005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B3361AC7D7B3005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B3371AC7D7B3005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B3391AC7D7B3005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B33A1AC7D7B3005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B33D1AC7D7B3005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B33E1AC7D7B3005A92C0 /* guiSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = guiSettings.xml; sourceTree = "<group>"; };
+		B941B33F1AC7D7B3005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B3401AC7D7B3005A92C0 /* example-SimpleExample.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SimpleExample.cbp"; sourceTree = "<group>"; };
+		B941B3411AC7D7B3005A92C0 /* example-SimpleExample.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-SimpleExample.sln"; sourceTree = "<group>"; };
+		B941B3421AC7D7B3005A92C0 /* example-SimpleExample.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SimpleExample.vcxproj"; sourceTree = "<group>"; };
+		B941B3431AC7D7B3005A92C0 /* example-SimpleExample.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SimpleExample.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B3441AC7D7B3005A92C0 /* example-SimpleExample.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SimpleExample.workspace"; sourceTree = "<group>"; };
+		B941B3451AC7D7B3005A92C0 /* example-SimpleExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-SimpleExample.xcodeproj"; sourceTree = "<group>"; };
+		B941B3491AC7D7B3005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B34A1AC7D7B3005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B34B1AC7D7B3005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B34C1AC7D7B3005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B34E1AC7D7B3005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B34F1AC7D7B3005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B3501AC7D7B3005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B3521AC7D7B3005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B3531AC7D7B3005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B3561AC7D7B3005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B3571AC7D7B3005A92C0 /* sliderhandle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderhandle.png; sourceTree = "<group>"; };
+		B941B3581AC7D7B3005A92C0 /* sliderhandledown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderhandledown.png; sourceTree = "<group>"; };
+		B941B3591AC7D7B3005A92C0 /* sliderprogress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderprogress.png; sourceTree = "<group>"; };
+		B941B35A1AC7D7B3005A92C0 /* sliderprogressleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderprogressleft.png; sourceTree = "<group>"; };
+		B941B35B1AC7D7B3005A92C0 /* sliderprogressright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderprogressright.png; sourceTree = "<group>"; };
+		B941B35C1AC7D7B3005A92C0 /* slidertrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slidertrack.png; sourceTree = "<group>"; };
+		B941B35D1AC7D7B3005A92C0 /* slidertrackleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slidertrackleft.png; sourceTree = "<group>"; };
+		B941B35E1AC7D7B3005A92C0 /* slidertrackright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slidertrackright.png; sourceTree = "<group>"; };
+		B941B35F1AC7D7B3005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B3601AC7D7B3005A92C0 /* example-Sliders.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Sliders.cbp"; sourceTree = "<group>"; };
+		B941B3611AC7D7B3005A92C0 /* example-Sliders.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-Sliders.sln"; sourceTree = "<group>"; };
+		B941B3621AC7D7B3005A92C0 /* example-Sliders.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Sliders.vcxproj"; sourceTree = "<group>"; };
+		B941B3631AC7D7B3005A92C0 /* example-Sliders.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Sliders.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B3641AC7D7B3005A92C0 /* example-Sliders.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Sliders.workspace"; sourceTree = "<group>"; };
+		B941B3651AC7D7B3005A92C0 /* example-Sliders.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-Sliders.xcodeproj"; sourceTree = "<group>"; };
+		B941B3691AC7D7B3005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B36A1AC7D7B3005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B36B1AC7D7B3005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B36C1AC7D7B3005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B36E1AC7D7B3005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B36F1AC7D7B3005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B3701AC7D7B3005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B3721AC7D7B3005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B3731AC7D7B3005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B3761AC7D7B3005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B3771AC7D7B3005A92C0 /* guiSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = guiSettings.xml; sourceTree = "<group>"; };
+		B941B3781AC7D7B3005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B3791AC7D7B3005A92C0 /* example-SuperCanvas.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SuperCanvas.cbp"; sourceTree = "<group>"; };
+		B941B37A1AC7D7B3005A92C0 /* example-SuperCanvas.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-SuperCanvas.sln"; sourceTree = "<group>"; };
+		B941B37B1AC7D7B3005A92C0 /* example-SuperCanvas.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SuperCanvas.vcxproj"; sourceTree = "<group>"; };
+		B941B37C1AC7D7B3005A92C0 /* example-SuperCanvas.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SuperCanvas.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B37D1AC7D7B3005A92C0 /* example-SuperCanvas.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-SuperCanvas.workspace"; sourceTree = "<group>"; };
+		B941B37E1AC7D7B3005A92C0 /* example-SuperCanvas.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-SuperCanvas.xcodeproj"; sourceTree = "<group>"; };
+		B941B3821AC7D7B3005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B3831AC7D7B3005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B3841AC7D7B3005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B3851AC7D7B3005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B3871AC7D7B3005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B3881AC7D7B3005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B3891AC7D7B3005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B38B1AC7D7B3005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B38E1AC7D7B3005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B38F1AC7D7B3005A92C0 /* COMBATTL.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = COMBATTL.TTF; sourceTree = "<group>"; };
+		B941B3921AC7D7B3005A92C0 /* App.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App.png; sourceTree = "<group>"; };
+		B941B3931AC7D7B3005A92C0 /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
+		B941B3941AC7D7B3005A92C0 /* toggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggle.png; sourceTree = "<group>"; };
+		B941B3951AC7D7B3005A92C0 /* toggledown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggledown.png; sourceTree = "<group>"; };
+		B941B3961AC7D7B3005A92C0 /* toggleon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggleon.png; sourceTree = "<group>"; };
+		B941B3971AC7D7B3005A92C0 /* toggleover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggleover.png; sourceTree = "<group>"; };
+		B941B3981AC7D7B3005A92C0 /* gui1Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui1Settings.xml; sourceTree = "<group>"; };
+		B941B3991AC7D7B3005A92C0 /* gui2Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui2Settings.xml; sourceTree = "<group>"; };
+		B941B39A1AC7D7B3005A92C0 /* gui3Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui3Settings.xml; sourceTree = "<group>"; };
+		B941B39B1AC7D7B3005A92C0 /* gui4Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui4Settings.xml; sourceTree = "<group>"; };
+		B941B39C1AC7D7B3005A92C0 /* gui5Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gui5Settings.xml; sourceTree = "<group>"; };
+		B941B39D1AC7D7B3005A92C0 /* nerd_me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nerd_me.png; sourceTree = "<group>"; };
+		B941B39E1AC7D7B3005A92C0 /* YasashisaAntique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = YasashisaAntique.ttf; sourceTree = "<group>"; };
+		B941B39F1AC7D7B3005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B3A01AC7D7B3005A92C0 /* example-AllWidgets.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-AllWidgets.cbp"; sourceTree = "<group>"; };
+		B941B3A11AC7D7B3005A92C0 /* example-AllWidgets.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-AllWidgets.sln"; sourceTree = "<group>"; };
+		B941B3A21AC7D7B3005A92C0 /* example-AllWidgets.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-AllWidgets.vcxproj"; sourceTree = "<group>"; };
+		B941B3A31AC7D7B3005A92C0 /* example-AllWidgets.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-AllWidgets.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B3A41AC7D7B3005A92C0 /* example-AllWidgets.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-AllWidgets.workspace"; sourceTree = "<group>"; };
+		B941B3A51AC7D7B3005A92C0 /* example-SwappableFontRenderer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-SwappableFontRenderer.xcodeproj"; sourceTree = "<group>"; };
+		B941B3A91AC7D7B4005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B3AA1AC7D7B4005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B3AB1AC7D7B4005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B3AC1AC7D7B4005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B3AE1AC7D7B4005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B3AF1AC7D7B4005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B3B01AC7D7B4005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B3B21AC7D7B4005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B3B31AC7D7B4005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B3B61AC7D7B4005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B3B71AC7D7B4005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B3B81AC7D7B4005A92C0 /* example-TabBar.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-TabBar.cbp"; sourceTree = "<group>"; };
+		B941B3B91AC7D7B4005A92C0 /* example-TabBar.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-TabBar.sln"; sourceTree = "<group>"; };
+		B941B3BA1AC7D7B4005A92C0 /* example-TabBar.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-TabBar.vcxproj"; sourceTree = "<group>"; };
+		B941B3BB1AC7D7B4005A92C0 /* example-TabBar.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-TabBar.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B3BC1AC7D7B4005A92C0 /* example-TabBar.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-TabBar.workspace"; sourceTree = "<group>"; };
+		B941B3BD1AC7D7B4005A92C0 /* example-TabBar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-TabBar.xcodeproj"; sourceTree = "<group>"; };
+		B941B3C11AC7D7B4005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B3C21AC7D7B4005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B3C31AC7D7B4005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B3C41AC7D7B4005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B3C61AC7D7B4005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B3C71AC7D7B4005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B3C81AC7D7B4005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B3CA1AC7D7B4005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B3CB1AC7D7B4005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B3CE1AC7D7B4005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B3CF1AC7D7B4005A92C0 /* guiSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = guiSettings.xml; sourceTree = "<group>"; };
+		B941B3D01AC7D7B4005A92C0 /* settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = settings.xml; sourceTree = "<group>"; };
+		B941B3D11AC7D7B4005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B3D21AC7D7B4005A92C0 /* example-Tutorial.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Tutorial.cbp"; sourceTree = "<group>"; };
+		B941B3D31AC7D7B4005A92C0 /* example-Tutorial.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-Tutorial.sln"; sourceTree = "<group>"; };
+		B941B3D41AC7D7B4005A92C0 /* example-Tutorial.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Tutorial.vcxproj"; sourceTree = "<group>"; };
+		B941B3D51AC7D7B4005A92C0 /* example-Tutorial.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Tutorial.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B3D61AC7D7B4005A92C0 /* example-Tutorial.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-Tutorial.workspace"; sourceTree = "<group>"; };
+		B941B3D71AC7D7B4005A92C0 /* example-Tutorial.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-Tutorial.xcodeproj"; sourceTree = "<group>"; };
+		B941B3DB1AC7D7B4005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B3DC1AC7D7B4005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B3DD1AC7D7B4005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B3DE1AC7D7B4005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B3E01AC7D7B4005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B3E11AC7D7B4005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B3E21AC7D7B4005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B3E41AC7D7B4005A92C0 /* .dropbox.attr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .dropbox.attr; sourceTree = "<group>"; };
+		B941B3E51AC7D7B4005A92C0 /* addons.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addons.make; sourceTree = "<group>"; };
+		B941B3E81AC7D7B4005A92C0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B941B3E91AC7D7B4005A92C0 /* config.make */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.make; sourceTree = "<group>"; };
+		B941B3EA1AC7D7B4005A92C0 /* example-VariableBinding.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-VariableBinding.cbp"; sourceTree = "<group>"; };
+		B941B3EB1AC7D7B4005A92C0 /* example-VariableBinding.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example-VariableBinding.sln"; sourceTree = "<group>"; };
+		B941B3EC1AC7D7B4005A92C0 /* example-VariableBinding.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-VariableBinding.vcxproj"; sourceTree = "<group>"; };
+		B941B3ED1AC7D7B4005A92C0 /* example-VariableBinding.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-VariableBinding.vcxproj.filters"; sourceTree = "<group>"; };
+		B941B3EE1AC7D7B4005A92C0 /* example-VariableBinding.workspace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "example-VariableBinding.workspace"; sourceTree = "<group>"; };
+		B941B3EF1AC7D7B4005A92C0 /* example-VariableBinding.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "example-VariableBinding.xcodeproj"; sourceTree = "<group>"; };
+		B941B3F31AC7D7B4005A92C0 /* icon.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.rc; sourceTree = "<group>"; };
+		B941B3F41AC7D7B4005A92C0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B941B3F51AC7D7B4005A92C0 /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		B941B3F61AC7D7B4005A92C0 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B941B3F81AC7D7B4005A92C0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B941B3F91AC7D7B4005A92C0 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B941B3FA1AC7D7B4005A92C0 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B941B3FB1AC7D7B4005A92C0 /* ofxaddons_thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ofxaddons_thumbnail.png; sourceTree = "<group>"; };
+		B941B3FC1AC7D7B5005A92C0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B941B3FE1AC7D7B5005A92C0 /* ofxUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI.h; sourceTree = "<group>"; };
+		B941B3FF1AC7D7B5005A92C0 /* ofxUI2DGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUI2DGraph.cpp; sourceTree = "<group>"; };
+		B941B4001AC7D7B5005A92C0 /* ofxUI2DGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI2DGraph.h; sourceTree = "<group>"; };
+		B941B4011AC7D7B5005A92C0 /* ofxUI2DPad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUI2DPad.cpp; sourceTree = "<group>"; };
+		B941B4021AC7D7B5005A92C0 /* ofxUI2DPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI2DPad.h; sourceTree = "<group>"; };
+		B941B4031AC7D7B5005A92C0 /* ofxUIBaseDraws.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIBaseDraws.cpp; sourceTree = "<group>"; };
+		B941B4041AC7D7B5005A92C0 /* ofxUIBaseDraws.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIBaseDraws.h; sourceTree = "<group>"; };
+		B941B4051AC7D7B5005A92C0 /* ofxUIBiLabelSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIBiLabelSlider.cpp; sourceTree = "<group>"; };
+		B941B4061AC7D7B5005A92C0 /* ofxUIBiLabelSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIBiLabelSlider.h; sourceTree = "<group>"; };
+		B941B4071AC7D7B5005A92C0 /* ofxUIButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIButton.cpp; sourceTree = "<group>"; };
+		B941B4081AC7D7B5005A92C0 /* ofxUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIButton.h; sourceTree = "<group>"; };
+		B941B4091AC7D7B5005A92C0 /* ofxUICanvas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUICanvas.cpp; sourceTree = "<group>"; };
+		B941B40A1AC7D7B5005A92C0 /* ofxUICanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUICanvas.h; sourceTree = "<group>"; };
+		B941B40B1AC7D7B5005A92C0 /* ofxUICircleSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUICircleSlider.cpp; sourceTree = "<group>"; };
+		B941B40C1AC7D7B5005A92C0 /* ofxUICircleSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUICircleSlider.h; sourceTree = "<group>"; };
+		B941B40D1AC7D7B5005A92C0 /* ofxUIDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIDefines.h; sourceTree = "<group>"; };
+		B941B40E1AC7D7B5005A92C0 /* ofxUIDragableLabelButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIDragableLabelButton.cpp; sourceTree = "<group>"; };
+		B941B40F1AC7D7B5005A92C0 /* ofxUIDragableLabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIDragableLabelButton.h; sourceTree = "<group>"; };
+		B941B4101AC7D7B5005A92C0 /* ofxUIDropDownList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIDropDownList.cpp; sourceTree = "<group>"; };
+		B941B4111AC7D7B5005A92C0 /* ofxUIDropDownList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIDropDownList.h; sourceTree = "<group>"; };
+		B941B4121AC7D7B5005A92C0 /* ofxUIEventArgs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIEventArgs.cpp; sourceTree = "<group>"; };
+		B941B4131AC7D7B5005A92C0 /* ofxUIEventArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIEventArgs.h; sourceTree = "<group>"; };
+		B941B4141AC7D7B5005A92C0 /* ofxUIFPS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIFPS.cpp; sourceTree = "<group>"; };
+		B941B4151AC7D7B5005A92C0 /* ofxUIFPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIFPS.h; sourceTree = "<group>"; };
+		B941B4161AC7D7B5005A92C0 /* ofxUIFPSSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIFPSSlider.cpp; sourceTree = "<group>"; };
+		B941B4171AC7D7B5005A92C0 /* ofxUIFPSSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIFPSSlider.h; sourceTree = "<group>"; };
+		B941B4181AC7D7B5005A92C0 /* ofxUIImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIImage.cpp; sourceTree = "<group>"; };
+		B941B4191AC7D7B5005A92C0 /* ofxUIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIImage.h; sourceTree = "<group>"; };
+		B941B41A1AC7D7B5005A92C0 /* ofxUIImageButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIImageButton.cpp; sourceTree = "<group>"; };
+		B941B41B1AC7D7B5005A92C0 /* ofxUIImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIImageButton.h; sourceTree = "<group>"; };
+		B941B41C1AC7D7B5005A92C0 /* ofxUIImageSampler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIImageSampler.cpp; sourceTree = "<group>"; };
+		B941B41D1AC7D7B5005A92C0 /* ofxUIImageSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIImageSampler.h; sourceTree = "<group>"; };
+		B941B41E1AC7D7B5005A92C0 /* ofxUIImageSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIImageSlider.cpp; sourceTree = "<group>"; };
+		B941B41F1AC7D7B5005A92C0 /* ofxUIImageSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIImageSlider.h; sourceTree = "<group>"; };
+		B941B4201AC7D7B5005A92C0 /* ofxUIImageToggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIImageToggle.cpp; sourceTree = "<group>"; };
+		B941B4211AC7D7B5005A92C0 /* ofxUIImageToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIImageToggle.h; sourceTree = "<group>"; };
+		B941B4221AC7D7B5005A92C0 /* ofxUILabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUILabel.cpp; sourceTree = "<group>"; };
+		B941B4231AC7D7B5005A92C0 /* ofxUILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUILabel.h; sourceTree = "<group>"; };
+		B941B4241AC7D7B5005A92C0 /* ofxUILabelButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUILabelButton.cpp; sourceTree = "<group>"; };
+		B941B4251AC7D7B5005A92C0 /* ofxUILabelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUILabelButton.h; sourceTree = "<group>"; };
+		B941B4261AC7D7B5005A92C0 /* ofxUILabelToggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUILabelToggle.cpp; sourceTree = "<group>"; };
+		B941B4271AC7D7B5005A92C0 /* ofxUILabelToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUILabelToggle.h; sourceTree = "<group>"; };
+		B941B4281AC7D7B5005A92C0 /* ofxUIMinimalSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIMinimalSlider.cpp; sourceTree = "<group>"; };
+		B941B4291AC7D7B5005A92C0 /* ofxUIMinimalSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIMinimalSlider.h; sourceTree = "<group>"; };
+		B941B42A1AC7D7B5005A92C0 /* ofxUIMovingGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIMovingGraph.cpp; sourceTree = "<group>"; };
+		B941B42B1AC7D7B5005A92C0 /* ofxUIMovingGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIMovingGraph.h; sourceTree = "<group>"; };
+		B941B42C1AC7D7B5005A92C0 /* ofxUIMultiImageButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIMultiImageButton.cpp; sourceTree = "<group>"; };
+		B941B42D1AC7D7B5005A92C0 /* ofxUIMultiImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIMultiImageButton.h; sourceTree = "<group>"; };
+		B941B42E1AC7D7B5005A92C0 /* ofxUIMultiImageToggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIMultiImageToggle.cpp; sourceTree = "<group>"; };
+		B941B42F1AC7D7B5005A92C0 /* ofxUIMultiImageToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIMultiImageToggle.h; sourceTree = "<group>"; };
+		B941B4301AC7D7B5005A92C0 /* ofxUINumberDialer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUINumberDialer.cpp; sourceTree = "<group>"; };
+		B941B4311AC7D7B5005A92C0 /* ofxUINumberDialer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUINumberDialer.h; sourceTree = "<group>"; };
+		B941B4321AC7D7B5005A92C0 /* ofxUIOFWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIOFWrapper.h; sourceTree = "<group>"; };
+		B941B4331AC7D7B5005A92C0 /* ofxUIRadio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIRadio.cpp; sourceTree = "<group>"; };
+		B941B4341AC7D7B5005A92C0 /* ofxUIRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIRadio.h; sourceTree = "<group>"; };
+		B941B4351AC7D7B5005A92C0 /* ofxUIRangeSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIRangeSlider.cpp; sourceTree = "<group>"; };
+		B941B4361AC7D7B5005A92C0 /* ofxUIRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIRangeSlider.h; sourceTree = "<group>"; };
+		B941B4371AC7D7B5005A92C0 /* ofxUIRectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIRectangle.cpp; sourceTree = "<group>"; };
+		B941B4381AC7D7B5005A92C0 /* ofxUIRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIRectangle.h; sourceTree = "<group>"; };
+		B941B4391AC7D7B5005A92C0 /* ofxUIRotarySlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIRotarySlider.cpp; sourceTree = "<group>"; };
+		B941B43A1AC7D7B5005A92C0 /* ofxUIRotarySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIRotarySlider.h; sourceTree = "<group>"; };
+		B941B43B1AC7D7B5005A92C0 /* ofxUIScrollableCanvas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIScrollableCanvas.cpp; sourceTree = "<group>"; };
+		B941B43C1AC7D7B5005A92C0 /* ofxUIScrollableCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIScrollableCanvas.h; sourceTree = "<group>"; };
+		B941B43D1AC7D7B5005A92C0 /* ofxUISlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUISlider.cpp; sourceTree = "<group>"; };
+		B941B43E1AC7D7B5005A92C0 /* ofxUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUISlider.h; sourceTree = "<group>"; };
+		B941B43F1AC7D7B5005A92C0 /* ofxUISortableList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUISortableList.cpp; sourceTree = "<group>"; };
+		B941B4401AC7D7B5005A92C0 /* ofxUISortableList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUISortableList.h; sourceTree = "<group>"; };
+		B941B4411AC7D7B5005A92C0 /* ofxUISpacer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUISpacer.cpp; sourceTree = "<group>"; };
+		B941B4421AC7D7B5005A92C0 /* ofxUISpacer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUISpacer.h; sourceTree = "<group>"; };
+		B941B4431AC7D7B5005A92C0 /* ofxUISpectrum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUISpectrum.cpp; sourceTree = "<group>"; };
+		B941B4441AC7D7B5005A92C0 /* ofxUISpectrum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUISpectrum.h; sourceTree = "<group>"; };
+		B941B4451AC7D7B5005A92C0 /* ofxUISuperCanvas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUISuperCanvas.cpp; sourceTree = "<group>"; };
+		B941B4461AC7D7B5005A92C0 /* ofxUISuperCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUISuperCanvas.h; sourceTree = "<group>"; };
+		B941B4471AC7D7B5005A92C0 /* ofxUITabBar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUITabBar.cpp; sourceTree = "<group>"; };
+		B941B4481AC7D7B5005A92C0 /* ofxUITabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUITabBar.h; sourceTree = "<group>"; };
+		B941B4491AC7D7B5005A92C0 /* ofxUITextArea.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUITextArea.cpp; sourceTree = "<group>"; };
+		B941B44A1AC7D7B5005A92C0 /* ofxUITextArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUITextArea.h; sourceTree = "<group>"; };
+		B941B44B1AC7D7B5005A92C0 /* ofxUITextInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUITextInput.cpp; sourceTree = "<group>"; };
+		B941B44C1AC7D7B5005A92C0 /* ofxUITextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUITextInput.h; sourceTree = "<group>"; };
+		B941B44D1AC7D7B5005A92C0 /* ofxUIToggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIToggle.cpp; sourceTree = "<group>"; };
+		B941B44E1AC7D7B5005A92C0 /* ofxUIToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIToggle.h; sourceTree = "<group>"; };
+		B941B44F1AC7D7B5005A92C0 /* ofxUIToggleMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIToggleMatrix.cpp; sourceTree = "<group>"; };
+		B941B4501AC7D7B5005A92C0 /* ofxUIToggleMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIToggleMatrix.h; sourceTree = "<group>"; };
+		B941B4511AC7D7B5005A92C0 /* ofxUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIUtils.h; sourceTree = "<group>"; };
+		B941B4521AC7D7B5005A92C0 /* ofxUIValuePlotter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIValuePlotter.cpp; sourceTree = "<group>"; };
+		B941B4531AC7D7B5005A92C0 /* ofxUIValuePlotter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIValuePlotter.h; sourceTree = "<group>"; };
+		B941B4541AC7D7B5005A92C0 /* ofxUIWaveform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIWaveform.cpp; sourceTree = "<group>"; };
+		B941B4551AC7D7B5005A92C0 /* ofxUIWaveform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWaveform.h; sourceTree = "<group>"; };
+		B941B4561AC7D7B5005A92C0 /* ofxUIWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIWidget.cpp; sourceTree = "<group>"; };
+		B941B4571AC7D7B5005A92C0 /* ofxUIWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWidget.h; sourceTree = "<group>"; };
+		B941B4581AC7D7B5005A92C0 /* ofxUIWidgets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWidgets.h; sourceTree = "<group>"; };
+		B941B4591AC7D7B5005A92C0 /* ofxUIWidgetWithLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUIWidgetWithLabel.cpp; sourceTree = "<group>"; };
+		B941B45A1AC7D7B5005A92C0 /* ofxUIWidgetWithLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWidgetWithLabel.h; sourceTree = "<group>"; };
+		B941B45B1AC7D7B5005A92C0 /* ofxUIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIWrapper.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -174,68 +821,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A3352A251815D640003EAC80 /* ofxUI */ = {
-			isa = PBXGroup;
-			children = (
-				A3352C891815D643003EAC80 /* src */,
-			);
-			path = ofxUI;
-			sourceTree = "<group>";
-		};
-		A3352C891815D643003EAC80 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				A3352C8A1815D643003EAC80 /* ofxUI.h */,
-				A3352C8B1815D643003EAC80 /* ofxUI2DGraph.h */,
-				A3352C8C1815D643003EAC80 /* ofxUI2DPad.h */,
-				A3352C8D1815D643003EAC80 /* ofxUIBaseDraws.h */,
-				A3352C8E1815D643003EAC80 /* ofxUIBiLabelSlider.h */,
-				A3352C8F1815D643003EAC80 /* ofxUIButton.h */,
-				A3352C901815D643003EAC80 /* ofxUICanvas.h */,
-				A3352C911815D643003EAC80 /* ofxUICircleSlider.h */,
-				A3352C921815D643003EAC80 /* ofxUICustomImageButton.h */,
-				A3352C931815D643003EAC80 /* ofxUIDropDownList.h */,
-				A3352C941815D643003EAC80 /* ofxUIEventArgs.h */,
-				A3352C951815D643003EAC80 /* ofxUIFPS.h */,
-				A3352C961815D643003EAC80 /* ofxUIFPSSlider.h */,
-				A3352C971815D643003EAC80 /* ofxUIImage.h */,
-				A3352C981815D643003EAC80 /* ofxUIImageButton.h */,
-				A3352C991815D643003EAC80 /* ofxUIImageSampler.h */,
-				A3352C9A1815D643003EAC80 /* ofxUIImageSlider.h */,
-				A3352C9B1815D643003EAC80 /* ofxUIImageToggle.h */,
-				A3352C9C1815D643003EAC80 /* ofxUILabel.h */,
-				A3352C9D1815D643003EAC80 /* ofxUILabelButton.h */,
-				A3352C9E1815D643003EAC80 /* ofxUILabelToggle.h */,
-				A3352C9F1815D643003EAC80 /* ofxUIMinimalSlider.h */,
-				A3352CA01815D643003EAC80 /* ofxUIMovingGraph.h */,
-				A3352CA11815D643003EAC80 /* ofxUIMultiImageButton.h */,
-				A3352CA21815D643003EAC80 /* ofxUIMultiImageSlider.h */,
-				A3352CA31815D643003EAC80 /* ofxUIMultiImageToggle.h */,
-				A3352CA41815D643003EAC80 /* ofxUINumberDialer.h */,
-				A3352CA51815D643003EAC80 /* ofxUIOFWrapper.h */,
-				A3352CA61815D643003EAC80 /* ofxUIRadio.h */,
-				A3352CA71815D643003EAC80 /* ofxUIRangeSlider.h */,
-				A3352CA81815D643003EAC80 /* ofxUIRectangle.h */,
-				A3352CA91815D643003EAC80 /* ofxUIRotarySlider.h */,
-				A3352CAA1815D643003EAC80 /* ofxUIScrollableCanvas.h */,
-				A3352CAB1815D643003EAC80 /* ofxUISlider.h */,
-				A3352CAC1815D643003EAC80 /* ofxUISpacer.h */,
-				A3352CAD1815D643003EAC80 /* ofxUISpectrum.h */,
-				A3352CAE1815D643003EAC80 /* ofxUISuperCanvas.h */,
-				A3352CAF1815D643003EAC80 /* ofxUITabBar.h */,
-				A3352CB01815D643003EAC80 /* ofxUITextArea.h */,
-				A3352CB11815D643003EAC80 /* ofxUITextInput.h */,
-				A3352CB21815D643003EAC80 /* ofxUIToggle.h */,
-				A3352CB31815D643003EAC80 /* ofxUIToggleMatrix.h */,
-				A3352CB41815D643003EAC80 /* ofxUIUtils.h */,
-				A3352CB51815D643003EAC80 /* ofxUIValuePlotter.h */,
-				A3352CB61815D643003EAC80 /* ofxUIWaveform.h */,
-				A3352CB71815D643003EAC80 /* ofxUIWidget.h */,
-				A3352CB81815D643003EAC80 /* ofxUIWidgetWithLabel.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		A3352D251815DD3B003EAC80 /* ofxXmlSettings */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,11 +850,1296 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		B941B1FD1AC7D7AF005A92C0 /* ofxUI */ = {
+			isa = PBXGroup;
+			children = (
+				B941B1FE1AC7D7AF005A92C0 /* .gitignore */,
+				B941B1FF1AC7D7AF005A92C0 /* example-AllWidgets */,
+				B941B2251AC7D7AF005A92C0 /* example-Buttons */,
+				B941B2441AC7D7B0005A92C0 /* example-CanvasMapVector */,
+				B941B2641AC7D7B0005A92C0 /* example-ContextualMenu */,
+				B941B27E1AC7D7B1005A92C0 /* example-CustomFont */,
+				B941B2981AC7D7B1005A92C0 /* example-Customization */,
+				B941B2B01AC7D7B1005A92C0 /* example-CustomPlacement */,
+				B941B2C81AC7D7B1005A92C0 /* example-CustomWidgets */,
+				B941B2E31AC7D7B2005A92C0 /* example-DynamicDropDown */,
+				B941B2FB1AC7D7B2005A92C0 /* example-SaveLoadSettings */,
+				B941B3201AC7D7B2005A92C0 /* example-Scrollable */,
+				B941B3381AC7D7B3005A92C0 /* example-SimpleExample */,
+				B941B3511AC7D7B3005A92C0 /* example-Sliders */,
+				B941B3711AC7D7B3005A92C0 /* example-SuperCanvas */,
+				B941B38A1AC7D7B3005A92C0 /* example-SwappableFontRenderer */,
+				B941B3B11AC7D7B4005A92C0 /* example-TabBar */,
+				B941B3C91AC7D7B4005A92C0 /* example-Tutorial */,
+				B941B3E31AC7D7B4005A92C0 /* example-VariableBinding */,
+				B941B3FB1AC7D7B4005A92C0 /* ofxaddons_thumbnail.png */,
+				B941B3FC1AC7D7B5005A92C0 /* README.md */,
+				B941B3FD1AC7D7B5005A92C0 /* src */,
+			);
+			name = ofxUI;
+			path = ../../../addons/ofxUI;
+			sourceTree = "<group>";
+		};
+		B941B1FF1AC7D7AF005A92C0 /* example-AllWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2001AC7D7AF005A92C0 /* .dropbox.attr */,
+				B941B2011AC7D7AF005A92C0 /* addons.make */,
+				B941B2021AC7D7AF005A92C0 /* bin */,
+				B941B2131AC7D7AF005A92C0 /* config.make */,
+				B941B2141AC7D7AF005A92C0 /* example-AllWidgets.cbp */,
+				B941B2151AC7D7AF005A92C0 /* example-AllWidgets.sln */,
+				B941B2161AC7D7AF005A92C0 /* example-AllWidgets.vcxproj */,
+				B941B2171AC7D7AF005A92C0 /* example-AllWidgets.vcxproj.filters */,
+				B941B2181AC7D7AF005A92C0 /* example-AllWidgets.workspace */,
+				B941B2191AC7D7AF005A92C0 /* example-AllWidgets.xcodeproj */,
+				B941B21D1AC7D7AF005A92C0 /* icon.rc */,
+				B941B21E1AC7D7AF005A92C0 /* Makefile */,
+				B941B21F1AC7D7AF005A92C0 /* openFrameworks-Info.plist */,
+				B941B2201AC7D7AF005A92C0 /* Project.xcconfig */,
+				B941B2211AC7D7AF005A92C0 /* src */,
+			);
+			path = "example-AllWidgets";
+			sourceTree = "<group>";
+		};
+		B941B2021AC7D7AF005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2031AC7D7AF005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B2031AC7D7AF005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2041AC7D7AF005A92C0 /* .gitkeep */,
+				B941B2051AC7D7AF005A92C0 /* GUI */,
+				B941B20D1AC7D7AF005A92C0 /* gui1Settings.xml */,
+				B941B20E1AC7D7AF005A92C0 /* gui2Settings.xml */,
+				B941B20F1AC7D7AF005A92C0 /* gui3Settings.xml */,
+				B941B2101AC7D7AF005A92C0 /* gui4Settings.xml */,
+				B941B2111AC7D7AF005A92C0 /* gui5Settings.xml */,
+				B941B2121AC7D7AF005A92C0 /* nerd_me.png */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B2051AC7D7AF005A92C0 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2061AC7D7AF005A92C0 /* images */,
+				B941B2091AC7D7AF005A92C0 /* toggle.png */,
+				B941B20A1AC7D7AF005A92C0 /* toggledown.png */,
+				B941B20B1AC7D7AF005A92C0 /* toggleon.png */,
+				B941B20C1AC7D7AF005A92C0 /* toggleover.png */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		B941B2061AC7D7AF005A92C0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2071AC7D7AF005A92C0 /* App.png */,
+				B941B2081AC7D7AF005A92C0 /* Preview.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		B941B21A1AC7D7AF005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4C11AC7D7B5005A92C0 /* example-AllWidgetsDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B2211AC7D7AF005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2221AC7D7AF005A92C0 /* main.cpp */,
+				B941B2231AC7D7AF005A92C0 /* ofApp.cpp */,
+				B941B2241AC7D7AF005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B2251AC7D7AF005A92C0 /* example-Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2261AC7D7B0005A92C0 /* .dropbox.attr */,
+				B941B2271AC7D7B0005A92C0 /* addons.make */,
+				B941B2281AC7D7B0005A92C0 /* bin */,
+				B941B2321AC7D7B0005A92C0 /* config.make */,
+				B941B2331AC7D7B0005A92C0 /* example-Buttons.cbp */,
+				B941B2341AC7D7B0005A92C0 /* example-Buttons.sln */,
+				B941B2351AC7D7B0005A92C0 /* example-Buttons.vcxproj */,
+				B941B2361AC7D7B0005A92C0 /* example-Buttons.vcxproj.filters */,
+				B941B2371AC7D7B0005A92C0 /* example-Buttons.workspace */,
+				B941B2381AC7D7B0005A92C0 /* example-Buttons.xcodeproj */,
+				B941B23C1AC7D7B0005A92C0 /* icon.rc */,
+				B941B23D1AC7D7B0005A92C0 /* Makefile */,
+				B941B23E1AC7D7B0005A92C0 /* openFrameworks-Info.plist */,
+				B941B23F1AC7D7B0005A92C0 /* Project.xcconfig */,
+				B941B2401AC7D7B0005A92C0 /* src */,
+			);
+			path = "example-Buttons";
+			sourceTree = "<group>";
+		};
+		B941B2281AC7D7B0005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2291AC7D7B0005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B2291AC7D7B0005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B22A1AC7D7B0005A92C0 /* .gitkeep */,
+				B941B22B1AC7D7B0005A92C0 /* GUI */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B22B1AC7D7B0005A92C0 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				B941B22C1AC7D7B0005A92C0 /* pause.png */,
+				B941B22D1AC7D7B0005A92C0 /* play.png */,
+				B941B22E1AC7D7B0005A92C0 /* toggle.png */,
+				B941B22F1AC7D7B0005A92C0 /* toggledown.png */,
+				B941B2301AC7D7B0005A92C0 /* toggleon.png */,
+				B941B2311AC7D7B0005A92C0 /* toggleover.png */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		B941B2391AC7D7B0005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4C41AC7D7B5005A92C0 /* example-ButtonsDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B2401AC7D7B0005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2411AC7D7B0005A92C0 /* main.cpp */,
+				B941B2421AC7D7B0005A92C0 /* ofApp.cpp */,
+				B941B2431AC7D7B0005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B2441AC7D7B0005A92C0 /* example-CanvasMapVector */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2451AC7D7B0005A92C0 /* .dropbox.attr */,
+				B941B2461AC7D7B0005A92C0 /* addons.make */,
+				B941B2471AC7D7B0005A92C0 /* bin */,
+				B941B2521AC7D7B0005A92C0 /* config.make */,
+				B941B2531AC7D7B0005A92C0 /* example-CanvasMapVector.cbp */,
+				B941B2541AC7D7B0005A92C0 /* example-CanvasMapVector.sln */,
+				B941B2551AC7D7B0005A92C0 /* example-CanvasMapVector.vcxproj */,
+				B941B2561AC7D7B0005A92C0 /* example-CanvasMapVector.vcxproj.filters */,
+				B941B2571AC7D7B0005A92C0 /* example-CanvasMapVector.workspace */,
+				B941B2581AC7D7B0005A92C0 /* example-CanvasMapVector.xcodeproj */,
+				B941B25C1AC7D7B0005A92C0 /* icon.rc */,
+				B941B25D1AC7D7B0005A92C0 /* Makefile */,
+				B941B25E1AC7D7B0005A92C0 /* openFrameworks-Info.plist */,
+				B941B25F1AC7D7B0005A92C0 /* Project.xcconfig */,
+				B941B2601AC7D7B0005A92C0 /* src */,
+			);
+			path = "example-CanvasMapVector";
+			sourceTree = "<group>";
+		};
+		B941B2471AC7D7B0005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2481AC7D7B0005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B2481AC7D7B0005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2491AC7D7B0005A92C0 /* .gitkeep */,
+				B941B24A1AC7D7B0005A92C0 /* GUI */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B24A1AC7D7B0005A92C0 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				B941B24B1AC7D7B0005A92C0 /* gui1Settings.xml */,
+				B941B24C1AC7D7B0005A92C0 /* gui2Settings.xml */,
+				B941B24D1AC7D7B0005A92C0 /* gui3Settings.xml */,
+				B941B24E1AC7D7B0005A92C0 /* gui4Settings.xml */,
+				B941B24F1AC7D7B0005A92C0 /* gui5Settings.xml */,
+				B941B2501AC7D7B0005A92C0 /* gui6Settings.xml */,
+				B941B2511AC7D7B0005A92C0 /* guiSettings.xml */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		B941B2591AC7D7B0005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4C71AC7D7B5005A92C0 /* example-CanvasMapVectorDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B2601AC7D7B0005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2611AC7D7B0005A92C0 /* main.cpp */,
+				B941B2621AC7D7B0005A92C0 /* ofApp.cpp */,
+				B941B2631AC7D7B0005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B2641AC7D7B0005A92C0 /* example-ContextualMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2651AC7D7B0005A92C0 /* .dropbox.attr */,
+				B941B2661AC7D7B0005A92C0 /* addons.make */,
+				B941B2671AC7D7B0005A92C0 /* bin */,
+				B941B26C1AC7D7B0005A92C0 /* config.make */,
+				B941B26D1AC7D7B0005A92C0 /* example-ContextualMenu.cbp */,
+				B941B26E1AC7D7B0005A92C0 /* example-ContextualMenu.sln */,
+				B941B26F1AC7D7B0005A92C0 /* example-ContextualMenu.vcxproj */,
+				B941B2701AC7D7B0005A92C0 /* example-ContextualMenu.vcxproj.filters */,
+				B941B2711AC7D7B0005A92C0 /* example-ContextualMenu.workspace */,
+				B941B2721AC7D7B0005A92C0 /* example-ContextualMenu.xcodeproj */,
+				B941B2761AC7D7B0005A92C0 /* icon.rc */,
+				B941B2771AC7D7B0005A92C0 /* Makefile */,
+				B941B2781AC7D7B0005A92C0 /* openFrameworks-Info.plist */,
+				B941B2791AC7D7B0005A92C0 /* Project.xcconfig */,
+				B941B27A1AC7D7B1005A92C0 /* src */,
+			);
+			path = "example-ContextualMenu";
+			sourceTree = "<group>";
+		};
+		B941B2671AC7D7B0005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2681AC7D7B0005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B2681AC7D7B0005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2691AC7D7B0005A92C0 /* .gitkeep */,
+				B941B26A1AC7D7B0005A92C0 /* GUI */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B26A1AC7D7B0005A92C0 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				B941B26B1AC7D7B0005A92C0 /* guiSettings.xml */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		B941B2731AC7D7B0005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4CA1AC7D7B5005A92C0 /* example-ContextualMenuDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B27A1AC7D7B1005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B27B1AC7D7B1005A92C0 /* main.cpp */,
+				B941B27C1AC7D7B1005A92C0 /* ofApp.cpp */,
+				B941B27D1AC7D7B1005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B27E1AC7D7B1005A92C0 /* example-CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				B941B27F1AC7D7B1005A92C0 /* .dropbox.attr */,
+				B941B2801AC7D7B1005A92C0 /* addons.make */,
+				B941B2811AC7D7B1005A92C0 /* bin */,
+				B941B2861AC7D7B1005A92C0 /* config.make */,
+				B941B2871AC7D7B1005A92C0 /* example-CustomFont.cbp */,
+				B941B2881AC7D7B1005A92C0 /* example-CustomFont.sln */,
+				B941B2891AC7D7B1005A92C0 /* example-CustomFont.vcxproj */,
+				B941B28A1AC7D7B1005A92C0 /* example-CustomFont.vcxproj.filters */,
+				B941B28B1AC7D7B1005A92C0 /* example-CustomFont.workspace */,
+				B941B28C1AC7D7B1005A92C0 /* example-CustomFont.xcodeproj */,
+				B941B2901AC7D7B1005A92C0 /* icon.rc */,
+				B941B2911AC7D7B1005A92C0 /* Makefile */,
+				B941B2921AC7D7B1005A92C0 /* openFrameworks-Info.plist */,
+				B941B2931AC7D7B1005A92C0 /* Project.xcconfig */,
+				B941B2941AC7D7B1005A92C0 /* src */,
+			);
+			path = "example-CustomFont";
+			sourceTree = "<group>";
+		};
+		B941B2811AC7D7B1005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2821AC7D7B1005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B2821AC7D7B1005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2831AC7D7B1005A92C0 /* .gitkeep */,
+				B941B2841AC7D7B1005A92C0 /* GUI */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B2841AC7D7B1005A92C0 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2851AC7D7B1005A92C0 /* faucet.ttf */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		B941B28D1AC7D7B1005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4CD1AC7D7B5005A92C0 /* example-CustomFontDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B2941AC7D7B1005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2951AC7D7B1005A92C0 /* main.cpp */,
+				B941B2961AC7D7B1005A92C0 /* ofApp.cpp */,
+				B941B2971AC7D7B1005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B2981AC7D7B1005A92C0 /* example-Customization */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2991AC7D7B1005A92C0 /* .dropbox.attr */,
+				B941B29A1AC7D7B1005A92C0 /* addons.make */,
+				B941B29B1AC7D7B1005A92C0 /* bin */,
+				B941B29E1AC7D7B1005A92C0 /* config.make */,
+				B941B29F1AC7D7B1005A92C0 /* example-Customization.cbp */,
+				B941B2A01AC7D7B1005A92C0 /* example-Customization.sln */,
+				B941B2A11AC7D7B1005A92C0 /* example-Customization.vcxproj */,
+				B941B2A21AC7D7B1005A92C0 /* example-Customization.vcxproj.filters */,
+				B941B2A31AC7D7B1005A92C0 /* example-Customization.workspace */,
+				B941B2A41AC7D7B1005A92C0 /* example-Customization.xcodeproj */,
+				B941B2A81AC7D7B1005A92C0 /* icon.rc */,
+				B941B2A91AC7D7B1005A92C0 /* Makefile */,
+				B941B2AA1AC7D7B1005A92C0 /* openFrameworks-Info.plist */,
+				B941B2AB1AC7D7B1005A92C0 /* Project.xcconfig */,
+				B941B2AC1AC7D7B1005A92C0 /* src */,
+			);
+			path = "example-Customization";
+			sourceTree = "<group>";
+		};
+		B941B29B1AC7D7B1005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B29C1AC7D7B1005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B29C1AC7D7B1005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B29D1AC7D7B1005A92C0 /* .gitkeep */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B2A51AC7D7B1005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4D01AC7D7B5005A92C0 /* example-CustomizationDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B2AC1AC7D7B1005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2AD1AC7D7B1005A92C0 /* main.cpp */,
+				B941B2AE1AC7D7B1005A92C0 /* ofApp.cpp */,
+				B941B2AF1AC7D7B1005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B2B01AC7D7B1005A92C0 /* example-CustomPlacement */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2B11AC7D7B1005A92C0 /* .dropbox.attr */,
+				B941B2B21AC7D7B1005A92C0 /* addons.make */,
+				B941B2B31AC7D7B1005A92C0 /* bin */,
+				B941B2B61AC7D7B1005A92C0 /* config.make */,
+				B941B2B71AC7D7B1005A92C0 /* example-CustomPlacement.cbp */,
+				B941B2B81AC7D7B1005A92C0 /* example-CustomPlacement.sln */,
+				B941B2B91AC7D7B1005A92C0 /* example-CustomPlacement.vcxproj */,
+				B941B2BA1AC7D7B1005A92C0 /* example-CustomPlacement.vcxproj.filters */,
+				B941B2BB1AC7D7B1005A92C0 /* example-CustomPlacement.workspace */,
+				B941B2BC1AC7D7B1005A92C0 /* example-CustomPlacement.xcodeproj */,
+				B941B2C01AC7D7B1005A92C0 /* icon.rc */,
+				B941B2C11AC7D7B1005A92C0 /* Makefile */,
+				B941B2C21AC7D7B1005A92C0 /* openFrameworks-Info.plist */,
+				B941B2C31AC7D7B1005A92C0 /* Project.xcconfig */,
+				B941B2C41AC7D7B1005A92C0 /* src */,
+			);
+			path = "example-CustomPlacement";
+			sourceTree = "<group>";
+		};
+		B941B2B31AC7D7B1005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2B41AC7D7B1005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B2B41AC7D7B1005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2B51AC7D7B1005A92C0 /* .gitkeep */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B2BD1AC7D7B1005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4D31AC7D7B5005A92C0 /* example-CustomPlacementDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B2C41AC7D7B1005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2C51AC7D7B1005A92C0 /* main.cpp */,
+				B941B2C61AC7D7B1005A92C0 /* ofApp.cpp */,
+				B941B2C71AC7D7B1005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B2C81AC7D7B1005A92C0 /* example-CustomWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2C91AC7D7B1005A92C0 /* .dropbox.attr */,
+				B941B2CA1AC7D7B1005A92C0 /* addons.make */,
+				B941B2CB1AC7D7B1005A92C0 /* bin */,
+				B941B2D11AC7D7B2005A92C0 /* config.make */,
+				B941B2D21AC7D7B2005A92C0 /* example-CustomWidgets.cbp */,
+				B941B2D31AC7D7B2005A92C0 /* example-CustomWidgets.sln */,
+				B941B2D41AC7D7B2005A92C0 /* example-CustomWidgets.vcxproj */,
+				B941B2D51AC7D7B2005A92C0 /* example-CustomWidgets.vcxproj.filters */,
+				B941B2D61AC7D7B2005A92C0 /* example-CustomWidgets.workspace */,
+				B941B2D71AC7D7B2005A92C0 /* example-CustomWidgets.xcodeproj */,
+				B941B2DB1AC7D7B2005A92C0 /* icon.rc */,
+				B941B2DC1AC7D7B2005A92C0 /* Makefile */,
+				B941B2DD1AC7D7B2005A92C0 /* openFrameworks-Info.plist */,
+				B941B2DE1AC7D7B2005A92C0 /* Project.xcconfig */,
+				B941B2DF1AC7D7B2005A92C0 /* src */,
+			);
+			path = "example-CustomWidgets";
+			sourceTree = "<group>";
+		};
+		B941B2CB1AC7D7B1005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2CC1AC7D7B1005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B2CC1AC7D7B1005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2CD1AC7D7B1005A92C0 /* .gitkeep */,
+				B941B2CE1AC7D7B2005A92C0 /* of1.jpg */,
+				B941B2CF1AC7D7B2005A92C0 /* of2.jpg */,
+				B941B2D01AC7D7B2005A92C0 /* settings.xml */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B2D81AC7D7B2005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4D61AC7D7B5005A92C0 /* example-CustomWidgetsDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B2DF1AC7D7B2005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2E01AC7D7B2005A92C0 /* main.cpp */,
+				B941B2E11AC7D7B2005A92C0 /* ofApp.cpp */,
+				B941B2E21AC7D7B2005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B2E31AC7D7B2005A92C0 /* example-DynamicDropDown */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2E41AC7D7B2005A92C0 /* .dropbox.attr */,
+				B941B2E51AC7D7B2005A92C0 /* addons.make */,
+				B941B2E61AC7D7B2005A92C0 /* bin */,
+				B941B2E91AC7D7B2005A92C0 /* config.make */,
+				B941B2EA1AC7D7B2005A92C0 /* example-DynamicDropDown.cbp */,
+				B941B2EB1AC7D7B2005A92C0 /* example-DynamicDropDown.sln */,
+				B941B2EC1AC7D7B2005A92C0 /* example-DynamicDropDown.vcxproj */,
+				B941B2ED1AC7D7B2005A92C0 /* example-DynamicDropDown.vcxproj.filters */,
+				B941B2EE1AC7D7B2005A92C0 /* example-DynamicDropDown.workspace */,
+				B941B2EF1AC7D7B2005A92C0 /* example-DynamicDropDown.xcodeproj */,
+				B941B2F31AC7D7B2005A92C0 /* icon.rc */,
+				B941B2F41AC7D7B2005A92C0 /* Makefile */,
+				B941B2F51AC7D7B2005A92C0 /* openFrameworks-Info.plist */,
+				B941B2F61AC7D7B2005A92C0 /* Project.xcconfig */,
+				B941B2F71AC7D7B2005A92C0 /* src */,
+			);
+			path = "example-DynamicDropDown";
+			sourceTree = "<group>";
+		};
+		B941B2E61AC7D7B2005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2E71AC7D7B2005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B2E71AC7D7B2005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2E81AC7D7B2005A92C0 /* .gitkeep */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B2F01AC7D7B2005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4D91AC7D7B5005A92C0 /* example-DynamicDropDownDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B2F71AC7D7B2005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2F81AC7D7B2005A92C0 /* main.cpp */,
+				B941B2F91AC7D7B2005A92C0 /* ofApp.cpp */,
+				B941B2FA1AC7D7B2005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B2FB1AC7D7B2005A92C0 /* example-SaveLoadSettings */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2FC1AC7D7B2005A92C0 /* addons.make */,
+				B941B2FD1AC7D7B2005A92C0 /* bin */,
+				B941B30E1AC7D7B2005A92C0 /* config.make */,
+				B941B30F1AC7D7B2005A92C0 /* example-SaveLoadSettings.cbp */,
+				B941B3101AC7D7B2005A92C0 /* example-SaveLoadSettings.sln */,
+				B941B3111AC7D7B2005A92C0 /* example-SaveLoadSettings.vcxproj */,
+				B941B3121AC7D7B2005A92C0 /* example-SaveLoadSettings.vcxproj.filters */,
+				B941B3131AC7D7B2005A92C0 /* example-SaveLoadSettings.workspace */,
+				B941B3141AC7D7B2005A92C0 /* example-SaveLoadSettings.xcodeproj */,
+				B941B3181AC7D7B2005A92C0 /* icon.rc */,
+				B941B3191AC7D7B2005A92C0 /* Makefile */,
+				B941B31A1AC7D7B2005A92C0 /* openFrameworks-Info.plist */,
+				B941B31B1AC7D7B2005A92C0 /* Project.xcconfig */,
+				B941B31C1AC7D7B2005A92C0 /* src */,
+			);
+			path = "example-SaveLoadSettings";
+			sourceTree = "<group>";
+		};
+		B941B2FD1AC7D7B2005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2FE1AC7D7B2005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B2FE1AC7D7B2005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B2FF1AC7D7B2005A92C0 /* .gitkeep */,
+				B941B3001AC7D7B2005A92C0 /* GUI */,
+				B941B3081AC7D7B2005A92C0 /* gui1.xml */,
+				B941B3091AC7D7B2005A92C0 /* gui2.xml */,
+				B941B30A1AC7D7B2005A92C0 /* gui3.xml */,
+				B941B30B1AC7D7B2005A92C0 /* gui4.xml */,
+				B941B30C1AC7D7B2005A92C0 /* gui5.xml */,
+				B941B30D1AC7D7B2005A92C0 /* nerd_me.png */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B3001AC7D7B2005A92C0 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3011AC7D7B2005A92C0 /* images */,
+				B941B3041AC7D7B2005A92C0 /* toggle.png */,
+				B941B3051AC7D7B2005A92C0 /* toggledown.png */,
+				B941B3061AC7D7B2005A92C0 /* toggleon.png */,
+				B941B3071AC7D7B2005A92C0 /* toggleover.png */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		B941B3011AC7D7B2005A92C0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3021AC7D7B2005A92C0 /* App.png */,
+				B941B3031AC7D7B2005A92C0 /* Preview.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		B941B3151AC7D7B2005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4DC1AC7D7B5005A92C0 /* example-SaveLoadSettingsDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B31C1AC7D7B2005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B31D1AC7D7B2005A92C0 /* main.cpp */,
+				B941B31E1AC7D7B2005A92C0 /* ofApp.cpp */,
+				B941B31F1AC7D7B2005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B3201AC7D7B2005A92C0 /* example-Scrollable */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3211AC7D7B2005A92C0 /* .dropbox.attr */,
+				B941B3221AC7D7B2005A92C0 /* addons.make */,
+				B941B3231AC7D7B2005A92C0 /* bin */,
+				B941B3261AC7D7B2005A92C0 /* config.make */,
+				B941B3271AC7D7B2005A92C0 /* example-Scrollable.cbp */,
+				B941B3281AC7D7B2005A92C0 /* example-Scrollable.sln */,
+				B941B3291AC7D7B2005A92C0 /* example-Scrollable.vcxproj */,
+				B941B32A1AC7D7B2005A92C0 /* example-Scrollable.vcxproj.filters */,
+				B941B32B1AC7D7B2005A92C0 /* example-Scrollable.workspace */,
+				B941B32C1AC7D7B2005A92C0 /* example-Scrollable.xcodeproj */,
+				B941B3301AC7D7B2005A92C0 /* icon.rc */,
+				B941B3311AC7D7B2005A92C0 /* Makefile */,
+				B941B3321AC7D7B2005A92C0 /* openFrameworks-Info.plist */,
+				B941B3331AC7D7B3005A92C0 /* Project.xcconfig */,
+				B941B3341AC7D7B3005A92C0 /* src */,
+			);
+			path = "example-Scrollable";
+			sourceTree = "<group>";
+		};
+		B941B3231AC7D7B2005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3241AC7D7B2005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B3241AC7D7B2005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3251AC7D7B2005A92C0 /* .gitkeep */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B32D1AC7D7B2005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4DF1AC7D7B5005A92C0 /* example-ScrollableDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B3341AC7D7B3005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3351AC7D7B3005A92C0 /* main.cpp */,
+				B941B3361AC7D7B3005A92C0 /* ofApp.cpp */,
+				B941B3371AC7D7B3005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B3381AC7D7B3005A92C0 /* example-SimpleExample */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3391AC7D7B3005A92C0 /* .dropbox.attr */,
+				B941B33A1AC7D7B3005A92C0 /* addons.make */,
+				B941B33B1AC7D7B3005A92C0 /* bin */,
+				B941B33F1AC7D7B3005A92C0 /* config.make */,
+				B941B3401AC7D7B3005A92C0 /* example-SimpleExample.cbp */,
+				B941B3411AC7D7B3005A92C0 /* example-SimpleExample.sln */,
+				B941B3421AC7D7B3005A92C0 /* example-SimpleExample.vcxproj */,
+				B941B3431AC7D7B3005A92C0 /* example-SimpleExample.vcxproj.filters */,
+				B941B3441AC7D7B3005A92C0 /* example-SimpleExample.workspace */,
+				B941B3451AC7D7B3005A92C0 /* example-SimpleExample.xcodeproj */,
+				B941B3491AC7D7B3005A92C0 /* icon.rc */,
+				B941B34A1AC7D7B3005A92C0 /* Makefile */,
+				B941B34B1AC7D7B3005A92C0 /* openFrameworks-Info.plist */,
+				B941B34C1AC7D7B3005A92C0 /* Project.xcconfig */,
+				B941B34D1AC7D7B3005A92C0 /* src */,
+			);
+			path = "example-SimpleExample";
+			sourceTree = "<group>";
+		};
+		B941B33B1AC7D7B3005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B33C1AC7D7B3005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B33C1AC7D7B3005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B33D1AC7D7B3005A92C0 /* .gitkeep */,
+				B941B33E1AC7D7B3005A92C0 /* guiSettings.xml */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B3461AC7D7B3005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4E21AC7D7B5005A92C0 /* example-SimpleExampleDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B34D1AC7D7B3005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B34E1AC7D7B3005A92C0 /* main.cpp */,
+				B941B34F1AC7D7B3005A92C0 /* ofApp.cpp */,
+				B941B3501AC7D7B3005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B3511AC7D7B3005A92C0 /* example-Sliders */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3521AC7D7B3005A92C0 /* .dropbox.attr */,
+				B941B3531AC7D7B3005A92C0 /* addons.make */,
+				B941B3541AC7D7B3005A92C0 /* bin */,
+				B941B35F1AC7D7B3005A92C0 /* config.make */,
+				B941B3601AC7D7B3005A92C0 /* example-Sliders.cbp */,
+				B941B3611AC7D7B3005A92C0 /* example-Sliders.sln */,
+				B941B3621AC7D7B3005A92C0 /* example-Sliders.vcxproj */,
+				B941B3631AC7D7B3005A92C0 /* example-Sliders.vcxproj.filters */,
+				B941B3641AC7D7B3005A92C0 /* example-Sliders.workspace */,
+				B941B3651AC7D7B3005A92C0 /* example-Sliders.xcodeproj */,
+				B941B3691AC7D7B3005A92C0 /* icon.rc */,
+				B941B36A1AC7D7B3005A92C0 /* Makefile */,
+				B941B36B1AC7D7B3005A92C0 /* openFrameworks-Info.plist */,
+				B941B36C1AC7D7B3005A92C0 /* Project.xcconfig */,
+				B941B36D1AC7D7B3005A92C0 /* src */,
+			);
+			path = "example-Sliders";
+			sourceTree = "<group>";
+		};
+		B941B3541AC7D7B3005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3551AC7D7B3005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B3551AC7D7B3005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3561AC7D7B3005A92C0 /* .gitkeep */,
+				B941B3571AC7D7B3005A92C0 /* sliderhandle.png */,
+				B941B3581AC7D7B3005A92C0 /* sliderhandledown.png */,
+				B941B3591AC7D7B3005A92C0 /* sliderprogress.png */,
+				B941B35A1AC7D7B3005A92C0 /* sliderprogressleft.png */,
+				B941B35B1AC7D7B3005A92C0 /* sliderprogressright.png */,
+				B941B35C1AC7D7B3005A92C0 /* slidertrack.png */,
+				B941B35D1AC7D7B3005A92C0 /* slidertrackleft.png */,
+				B941B35E1AC7D7B3005A92C0 /* slidertrackright.png */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B3661AC7D7B3005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4E51AC7D7B5005A92C0 /* example-SlidersDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B36D1AC7D7B3005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B36E1AC7D7B3005A92C0 /* main.cpp */,
+				B941B36F1AC7D7B3005A92C0 /* ofApp.cpp */,
+				B941B3701AC7D7B3005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B3711AC7D7B3005A92C0 /* example-SuperCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3721AC7D7B3005A92C0 /* .dropbox.attr */,
+				B941B3731AC7D7B3005A92C0 /* addons.make */,
+				B941B3741AC7D7B3005A92C0 /* bin */,
+				B941B3781AC7D7B3005A92C0 /* config.make */,
+				B941B3791AC7D7B3005A92C0 /* example-SuperCanvas.cbp */,
+				B941B37A1AC7D7B3005A92C0 /* example-SuperCanvas.sln */,
+				B941B37B1AC7D7B3005A92C0 /* example-SuperCanvas.vcxproj */,
+				B941B37C1AC7D7B3005A92C0 /* example-SuperCanvas.vcxproj.filters */,
+				B941B37D1AC7D7B3005A92C0 /* example-SuperCanvas.workspace */,
+				B941B37E1AC7D7B3005A92C0 /* example-SuperCanvas.xcodeproj */,
+				B941B3821AC7D7B3005A92C0 /* icon.rc */,
+				B941B3831AC7D7B3005A92C0 /* Makefile */,
+				B941B3841AC7D7B3005A92C0 /* openFrameworks-Info.plist */,
+				B941B3851AC7D7B3005A92C0 /* Project.xcconfig */,
+				B941B3861AC7D7B3005A92C0 /* src */,
+			);
+			path = "example-SuperCanvas";
+			sourceTree = "<group>";
+		};
+		B941B3741AC7D7B3005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3751AC7D7B3005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B3751AC7D7B3005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3761AC7D7B3005A92C0 /* .gitkeep */,
+				B941B3771AC7D7B3005A92C0 /* guiSettings.xml */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B37F1AC7D7B3005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4E81AC7D7B5005A92C0 /* example-SuperCanvasDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B3861AC7D7B3005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3871AC7D7B3005A92C0 /* main.cpp */,
+				B941B3881AC7D7B3005A92C0 /* ofApp.cpp */,
+				B941B3891AC7D7B3005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B38A1AC7D7B3005A92C0 /* example-SwappableFontRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				B941B38B1AC7D7B3005A92C0 /* addons.make */,
+				B941B38C1AC7D7B3005A92C0 /* bin */,
+				B941B39F1AC7D7B3005A92C0 /* config.make */,
+				B941B3A01AC7D7B3005A92C0 /* example-AllWidgets.cbp */,
+				B941B3A11AC7D7B3005A92C0 /* example-AllWidgets.sln */,
+				B941B3A21AC7D7B3005A92C0 /* example-AllWidgets.vcxproj */,
+				B941B3A31AC7D7B3005A92C0 /* example-AllWidgets.vcxproj.filters */,
+				B941B3A41AC7D7B3005A92C0 /* example-AllWidgets.workspace */,
+				B941B3A51AC7D7B3005A92C0 /* example-SwappableFontRenderer.xcodeproj */,
+				B941B3A91AC7D7B4005A92C0 /* icon.rc */,
+				B941B3AA1AC7D7B4005A92C0 /* Makefile */,
+				B941B3AB1AC7D7B4005A92C0 /* openFrameworks-Info.plist */,
+				B941B3AC1AC7D7B4005A92C0 /* Project.xcconfig */,
+				B941B3AD1AC7D7B4005A92C0 /* src */,
+			);
+			path = "example-SwappableFontRenderer";
+			sourceTree = "<group>";
+		};
+		B941B38C1AC7D7B3005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B38D1AC7D7B3005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B38D1AC7D7B3005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B38E1AC7D7B3005A92C0 /* .gitkeep */,
+				B941B38F1AC7D7B3005A92C0 /* COMBATTL.TTF */,
+				B941B3901AC7D7B3005A92C0 /* GUI */,
+				B941B3981AC7D7B3005A92C0 /* gui1Settings.xml */,
+				B941B3991AC7D7B3005A92C0 /* gui2Settings.xml */,
+				B941B39A1AC7D7B3005A92C0 /* gui3Settings.xml */,
+				B941B39B1AC7D7B3005A92C0 /* gui4Settings.xml */,
+				B941B39C1AC7D7B3005A92C0 /* gui5Settings.xml */,
+				B941B39D1AC7D7B3005A92C0 /* nerd_me.png */,
+				B941B39E1AC7D7B3005A92C0 /* YasashisaAntique.ttf */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B3901AC7D7B3005A92C0 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3911AC7D7B3005A92C0 /* images */,
+				B941B3941AC7D7B3005A92C0 /* toggle.png */,
+				B941B3951AC7D7B3005A92C0 /* toggledown.png */,
+				B941B3961AC7D7B3005A92C0 /* toggleon.png */,
+				B941B3971AC7D7B3005A92C0 /* toggleover.png */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		B941B3911AC7D7B3005A92C0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3921AC7D7B3005A92C0 /* App.png */,
+				B941B3931AC7D7B3005A92C0 /* Preview.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		B941B3A61AC7D7B3005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4EB1AC7D7B5005A92C0 /* example-SwappableFontRendererDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B3AD1AC7D7B4005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3AE1AC7D7B4005A92C0 /* main.cpp */,
+				B941B3AF1AC7D7B4005A92C0 /* ofApp.cpp */,
+				B941B3B01AC7D7B4005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B3B11AC7D7B4005A92C0 /* example-TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3B21AC7D7B4005A92C0 /* .dropbox.attr */,
+				B941B3B31AC7D7B4005A92C0 /* addons.make */,
+				B941B3B41AC7D7B4005A92C0 /* bin */,
+				B941B3B71AC7D7B4005A92C0 /* config.make */,
+				B941B3B81AC7D7B4005A92C0 /* example-TabBar.cbp */,
+				B941B3B91AC7D7B4005A92C0 /* example-TabBar.sln */,
+				B941B3BA1AC7D7B4005A92C0 /* example-TabBar.vcxproj */,
+				B941B3BB1AC7D7B4005A92C0 /* example-TabBar.vcxproj.filters */,
+				B941B3BC1AC7D7B4005A92C0 /* example-TabBar.workspace */,
+				B941B3BD1AC7D7B4005A92C0 /* example-TabBar.xcodeproj */,
+				B941B3C11AC7D7B4005A92C0 /* icon.rc */,
+				B941B3C21AC7D7B4005A92C0 /* Makefile */,
+				B941B3C31AC7D7B4005A92C0 /* openFrameworks-Info.plist */,
+				B941B3C41AC7D7B4005A92C0 /* Project.xcconfig */,
+				B941B3C51AC7D7B4005A92C0 /* src */,
+			);
+			path = "example-TabBar";
+			sourceTree = "<group>";
+		};
+		B941B3B41AC7D7B4005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3B51AC7D7B4005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B3B51AC7D7B4005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3B61AC7D7B4005A92C0 /* .gitkeep */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B3BE1AC7D7B4005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4EE1AC7D7B5005A92C0 /* example-TabBarDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B3C51AC7D7B4005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3C61AC7D7B4005A92C0 /* main.cpp */,
+				B941B3C71AC7D7B4005A92C0 /* ofApp.cpp */,
+				B941B3C81AC7D7B4005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B3C91AC7D7B4005A92C0 /* example-Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3CA1AC7D7B4005A92C0 /* .dropbox.attr */,
+				B941B3CB1AC7D7B4005A92C0 /* addons.make */,
+				B941B3CC1AC7D7B4005A92C0 /* bin */,
+				B941B3D11AC7D7B4005A92C0 /* config.make */,
+				B941B3D21AC7D7B4005A92C0 /* example-Tutorial.cbp */,
+				B941B3D31AC7D7B4005A92C0 /* example-Tutorial.sln */,
+				B941B3D41AC7D7B4005A92C0 /* example-Tutorial.vcxproj */,
+				B941B3D51AC7D7B4005A92C0 /* example-Tutorial.vcxproj.filters */,
+				B941B3D61AC7D7B4005A92C0 /* example-Tutorial.workspace */,
+				B941B3D71AC7D7B4005A92C0 /* example-Tutorial.xcodeproj */,
+				B941B3DB1AC7D7B4005A92C0 /* icon.rc */,
+				B941B3DC1AC7D7B4005A92C0 /* Makefile */,
+				B941B3DD1AC7D7B4005A92C0 /* openFrameworks-Info.plist */,
+				B941B3DE1AC7D7B4005A92C0 /* Project.xcconfig */,
+				B941B3DF1AC7D7B4005A92C0 /* src */,
+			);
+			path = "example-Tutorial";
+			sourceTree = "<group>";
+		};
+		B941B3CC1AC7D7B4005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3CD1AC7D7B4005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B3CD1AC7D7B4005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3CE1AC7D7B4005A92C0 /* .gitkeep */,
+				B941B3CF1AC7D7B4005A92C0 /* guiSettings.xml */,
+				B941B3D01AC7D7B4005A92C0 /* settings.xml */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B3D81AC7D7B4005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4F11AC7D7B5005A92C0 /* example-TutorialDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B3DF1AC7D7B4005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3E01AC7D7B4005A92C0 /* main.cpp */,
+				B941B3E11AC7D7B4005A92C0 /* ofApp.cpp */,
+				B941B3E21AC7D7B4005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B3E31AC7D7B4005A92C0 /* example-VariableBinding */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3E41AC7D7B4005A92C0 /* .dropbox.attr */,
+				B941B3E51AC7D7B4005A92C0 /* addons.make */,
+				B941B3E61AC7D7B4005A92C0 /* bin */,
+				B941B3E91AC7D7B4005A92C0 /* config.make */,
+				B941B3EA1AC7D7B4005A92C0 /* example-VariableBinding.cbp */,
+				B941B3EB1AC7D7B4005A92C0 /* example-VariableBinding.sln */,
+				B941B3EC1AC7D7B4005A92C0 /* example-VariableBinding.vcxproj */,
+				B941B3ED1AC7D7B4005A92C0 /* example-VariableBinding.vcxproj.filters */,
+				B941B3EE1AC7D7B4005A92C0 /* example-VariableBinding.workspace */,
+				B941B3EF1AC7D7B4005A92C0 /* example-VariableBinding.xcodeproj */,
+				B941B3F31AC7D7B4005A92C0 /* icon.rc */,
+				B941B3F41AC7D7B4005A92C0 /* Makefile */,
+				B941B3F51AC7D7B4005A92C0 /* openFrameworks-Info.plist */,
+				B941B3F61AC7D7B4005A92C0 /* Project.xcconfig */,
+				B941B3F71AC7D7B4005A92C0 /* src */,
+			);
+			path = "example-VariableBinding";
+			sourceTree = "<group>";
+		};
+		B941B3E61AC7D7B4005A92C0 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3E71AC7D7B4005A92C0 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B941B3E71AC7D7B4005A92C0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3E81AC7D7B4005A92C0 /* .gitkeep */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B941B3F01AC7D7B4005A92C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B941B4F41AC7D7B5005A92C0 /* example-VariableBindingDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B941B3F71AC7D7B4005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3F81AC7D7B4005A92C0 /* main.cpp */,
+				B941B3F91AC7D7B4005A92C0 /* ofApp.cpp */,
+				B941B3FA1AC7D7B4005A92C0 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B941B3FD1AC7D7B5005A92C0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B941B3FE1AC7D7B5005A92C0 /* ofxUI.h */,
+				B941B3FF1AC7D7B5005A92C0 /* ofxUI2DGraph.cpp */,
+				B941B4001AC7D7B5005A92C0 /* ofxUI2DGraph.h */,
+				B941B4011AC7D7B5005A92C0 /* ofxUI2DPad.cpp */,
+				B941B4021AC7D7B5005A92C0 /* ofxUI2DPad.h */,
+				B941B4031AC7D7B5005A92C0 /* ofxUIBaseDraws.cpp */,
+				B941B4041AC7D7B5005A92C0 /* ofxUIBaseDraws.h */,
+				B941B4051AC7D7B5005A92C0 /* ofxUIBiLabelSlider.cpp */,
+				B941B4061AC7D7B5005A92C0 /* ofxUIBiLabelSlider.h */,
+				B941B4071AC7D7B5005A92C0 /* ofxUIButton.cpp */,
+				B941B4081AC7D7B5005A92C0 /* ofxUIButton.h */,
+				B941B4091AC7D7B5005A92C0 /* ofxUICanvas.cpp */,
+				B941B40A1AC7D7B5005A92C0 /* ofxUICanvas.h */,
+				B941B40B1AC7D7B5005A92C0 /* ofxUICircleSlider.cpp */,
+				B941B40C1AC7D7B5005A92C0 /* ofxUICircleSlider.h */,
+				B941B40D1AC7D7B5005A92C0 /* ofxUIDefines.h */,
+				B941B40E1AC7D7B5005A92C0 /* ofxUIDragableLabelButton.cpp */,
+				B941B40F1AC7D7B5005A92C0 /* ofxUIDragableLabelButton.h */,
+				B941B4101AC7D7B5005A92C0 /* ofxUIDropDownList.cpp */,
+				B941B4111AC7D7B5005A92C0 /* ofxUIDropDownList.h */,
+				B941B4121AC7D7B5005A92C0 /* ofxUIEventArgs.cpp */,
+				B941B4131AC7D7B5005A92C0 /* ofxUIEventArgs.h */,
+				B941B4141AC7D7B5005A92C0 /* ofxUIFPS.cpp */,
+				B941B4151AC7D7B5005A92C0 /* ofxUIFPS.h */,
+				B941B4161AC7D7B5005A92C0 /* ofxUIFPSSlider.cpp */,
+				B941B4171AC7D7B5005A92C0 /* ofxUIFPSSlider.h */,
+				B941B4181AC7D7B5005A92C0 /* ofxUIImage.cpp */,
+				B941B4191AC7D7B5005A92C0 /* ofxUIImage.h */,
+				B941B41A1AC7D7B5005A92C0 /* ofxUIImageButton.cpp */,
+				B941B41B1AC7D7B5005A92C0 /* ofxUIImageButton.h */,
+				B941B41C1AC7D7B5005A92C0 /* ofxUIImageSampler.cpp */,
+				B941B41D1AC7D7B5005A92C0 /* ofxUIImageSampler.h */,
+				B941B41E1AC7D7B5005A92C0 /* ofxUIImageSlider.cpp */,
+				B941B41F1AC7D7B5005A92C0 /* ofxUIImageSlider.h */,
+				B941B4201AC7D7B5005A92C0 /* ofxUIImageToggle.cpp */,
+				B941B4211AC7D7B5005A92C0 /* ofxUIImageToggle.h */,
+				B941B4221AC7D7B5005A92C0 /* ofxUILabel.cpp */,
+				B941B4231AC7D7B5005A92C0 /* ofxUILabel.h */,
+				B941B4241AC7D7B5005A92C0 /* ofxUILabelButton.cpp */,
+				B941B4251AC7D7B5005A92C0 /* ofxUILabelButton.h */,
+				B941B4261AC7D7B5005A92C0 /* ofxUILabelToggle.cpp */,
+				B941B4271AC7D7B5005A92C0 /* ofxUILabelToggle.h */,
+				B941B4281AC7D7B5005A92C0 /* ofxUIMinimalSlider.cpp */,
+				B941B4291AC7D7B5005A92C0 /* ofxUIMinimalSlider.h */,
+				B941B42A1AC7D7B5005A92C0 /* ofxUIMovingGraph.cpp */,
+				B941B42B1AC7D7B5005A92C0 /* ofxUIMovingGraph.h */,
+				B941B42C1AC7D7B5005A92C0 /* ofxUIMultiImageButton.cpp */,
+				B941B42D1AC7D7B5005A92C0 /* ofxUIMultiImageButton.h */,
+				B941B42E1AC7D7B5005A92C0 /* ofxUIMultiImageToggle.cpp */,
+				B941B42F1AC7D7B5005A92C0 /* ofxUIMultiImageToggle.h */,
+				B941B4301AC7D7B5005A92C0 /* ofxUINumberDialer.cpp */,
+				B941B4311AC7D7B5005A92C0 /* ofxUINumberDialer.h */,
+				B941B4321AC7D7B5005A92C0 /* ofxUIOFWrapper.h */,
+				B941B4331AC7D7B5005A92C0 /* ofxUIRadio.cpp */,
+				B941B4341AC7D7B5005A92C0 /* ofxUIRadio.h */,
+				B941B4351AC7D7B5005A92C0 /* ofxUIRangeSlider.cpp */,
+				B941B4361AC7D7B5005A92C0 /* ofxUIRangeSlider.h */,
+				B941B4371AC7D7B5005A92C0 /* ofxUIRectangle.cpp */,
+				B941B4381AC7D7B5005A92C0 /* ofxUIRectangle.h */,
+				B941B4391AC7D7B5005A92C0 /* ofxUIRotarySlider.cpp */,
+				B941B43A1AC7D7B5005A92C0 /* ofxUIRotarySlider.h */,
+				B941B43B1AC7D7B5005A92C0 /* ofxUIScrollableCanvas.cpp */,
+				B941B43C1AC7D7B5005A92C0 /* ofxUIScrollableCanvas.h */,
+				B941B43D1AC7D7B5005A92C0 /* ofxUISlider.cpp */,
+				B941B43E1AC7D7B5005A92C0 /* ofxUISlider.h */,
+				B941B43F1AC7D7B5005A92C0 /* ofxUISortableList.cpp */,
+				B941B4401AC7D7B5005A92C0 /* ofxUISortableList.h */,
+				B941B4411AC7D7B5005A92C0 /* ofxUISpacer.cpp */,
+				B941B4421AC7D7B5005A92C0 /* ofxUISpacer.h */,
+				B941B4431AC7D7B5005A92C0 /* ofxUISpectrum.cpp */,
+				B941B4441AC7D7B5005A92C0 /* ofxUISpectrum.h */,
+				B941B4451AC7D7B5005A92C0 /* ofxUISuperCanvas.cpp */,
+				B941B4461AC7D7B5005A92C0 /* ofxUISuperCanvas.h */,
+				B941B4471AC7D7B5005A92C0 /* ofxUITabBar.cpp */,
+				B941B4481AC7D7B5005A92C0 /* ofxUITabBar.h */,
+				B941B4491AC7D7B5005A92C0 /* ofxUITextArea.cpp */,
+				B941B44A1AC7D7B5005A92C0 /* ofxUITextArea.h */,
+				B941B44B1AC7D7B5005A92C0 /* ofxUITextInput.cpp */,
+				B941B44C1AC7D7B5005A92C0 /* ofxUITextInput.h */,
+				B941B44D1AC7D7B5005A92C0 /* ofxUIToggle.cpp */,
+				B941B44E1AC7D7B5005A92C0 /* ofxUIToggle.h */,
+				B941B44F1AC7D7B5005A92C0 /* ofxUIToggleMatrix.cpp */,
+				B941B4501AC7D7B5005A92C0 /* ofxUIToggleMatrix.h */,
+				B941B4511AC7D7B5005A92C0 /* ofxUIUtils.h */,
+				B941B4521AC7D7B5005A92C0 /* ofxUIValuePlotter.cpp */,
+				B941B4531AC7D7B5005A92C0 /* ofxUIValuePlotter.h */,
+				B941B4541AC7D7B5005A92C0 /* ofxUIWaveform.cpp */,
+				B941B4551AC7D7B5005A92C0 /* ofxUIWaveform.h */,
+				B941B4561AC7D7B5005A92C0 /* ofxUIWidget.cpp */,
+				B941B4571AC7D7B5005A92C0 /* ofxUIWidget.h */,
+				B941B4581AC7D7B5005A92C0 /* ofxUIWidgets.h */,
+				B941B4591AC7D7B5005A92C0 /* ofxUIWidgetWithLabel.cpp */,
+				B941B45A1AC7D7B5005A92C0 /* ofxUIWidgetWithLabel.h */,
+				B941B45B1AC7D7B5005A92C0 /* ofxUIWrapper.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				B941B1FD1AC7D7AF005A92C0 /* ofxUI */,
 				A3352D251815DD3B003EAC80 /* ofxXmlSettings */,
-				A3352A251815D640003EAC80 /* ofxUI */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -400,6 +2270,78 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = B941B21A1AC7D7AF005A92C0 /* Products */;
+					ProjectRef = B941B2191AC7D7AF005A92C0 /* example-AllWidgets.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B2391AC7D7B0005A92C0 /* Products */;
+					ProjectRef = B941B2381AC7D7B0005A92C0 /* example-Buttons.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B2591AC7D7B0005A92C0 /* Products */;
+					ProjectRef = B941B2581AC7D7B0005A92C0 /* example-CanvasMapVector.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B2731AC7D7B0005A92C0 /* Products */;
+					ProjectRef = B941B2721AC7D7B0005A92C0 /* example-ContextualMenu.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B28D1AC7D7B1005A92C0 /* Products */;
+					ProjectRef = B941B28C1AC7D7B1005A92C0 /* example-CustomFont.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B2A51AC7D7B1005A92C0 /* Products */;
+					ProjectRef = B941B2A41AC7D7B1005A92C0 /* example-Customization.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B2BD1AC7D7B1005A92C0 /* Products */;
+					ProjectRef = B941B2BC1AC7D7B1005A92C0 /* example-CustomPlacement.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B2D81AC7D7B2005A92C0 /* Products */;
+					ProjectRef = B941B2D71AC7D7B2005A92C0 /* example-CustomWidgets.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B2F01AC7D7B2005A92C0 /* Products */;
+					ProjectRef = B941B2EF1AC7D7B2005A92C0 /* example-DynamicDropDown.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B3151AC7D7B2005A92C0 /* Products */;
+					ProjectRef = B941B3141AC7D7B2005A92C0 /* example-SaveLoadSettings.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B32D1AC7D7B2005A92C0 /* Products */;
+					ProjectRef = B941B32C1AC7D7B2005A92C0 /* example-Scrollable.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B3461AC7D7B3005A92C0 /* Products */;
+					ProjectRef = B941B3451AC7D7B3005A92C0 /* example-SimpleExample.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B3661AC7D7B3005A92C0 /* Products */;
+					ProjectRef = B941B3651AC7D7B3005A92C0 /* example-Sliders.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B37F1AC7D7B3005A92C0 /* Products */;
+					ProjectRef = B941B37E1AC7D7B3005A92C0 /* example-SuperCanvas.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B3A61AC7D7B3005A92C0 /* Products */;
+					ProjectRef = B941B3A51AC7D7B3005A92C0 /* example-SwappableFontRenderer.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B3BE1AC7D7B4005A92C0 /* Products */;
+					ProjectRef = B941B3BD1AC7D7B4005A92C0 /* example-TabBar.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B3D81AC7D7B4005A92C0 /* Products */;
+					ProjectRef = B941B3D71AC7D7B4005A92C0 /* example-Tutorial.xcodeproj */;
+				},
+				{
+					ProductGroup = B941B3F01AC7D7B4005A92C0 /* Products */;
+					ProjectRef = B941B3EF1AC7D7B4005A92C0 /* example-VariableBinding.xcodeproj */;
+				},
+				{
 					ProductGroup = E4328144138ABC890047C5CB /* Products */;
 					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
 				},
@@ -412,6 +2354,132 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		B941B4C11AC7D7B5005A92C0 /* example-AllWidgetsDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-AllWidgetsDebug.app";
+			remoteRef = B941B4C01AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4C41AC7D7B5005A92C0 /* example-ButtonsDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-ButtonsDebug.app";
+			remoteRef = B941B4C31AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4C71AC7D7B5005A92C0 /* example-CanvasMapVectorDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-CanvasMapVectorDebug.app";
+			remoteRef = B941B4C61AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4CA1AC7D7B5005A92C0 /* example-ContextualMenuDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-ContextualMenuDebug.app";
+			remoteRef = B941B4C91AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4CD1AC7D7B5005A92C0 /* example-CustomFontDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-CustomFontDebug.app";
+			remoteRef = B941B4CC1AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4D01AC7D7B5005A92C0 /* example-CustomizationDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-CustomizationDebug.app";
+			remoteRef = B941B4CF1AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4D31AC7D7B5005A92C0 /* example-CustomPlacementDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-CustomPlacementDebug.app";
+			remoteRef = B941B4D21AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4D61AC7D7B5005A92C0 /* example-CustomWidgetsDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-CustomWidgetsDebug.app";
+			remoteRef = B941B4D51AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4D91AC7D7B5005A92C0 /* example-DynamicDropDownDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-DynamicDropDownDebug.app";
+			remoteRef = B941B4D81AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4DC1AC7D7B5005A92C0 /* example-SaveLoadSettingsDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-SaveLoadSettingsDebug.app";
+			remoteRef = B941B4DB1AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4DF1AC7D7B5005A92C0 /* example-ScrollableDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-ScrollableDebug.app";
+			remoteRef = B941B4DE1AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4E21AC7D7B5005A92C0 /* example-SimpleExampleDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-SimpleExampleDebug.app";
+			remoteRef = B941B4E11AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4E51AC7D7B5005A92C0 /* example-SlidersDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-SlidersDebug.app";
+			remoteRef = B941B4E41AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4E81AC7D7B5005A92C0 /* example-SuperCanvasDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-SuperCanvasDebug.app";
+			remoteRef = B941B4E71AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4EB1AC7D7B5005A92C0 /* example-SwappableFontRendererDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-SwappableFontRendererDebug.app";
+			remoteRef = B941B4EA1AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4EE1AC7D7B5005A92C0 /* example-TabBarDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-TabBarDebug.app";
+			remoteRef = B941B4ED1AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4F11AC7D7B5005A92C0 /* example-TutorialDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-TutorialDebug.app";
+			remoteRef = B941B4F01AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B941B4F41AC7D7B5005A92C0 /* example-VariableBindingDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "example-VariableBindingDebug.app";
+			remoteRef = B941B4F31AC7D7B5005A92C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -442,13 +2510,112 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B941B4701AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4B21AC7D7B5005A92C0 /* ofxUISortableList.cpp in Sources */,
+				B941B4A31AC7D7B5005A92C0 /* ofxUIImageToggle.cpp in Sources */,
+				B941B46B1AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4961AC7D7B5005A92C0 /* ofxUIBiLabelSlider.cpp in Sources */,
+				B941B48A1AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B47F1AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4921AC7D7B5005A92C0 /* README.md in Sources */,
+				B941B4971AC7D7B5005A92C0 /* ofxUIButton.cpp in Sources */,
+				B941B4981AC7D7B5005A92C0 /* ofxUICanvas.cpp in Sources */,
+				B941B4AA1AC7D7B5005A92C0 /* ofxUIMultiImageToggle.cpp in Sources */,
+				B941B4B11AC7D7B5005A92C0 /* ofxUISlider.cpp in Sources */,
+				B941B4791AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4A11AC7D7B5005A92C0 /* ofxUIImageSampler.cpp in Sources */,
+				B941B4781AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4871AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4831AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4931AC7D7B5005A92C0 /* ofxUI2DGraph.cpp in Sources */,
+				B941B47A1AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4641AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4951AC7D7B5005A92C0 /* ofxUIBaseDraws.cpp in Sources */,
+				B941B47D1AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B46F1AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4651AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4771AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4661AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4891AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4741AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4BC1AC7D7B5005A92C0 /* ofxUIWaveform.cpp in Sources */,
+				B941B48F1AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4841AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4AB1AC7D7B5005A92C0 /* ofxUINumberDialer.cpp in Sources */,
+				B941B49B1AC7D7B5005A92C0 /* ofxUIDropDownList.cpp in Sources */,
+				B941B4B41AC7D7B5005A92C0 /* ofxUISpectrum.cpp in Sources */,
+				B941B4A51AC7D7B5005A92C0 /* ofxUILabelButton.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				B941B4B91AC7D7B5005A92C0 /* ofxUIToggle.cpp in Sources */,
+				B941B4911AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4801AC7D7B5005A92C0 /* Makefile in Sources */,
 				A3F2D1FE1815AAEE0030A715 /* Particle.cpp in Sources */,
+				B941B4721AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4B01AC7D7B5005A92C0 /* ofxUIScrollableCanvas.cpp in Sources */,
+				B941B4B71AC7D7B5005A92C0 /* ofxUITextArea.cpp in Sources */,
+				B941B4601AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4B51AC7D7B5005A92C0 /* ofxUISuperCanvas.cpp in Sources */,
+				B941B45D1AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4A21AC7D7B5005A92C0 /* ofxUIImageSlider.cpp in Sources */,
+				B941B47C1AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4BD1AC7D7B5005A92C0 /* ofxUIWidget.cpp in Sources */,
+				B941B45F1AC7D7B5005A92C0 /* Makefile in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
+				B941B46E1AC7D7B5005A92C0 /* Makefile in Sources */,
 				A3352D2E1815DD3B003EAC80 /* tinyxml.cpp in Sources */,
+				B941B4681AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4A41AC7D7B5005A92C0 /* ofxUILabel.cpp in Sources */,
+				B941B4AD1AC7D7B5005A92C0 /* ofxUIRangeSlider.cpp in Sources */,
+				B941B4A71AC7D7B5005A92C0 /* ofxUIMinimalSlider.cpp in Sources */,
+				B941B49A1AC7D7B5005A92C0 /* ofxUIDragableLabelButton.cpp in Sources */,
+				B941B49D1AC7D7B5005A92C0 /* ofxUIFPS.cpp in Sources */,
+				B941B4B31AC7D7B5005A92C0 /* ofxUISpacer.cpp in Sources */,
+				B941B4AF1AC7D7B5005A92C0 /* ofxUIRotarySlider.cpp in Sources */,
+				B941B4691AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B48B1AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4A01AC7D7B5005A92C0 /* ofxUIImageButton.cpp in Sources */,
+				B941B48D1AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4851AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4AE1AC7D7B5005A92C0 /* ofxUIRectangle.cpp in Sources */,
 				A3352D2F1815DD3B003EAC80 /* tinyxmlerror.cpp in Sources */,
+				B941B49E1AC7D7B5005A92C0 /* ofxUIFPSSlider.cpp in Sources */,
+				B941B47B1AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4AC1AC7D7B5005A92C0 /* ofxUIRadio.cpp in Sources */,
+				B941B4BB1AC7D7B5005A92C0 /* ofxUIValuePlotter.cpp in Sources */,
+				B941B46C1AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4901AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4631AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B46D1AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B45E1AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4A91AC7D7B5005A92C0 /* ofxUIMultiImageButton.cpp in Sources */,
+				B941B4881AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
 				A3352D301815DD3B003EAC80 /* tinyxmlparser.cpp in Sources */,
+				B941B49F1AC7D7B5005A92C0 /* ofxUIImage.cpp in Sources */,
+				B941B49C1AC7D7B5005A92C0 /* ofxUIEventArgs.cpp in Sources */,
+				B941B4611AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B47E1AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4BE1AC7D7B5005A92C0 /* ofxUIWidgetWithLabel.cpp in Sources */,
+				B941B48E1AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B45C1AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4B61AC7D7B5005A92C0 /* ofxUITabBar.cpp in Sources */,
+				B941B4991AC7D7B5005A92C0 /* ofxUICircleSlider.cpp in Sources */,
+				B941B4761AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4861AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4941AC7D7B5005A92C0 /* ofxUI2DPad.cpp in Sources */,
+				B941B4751AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4811AC7D7B5005A92C0 /* main.cpp in Sources */,
+				B941B4BA1AC7D7B5005A92C0 /* ofxUIToggleMatrix.cpp in Sources */,
+				B941B4A81AC7D7B5005A92C0 /* ofxUIMovingGraph.cpp in Sources */,
+				B941B4671AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4B81AC7D7B5005A92C0 /* ofxUITextInput.cpp in Sources */,
+				B941B4731AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B4621AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B46A1AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
 				A3352D311815DD3B003EAC80 /* ofxXmlSettings.cpp in Sources */,
+				B941B4A61AC7D7B5005A92C0 /* ofxUILabelToggle.cpp in Sources */,
+				B941B4821AC7D7B5005A92C0 /* ofApp.cpp in Sources */,
+				B941B48C1AC7D7B5005A92C0 /* Makefile in Sources */,
+				B941B4711AC7D7B5005A92C0 /* Makefile in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

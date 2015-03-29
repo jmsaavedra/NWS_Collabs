@@ -78,9 +78,10 @@ void ofApp::update(){
             //something!!
             break;
         case 5:
-            yu.update(chan1Amp/100);
+            yu.update(smoothedAmp[0]);
             break;
         case 6:
+            //kai.update(smoothedAmp[0]);
             kai.update(oscFFT.chan1_amp);
             break;
         default:
@@ -101,13 +102,13 @@ void ofApp::draw(){
             kiyo1.draw();
             break;
         case 3:
-            angela.draw(chan1Amp);
+            angela.draw(oscFFT.chan1_amp);
             break;
         case 4:
             //something!!
             break;
         case 5:
-            yu.draw(oscFFT.chan1_fft);
+            yu.draw(smoothedFft_01);
             break;
         case 6:
             kai.draw();
@@ -177,6 +178,28 @@ void ofApp::mouseMoved(int x, int y){
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
 
+    switch (movementNumber){
+        case 1:
+            // angela.mousePressed(x,y,button);
+            break;
+        case 2:
+            // santi.mousePressed(x,y,button);
+            break;
+        case 3:
+            // kai.mousePressed(x,y,button);
+            break;
+        case 4:
+            kai.mouseDragged(x,y,button);
+            break;
+        case 5:
+            
+            break;
+        case 6:
+            kai.mouseDragged(x,y,button);
+            break;
+        default:
+            break;
+    }
 }
 
 //--------------------------------------------------------------
@@ -194,13 +217,13 @@ void ofApp::mousePressed(int x, int y, int button){
         // kai.mousePressed(x,y,button);
             break;
         case 4:
-            
+            kai.mousePressed(x,y,button);
             break;
         case 5:
             
             break;
         case 6:
-            
+            kai.mousePressed(x,y,button);
             break;
         default:
             break;
@@ -210,6 +233,28 @@ void ofApp::mousePressed(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
 
+    switch (movementNumber){
+        case 1:
+            // angela.mousePressed(x,y,button);
+            break;
+        case 2:
+            // santi.mousePressed(x,y,button);
+            break;
+        case 3:
+            // kai.mousePressed(x,y,button);
+            break;
+        case 4:
+            kai.mouseReleased(x,y,button);
+            break;
+        case 5:
+            
+            break;
+        case 6:
+            kai.mouseReleased(x,y,button);
+            break;
+        default:
+            break;
+    }
 }
 
 //--------------------------------------------------------------
