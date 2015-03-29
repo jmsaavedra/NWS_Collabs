@@ -12,7 +12,6 @@ void ofApp::setup(){
     AudioIn.setDeviceID(2);
     AudioIn.setup(this, 2, NUM_CHANNELS, 44100, BUFFER_SIZE, 4);
     AudioIn.start();
-
     
     nBandsToGet = 1024;
     
@@ -20,9 +19,15 @@ void ofApp::setup(){
     nBandsToGet = 1024;
     nBandsToUse = nBandsToGet/4;
     
-    fftSmoothed = new float[nBandsToGet];
-    for (int i = 0; i < nBandsToGet; i++){
-        fftSmoothed[i] = 0;
+//    fftSmoothed = new float[nBandsToGet];
+//    for (int i = 0; i < nBandsToGet; i++){
+//        fftSmoothed[i] = 0;
+//    }
+    
+    for(int i=0; i<NUM_CHANNELS; i++){
+        for(int j=0; j<BUFFER_SIZE; j++){
+            fftSmoothed[i][j] = 0;
+        }
     }
     
     setupComplete = true;
@@ -39,15 +44,15 @@ void ofApp::update(){
     }
     
     
-    float * val = ofSoundGetSpectrum(nBandsToGet);//(nBandsToGet);		// request 128 values for fft
-    for (int i = 0;i < nBandsToGet; i++){
-        
-        // let the smoothed calue sink to zero:
-        fftSmoothed[i] *= 0.90f;
-        
-        // take the max, either the smoothed or the incoming:
-        if (fftSmoothed[i] < val[i]) fftSmoothed[i] = val[i];
-    }
+//    float * val = ofSoundGetSpectrum(nBandsToGet);//(nBandsToGet);		// request 128 values for fft
+//    for (int i = 0;i < nBandsToGet; i++){
+//        
+//        // let the smoothed calue sink to zero:
+//        fftSmoothed[i] *= 0.90f;
+//        
+//        // take the max, either the smoothed or the incoming:
+//        if (fftSmoothed[i] < val[i]) fftSmoothed[i] = val[i];
+//    }
 
     sendOsc();
 }
@@ -104,7 +109,7 @@ void ofApp::sendOsc(){
     
     for (int i = 0;i < NUM_CHANNELS; i++){
         ofxOscMessage FFT;
-        FFT.setAddress("/channel_01/FFT");
+        FFT.setAddress("/RMS");
         FFT.addIntArg(i);
         FFT.addFloatArg(scaledVol[i]);
         oscSender.sendMessage(FFT);
@@ -114,12 +119,16 @@ void ofApp::sendOsc(){
 
 //--------------------------------------------------------------
 void ofApp::audioReceived 	(float * input, int bufferSize, int nChannels){
+    
+//    memcpy(&audioBuffer[0], input, sizeof(float) * bufferSize);
+//    memcpy(ofSound)
 
     // samples are "interleaved"
     for (int i=0; i<NUM_CHANNELS; i++){
         for(int j=0; j<bufferSize; j++){
             channel[i][j] = input[i * nChannels + i];
             volume[i] = channel[i][j] * channel[i][j];
+            
         }
     }
     
@@ -129,6 +138,17 @@ void ofApp::audioReceived 	(float * input, int bufferSize, int nChannels){
         smoothedVol[i] *= 0.93;
         smoothedVol[i] += 0.07*volume[i];
     }
+    
+//    float * val = ofSoundGetSpectrum(nBandsToGet);//(nBandsToGet);		// request 128 values for fft
+//    for (int i = 0;i < nBandsToGet; i++){
+//        
+//        // let the smoothed calue sink to zero:
+//        fftSmoothed[i] *= 0.90f;
+//        
+//        // take the max, either the smoothed or the incoming:
+//        if (fftSmoothed[i] < val[i]) fftSmoothed[i] = val[i];
+//    }
+    
 }
 
 //--------------------------------------------------------------

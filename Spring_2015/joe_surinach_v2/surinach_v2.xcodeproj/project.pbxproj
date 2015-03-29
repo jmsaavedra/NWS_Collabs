@@ -20,6 +20,8 @@
 		8F5205AEF8861EF234F0651A /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81967292BFC87A0144BD32C6 /* ofxOscSender.cpp */; };
 		A29D8C96AE042ECEAA1BD4F3 /* NetworkingUtilsWin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B1FAD3F30C8065C396ACB /* NetworkingUtilsWin.cpp */; };
 		ADE367465D2A8EBAD4C7A8D9 /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADD194746185E2DA11468377 /* IpEndpointName.cpp */; };
+		B97F817E1AC70B7200DDE842 /* Angela.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B97F817A1AC70B7200DDE842 /* Angela.cpp */; };
+		B97F817F1AC70B7200DDE842 /* Dot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B97F817C1AC70B7200DDE842 /* Dot.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		C4782ECC372420ACE0615B74 /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8881B3C8C0A1C45F042E7A /* OscPrintReceivedElements.cpp */; };
 		DCCC546B1AC5CB07001B8121 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCCC54671AC5CB07001B8121 /* ball.cpp */; };
@@ -110,6 +112,10 @@
 		ADD194746185E2DA11468377 /* IpEndpointName.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = IpEndpointName.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.cpp; sourceTree = SOURCE_ROOT; };
 		AE335EB4709BFD4671EEAC84 /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MessageMappingOscPacketListener.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/MessageMappingOscPacketListener.h; sourceTree = SOURCE_ROOT; };
 		B31C608870ECEB2490A93736 /* ofxOscParameterSync.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOscParameterSync.h; path = ../../../addons/ofxOsc/src/ofxOscParameterSync.h; sourceTree = SOURCE_ROOT; };
+		B97F817A1AC70B7200DDE842 /* Angela.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Angela.cpp; sourceTree = "<group>"; };
+		B97F817B1AC70B7200DDE842 /* Angela.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Angela.h; sourceTree = "<group>"; };
+		B97F817C1AC70B7200DDE842 /* Dot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dot.cpp; sourceTree = "<group>"; };
+		B97F817D1AC70B7200DDE842 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		BC8881B3C8C0A1C45F042E7A /* OscPrintReceivedElements.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = OscPrintReceivedElements.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp; sourceTree = SOURCE_ROOT; };
 		C2FAC65C491D4231379F3298 /* ofxOscReceiver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscReceiver.cpp; path = ../../../addons/ofxOsc/src/ofxOscReceiver.cpp; sourceTree = SOURCE_ROOT; };
@@ -238,6 +244,17 @@
 				D27B2221A225CA523C019676 /* src */,
 			);
 			name = oscpack;
+			sourceTree = "<group>";
+		};
+		B97F81801AC70B7800DDE842 /* angela */ = {
+			isa = PBXGroup;
+			children = (
+				B97F817D1AC70B7200DDE842 /* Dot.h */,
+				B97F817C1AC70B7200DDE842 /* Dot.cpp */,
+				B97F817B1AC70B7200DDE842 /* Angela.h */,
+				B97F817A1AC70B7200DDE842 /* Angela.cpp */,
+			);
+			name = angela;
 			sourceTree = "<group>";
 		};
 		BA6760AC87647DD61A92BD41 /* win32 */ = {
@@ -410,6 +427,7 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B97F81801AC70B7800DDE842 /* angela */,
 				E208FDFD1AC66CE30031F95E /* osc */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
@@ -548,12 +566,14 @@
 				4ADB88E2FB52E76A471065DE /* ofxOscParameterSync.cpp in Sources */,
 				8F5205AEF8861EF234F0651A /* ofxOscSender.cpp in Sources */,
 				640279EE111671BD026CB013 /* ofxOscReceiver.cpp in Sources */,
+				B97F817E1AC70B7200DDE842 /* Angela.cpp in Sources */,
 				C4782ECC372420ACE0615B74 /* OscPrintReceivedElements.cpp in Sources */,
 				62545D179C94265CA1389D4A /* OscOutboundPacketStream.cpp in Sources */,
 				DCCC546B1AC5CB07001B8121 /* ball.cpp in Sources */,
 				879A251454401BC0B6E4F238 /* OscTypes.cpp in Sources */,
 				0546D1A38E13BD319CC9755B /* OscReceivedElements.cpp in Sources */,
 				E27EB1101AC5C02D00DF39B2 /* ofxToggle.cpp in Sources */,
+				B97F817F1AC70B7200DDE842 /* Dot.cpp in Sources */,
 				E208FE001AC674FD0031F95E /* surinachOsc.cpp in Sources */,
 				E27EB10A1AC5C02D00DF39B2 /* ofxButton.cpp in Sources */,
 				A29D8C96AE042ECEAA1BD4F3 /* NetworkingUtilsWin.cpp in Sources */,

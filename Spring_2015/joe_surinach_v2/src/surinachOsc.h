@@ -11,16 +11,20 @@
 #include "ofMain.h"
 #include "ofxOsc.h"
 
-#define PORT 9001
+//#define PORT 9001
 
 class surinachOsc {
     
 public:
-    void setup();
+    void setup(int port);
     void update();
     
-    ofxOscReceiver receiver;
-    
-    float * receivedFft;
+    float * receivedRms;
+    float * chan1_fft;
+    float * chan2_fft;
     int nBandsToUse;
+    
+private:
+        ofxOscReceiver receiver;
+    
 };
