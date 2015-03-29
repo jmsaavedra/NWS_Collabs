@@ -136,16 +136,16 @@ void kai_01::setup(){
 //    cout << "listening for osc messages on port " << PORT << "\n";
     //receiver.setup(PORT);
     
-    current_msg_string = 0;
-    mouseX = 0;
-    mouseY = 0;
-    mouseButtonState = "";
+//    current_msg_string = 0;
+//    mouseX = 0;
+//    mouseY = 0;
+//    mouseButtonState = "";
     
     //    ofBackground(30, 30, 130);
     //i reset the bg color, but not works
-    ofBackground(0, 0, 0);
+//    ofBackground(0, 0, 0);
     
-    nBandsToUse = 1024;
+//    nBandsToUse = 1024;
 //    receivedFft = new float[nBandsToUse];
 //    for (int i = 0; i < nBandsToUse; i++){
 //        receivedFft[i] = 0;
@@ -273,22 +273,22 @@ void kai_01::draw(){
     //audio stuff
     //***********************************************
     //***********************************************
-    ofEnableAlphaBlending();
-    ofSetColor(255,255,255,100);
-    ofRect(25,25,ofGetWidth()-50,225);
-    ofDisableAlphaBlending();
+//    ofEnableAlphaBlending();
+//    ofSetColor(255,255,255,100);
+//    ofRect(25,25,ofGetWidth()-50,225);
+//    ofDisableAlphaBlending();
     
     // draw the fft resutls:
-    ofSetColor(255,255,255,255);
-    
-    float width = 3;
-    for (int i = 0;i < nBandsToUse; i++){
-        //cout << i << "\t"<<fftSmoothed[i] << endl;
-        //ofRect(25+i*width,250,width,-(receivedFft[i] * 750));
-        if(i%10 == 0){
-            ofDrawBitmapString(ofToString(i), 25+i*width, 265);
-        }
-    }
+//    ofSetColor(255,255,255,255);
+//    
+//    float width = 3;
+//    for (int i = 0;i < nBandsToUse; i++){
+//        //cout << i << "\t"<<fftSmoothed[i] << endl;
+//        //ofRect(25+i*width,250,width,-(receivedFft[i] * 750));
+//        if(i%10 == 0){
+//            ofDrawBitmapString(ofToString(i), 25+i*width, 265);
+//        }
+//    }
     //    ofDrawBitmapString("listening on PORT "+ofToString(PORT), 25, ofGetHeight()-80);
     
 //    ofDrawBitmapString("THIS IS YOUR APP, DO WHATEVER YOU WANT WITH THIS DATA!!"+ofToString(PORT), 25, ofGetHeight()-50);

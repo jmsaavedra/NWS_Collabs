@@ -47,7 +47,7 @@ void Yu::setup(){
     
     w = img.width;
     h = img.height;
-    img.allocate(w, h,OF_IMAGE_COLOR);
+//    img.allocate(w, h,OF_IMAGE_COLOR);
     
     pixels = img.getPixels();
 }
@@ -101,7 +101,7 @@ void Yu::update(float amp){
 //--------------------------------------------------------------
 void Yu::draw(float fft[]){
     receivedFft = fft;
-    cout << receivedFft[BandAlpha]<< endl;
+//    cout << receivedFft[BandAlpha]<< endl;
 //    ofEnableAlphaBlending();
 //    ofSetColor(255,255,255,100);
 ////    ofRect(25,25,ofGetWidth()-50,225);
@@ -207,7 +207,7 @@ void Yu::keyPressed(int key){
         img.loadImage("4.jpg");
         
     }
-    img.allocate(w, h,OF_IMAGE_COLOR);
+//    img.allocate(w, h,OF_IMAGE_COLOR);
     pixels = img.getPixels();
     w = img.width;
     h = img.height;

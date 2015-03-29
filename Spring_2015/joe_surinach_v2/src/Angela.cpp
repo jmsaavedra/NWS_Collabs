@@ -136,7 +136,7 @@ void Angela::draw(float ampVal){
     else {
 
         colorDot.circleSize2 = colorDot.baseFft * 800;
-        cout << colorDot.circleSize2 << " = " << colorDot.baseFft << " * " << colorDot.circleSize << endl;
+        //cout << colorDot.circleSize2 << " = " << colorDot.baseFft << " * " << colorDot.circleSize << endl;
         if(colorDot.baseFft <= 0.02) {
             ofDisableAlphaBlending();
             ofSetColor(ofRandom(colorDot.baseFft * 200,220),

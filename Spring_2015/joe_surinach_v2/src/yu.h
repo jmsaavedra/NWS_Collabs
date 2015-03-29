@@ -29,7 +29,7 @@ class Yu {
 		int mouseX, mouseY;
 		string mouseButtonState;
     
-        ofImage receivedImage;
+//        ofImage receivedImage;
     
         ofImage img;
         int w;

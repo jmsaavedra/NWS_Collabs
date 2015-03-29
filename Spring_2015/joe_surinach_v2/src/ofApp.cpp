@@ -27,9 +27,8 @@ void ofApp::setup(){
 //    angela.setup();
 //    kai.setup();
 //    yu.setup();
-    
-    santi.setup();
-    movementNumber = 1;
+    kai.setup();
+    movementNumber = 0;
 }
 
 //--------------------------------------------------------------
@@ -65,6 +64,8 @@ void ofApp::update(){
     
     //========== MOVEMENT UPDATE METHODS ===============
     switch (movementNumber) {
+        case 0:
+            kai.update(oscFFT.chan1_amp);
         case 1:
             santi.update(smoothedFft_01);
             break;
@@ -75,7 +76,7 @@ void ofApp::update(){
             angela.update(smoothedFft_01);
             break;
         case 4:
-            //something!!
+            kai.update(oscFFT.chan1_amp);
             break;
         case 5:
             yu.update(smoothedAmp[0]);
@@ -95,6 +96,8 @@ void ofApp::update(){
 void ofApp::draw(){
     //========== MOVEMENT DRAW METHODS ===============
     switch (movementNumber) {
+        case 0:
+            kai.draw();
         case 1:
             santi.draw();
             break;
@@ -105,7 +108,7 @@ void ofApp::draw(){
             angela.draw(oscFFT.chan1_amp);
             break;
         case 4:
-            //something!!
+            kai.draw();
             break;
         case 5:
             yu.draw(smoothedFft_01);
@@ -127,19 +130,21 @@ void ofApp::keyPressed(int key){
         if(movementNumber == 1) santi.setup();
         if(movementNumber == 2) kiyo1.setup();
         if(movementNumber == 3) angela.setup();
-        if(movementNumber == 4) cout << "SOMETHING!"<<endl;
+        if(movementNumber == 4) cout << "kai"<<endl;//kai.setup();
         if(movementNumber == 5) yu.setup();
         if(movementNumber == 6) kai.setup();
 
     } else if (key == OF_KEY_LEFT){
-        movementNumber--;
-        if(movementNumber < 1) movementNumber = 1;
+//        movementNumber--;
+//        if(movementNumber < 0) movementNumber = 0;
     } else if (key == 'f'){
         ofToggleFullscreen();
     }
     
     else {
         switch (movementNumber){
+            case 0:
+                kai.keyPressed(key);
             case 1:
                 santi.keyPressed(key);
                 break;
@@ -150,7 +155,7 @@ void ofApp::keyPressed(int key){
                 angela.keyPressed(key);
                 break;
             case 4:
-                //kiyo1.keyPressed(key);
+                kai.keyPressed(key);
                 break;
             case 5:
                 yu.keyPressed(key);
@@ -179,6 +184,8 @@ void ofApp::mouseMoved(int x, int y){
 void ofApp::mouseDragged(int x, int y, int button){
 
     switch (movementNumber){
+        case 0:
+            kai.mouseDragged(x, y, button);
         case 1:
             // angela.mousePressed(x,y,button);
             break;
@@ -207,6 +214,8 @@ void ofApp::mousePressed(int x, int y, int button){
     
     
     switch (movementNumber){
+        case 0:
+            kai.mousePressed(x, y, button);
         case 1:
         // angela.mousePressed(x,y,button);
             break;
@@ -234,6 +243,8 @@ void ofApp::mousePressed(int x, int y, int button){
 void ofApp::mouseReleased(int x, int y, int button){
 
     switch (movementNumber){
+        case 0:
+            kai.mousePressed(x, y, button);
         case 1:
             // angela.mousePressed(x,y,button);
             break;
