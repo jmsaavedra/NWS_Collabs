@@ -50,7 +50,7 @@ void Particle::setup() {
     time = 0;
     lifeTime = param.lifeTime;
     live = true;
-    colorMode = 0;
+    colorMode = 2;
 }
 
 //--------------------------------------------------------------
@@ -102,11 +102,13 @@ void Particle::draw( float a ){
             ofSetColor( color );
         }
         else if(colorMode == 1){
-            ofSetColor(255, time, lifeTime);
+            float hue = ofMap( time, 0, lifeTime, 0, 255 );
+            ofSetColor(255, hue, 255-hue);
         }
         
         else if(colorMode == 0){
-            ofSetColor(time, lifeTime, 255);
+            float hue = ofMap( time, 0, lifeTime, 0, 255 );
+            ofSetColor(255-hue, hue, 255);
         }
         
         
