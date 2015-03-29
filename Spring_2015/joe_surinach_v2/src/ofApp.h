@@ -3,6 +3,7 @@
 
 #include "ofMain.h"
 #include "surinachOsc.h"
+#include "oscFFT.h"
 
 //all other classes
 #include "kai_01.h"
@@ -34,6 +35,6 @@ class ofApp : public ofBaseApp {
     Angela angela;
     
     surinachOsc oscRMS;
-    surinachOsc oscFFT;
+    surinachOscFft oscFFT;
 
 };

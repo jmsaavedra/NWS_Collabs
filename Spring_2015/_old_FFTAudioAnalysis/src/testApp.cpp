@@ -26,7 +26,7 @@ void testApp::setup(){
 //        }
 //    }
 //    else {
-    AudioIn.setup(this, 0, 8, 44100, BUFFER_SIZE, 2);
+    AudioIn.setup(this, 0, 8, 44100, BUFFER_SIZE, 1);
 //    }
     AudioIn.start();
     
@@ -38,8 +38,8 @@ void testApp::setup(){
     
     avg_power  = 0.0f;
     
-	Channel01_Analyzer.setup(44100, BUFFER_SIZE/2, 15);
-    Channel02_Analyzer.setup(44100, BUFFER_SIZE/2, 15);
+	Channel01_Analyzer.setup(44100, BUFFER_SIZE/2, 11);
+    Channel02_Analyzer.setup(44100, BUFFER_SIZE/2, 11);
     
 //    Channel01_Analyzer.setup(44100, BUFFER_SIZE, 2);
 //    Channel02_Analyzer.setup(44100, BUFFER_SIZE, 2);
@@ -307,11 +307,22 @@ void testApp::SentMessages(){
 //    }
 //    Sender.sendMessage(FFT01);
     
-    ofxOscMessage FFT02;
-    FFT02.setAddress("/channel_02/FFT");
+    for (int i = 0; i < Channel01_Analyzer.nAverages; i++){
+        ofxOscMessage FFT01;
+        FFT01.setAddress("/channel_02/FFT");
+        FFT01.addIntArg(i);
+        FFT01.addFloatArg(Channel01_Analyzer.averages[i]);
+        Sender.sendMessage(FFT01);
+    }
+
+
     for (int i = 0; i < Channel02_Analyzer.nAverages; i++){
+        ofxOscMessage FFT02;
+        FFT02.setAddress("/channel_02/FFT");
         FFT02.addIntArg(i);
         FFT02.addFloatArg(Channel02_Analyzer.averages[i]);
+        Sender.sendMessage(FFT02);
     }
-    Sender.sendMessage(FFT02);
+
+//    cout << "sent: "<<Channel02_Analyzer.nAverages << endl;
 }

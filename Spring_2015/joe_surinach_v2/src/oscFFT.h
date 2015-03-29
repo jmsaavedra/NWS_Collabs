@@ -1,8 +1,8 @@
 //
-//  surinachOsc.h
+//  oscFFT.h
 //  surinach_v2
 //
-//  Created by Joseph Saavedra on 3/28/15.
+//  Created by performer on 3/28/15.
 //
 //
 
@@ -11,20 +11,20 @@
 #include "ofMain.h"
 #include "ofxOsc.h"
 
-#define PORT 9001
+#define PORT 12345
 
-class surinachOsc {
+class surinachOscFft {
     
 public:
     void setup();
     void update();
     
-    float * receivedRms;
+    //    float * receivedRms;
     float * chan1_fft;
     float * chan2_fft;
     int nBandsToUse;
     
-//private:
-        ofxOscReceiver receiver;
+    //private:
+    ofxOscReceiver receiver;
     
 };

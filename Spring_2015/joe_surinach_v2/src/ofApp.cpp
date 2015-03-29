@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-    oscRMS.setup(9001);
+    oscRMS.setup();
 
 
     movementNumber = 0;
@@ -14,14 +14,14 @@ void ofApp::setup(){
 //    kai.setup();
 //    santi.setup();
     
-    oscFFT.setup(9002);
+    oscFFT.setup();
+
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    
-//    oscRMS.update();
-//    oscFFT.update();
+    oscRMS.update();
+    oscFFT.update();
     
     //========== MOVEMENT UPDATE METHODS ===============
     switch (movementNumber) {

@@ -11,7 +11,7 @@
 
 
 #define HOST "localhost"
-#define PORT 9002
+#define PORT 12345
 
 #define NCHAN 4 //---- NUMBER OF CHANNELS OF INPUT !!
 
