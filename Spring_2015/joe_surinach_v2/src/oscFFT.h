@@ -11,7 +11,10 @@
 #include "ofMain.h"
 #include "ofxOsc.h"
 
-#define PORT 12345
+#define PORT 12348
+
+#define NBANDS 2048
+
 
 class surinachOscFft {
     
@@ -22,6 +25,16 @@ public:
     //    float * receivedRms;
     float * chan1_fft;
     float * chan2_fft;
+    float * chan3_fft;
+    float * chan4_fft;
+    
+    float chan1_fft_bands[NBANDS];
+    
+    float chan1_amp;
+    float chan2_amp;
+    float chan3_amp;
+    float chan4_amp;
+    
     int nBandsToUse;
     
     //private:

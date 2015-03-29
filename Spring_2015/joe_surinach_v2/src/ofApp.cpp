@@ -3,36 +3,37 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-    oscRMS.setup();
+    oscFFT.setup();
 
 
-    movementNumber = 0;
+
     ofSetCircleResolution(180);
     ofSetCurveResolution(180);
     
 //    angela.setup();
 //    kai.setup();
-//    santi.setup();
+    santi.setup();
     
-    oscFFT.setup();
+    movementNumber = 2;
 
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    oscRMS.update();
     oscFFT.update();
+    chan1Amp = oscFFT.chan1_amp;
+
     
     //========== MOVEMENT UPDATE METHODS ===============
     switch (movementNumber) {
         case 1:
-            angela.update(oscFFT.chan2_fft);
+            angela.update(oscFFT.chan1_fft);
             break;
         case 2:
-            santi.update(oscFFT.chan2_fft);
+            santi.update(oscFFT.chan1_fft);
             break;
         case 3:
-            kai.update(oscRMS.receivedRms);
+            kai.update(oscFFT.chan1_amp);
             break;
         case 4:
             
@@ -55,7 +56,7 @@ void ofApp::draw(){
     //========== MOVEMENT DRAW METHODS ===============
     switch (movementNumber) {
         case 1:
-            angela.draw();
+            angela.draw(chan1Amp);
             break;
         case 2:
             santi.draw();
@@ -152,13 +153,13 @@ void ofApp::mousePressed(int x, int y, int button){
     
     switch (movementNumber){
         case 1:
-            kai.mousePressed(x,y,button);
+            angela.mousePressed(x,y,button);
             break;
         case 2:
             santi.mousePressed(x,y,button);
             break;
         case 3:
-            
+            kai.mousePressed(x,y,button);
             break;
         case 4:
             

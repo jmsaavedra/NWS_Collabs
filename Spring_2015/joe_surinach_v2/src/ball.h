@@ -18,19 +18,19 @@
 
 
 
-#define FFT_MAP_RADIUS      0.40
+#define FFT_MAP_RADIUS      0.9
 
 #define RADIUS_MIN          1
 
-#define RADIUS_MAX          200
+#define RADIUS_MAX          150
 
 
 
-#define MAX_VELOCITY        10
+#define MAX_VELOCITY        5
 
 #define MAX_FORCE           9
 
-#define FFT_MAP_FORCE       0.36
+#define FFT_MAP_FORCE       0.01
 
 #define FFT_FORCE_MAX       5
 
@@ -38,11 +38,11 @@
 
 #define NOISE_COLOR_LERP    0.355
 
-#define MIN_SATURATION      400
+#define MIN_SATURATION      800
 
-#define MIN_BRIGHTNESS      300
+#define MIN_BRIGHTNESS      500
 
-#define NOISE_STEP          0.02
+#define NOISE_STEP          0.06
 
 
 

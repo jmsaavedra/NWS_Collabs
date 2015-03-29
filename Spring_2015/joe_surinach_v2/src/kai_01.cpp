@@ -178,8 +178,8 @@ void kai_01::setup(){
 }
 
 //--------------------------------------------------------------
-void kai_01::update(float Fft[] ){
-    receivedFft = Fft;
+void kai_01::update(float amp ){
+//    receivedFft = amp;
     //audio stuff
     //***********************************************
     //***********************************************
@@ -210,8 +210,9 @@ void kai_01::update(float Fft[] ){
 //        }
 //    }
     
-    keyValue = receivedFft[1]*2;
+//    keyValue = receivedFft[1]*10;
 //    keyValue = Fft*5;
+    keyValue = amp*10;
     keyValue = ofMap(keyValue, 0.0, 1.0, 0.0, 8.0);
     keyValue *= 0.95;
     //***********************************************
@@ -269,7 +270,7 @@ void kai_01::draw(){
     float width = 3;
     for (int i = 0;i < nBandsToUse; i++){
         //cout << i << "\t"<<fftSmoothed[i] << endl;
-        ofRect(25+i*width,250,width,-(receivedFft[i] * 750));
+        //ofRect(25+i*width,250,width,-(receivedFft[i] * 750));
         if(i%10 == 0){
             ofDrawBitmapString(ofToString(i), 25+i*width, 265);
         }

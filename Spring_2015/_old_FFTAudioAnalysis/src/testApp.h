@@ -11,7 +11,7 @@
 
 
 #define HOST "localhost"
-#define PORT 12345
+#define PORT 12348
 
 #define NCHAN 4 //---- NUMBER OF CHANNELS OF INPUT !!
 
@@ -39,15 +39,21 @@ class testApp : public ofBaseApp{
     
     FFTOctaveAnalyzer Channel01_Analyzer;
     FFTOctaveAnalyzer Channel02_Analyzer;
+    FFTOctaveAnalyzer Channel03_Analyzer;
+    FFTOctaveAnalyzer Channel04_Analyzer;
     
     float Channel01[BUFFER_SIZE];
     float Channel02[BUFFER_SIZE];
+    float Channel03[BUFFER_SIZE];
+    float Channel04[BUFFER_SIZE];
     
     fft		Channel01_fft;
     fft     Channel02_fft;
     
     aubioAnalyzer Channel01_Aubio;
     aubioAnalyzer Channel02_Aubio;
+    aubioAnalyzer Channel03_Aubio;
+    aubioAnalyzer Channel04_Aubio;
     
     float avg_power;
     float peakTime, decayRate, HiGain, LowGain;
@@ -69,6 +75,8 @@ class testApp : public ofBaseApp{
     
     float Channel01_att;
     float Channel02_att;
+    float Channel03_att;
+    float Channel04_att;
     
     ofSoundStream AudioIn;
     
@@ -94,7 +102,17 @@ class testApp : public ofBaseApp{
     float Channel02_Attack;
     float Channel02_Amplitude;
     float Channel02_LinearPitch;
- 
+
+    float Channel03_Pitch;
+    float Channel03_Attack;
+    float Channel03_Amplitude;
+    float Channel03_LinearPitch;
+
+    float Channel04_Pitch;
+    float Channel04_Attack;
+    float Channel04_Amplitude;
+    float Channel04_LinearPitch;
+
 	
     bool setupFailed;
 };

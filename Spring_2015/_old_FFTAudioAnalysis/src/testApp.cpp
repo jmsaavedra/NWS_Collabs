@@ -16,18 +16,8 @@ void testApp::setup(){
 	
     ofSoundStreamListDevices();
     
-//	cout<< "devices: " <<  ofSoundStreamListDevices() << endl;
-    
-	
 	AudioIn.setDeviceID(2); // !!! watch print for list of devices !!!
-//    if (NCHAN > 3){
-//        if ( ! AudioIn.setup(this, 2, 4, 44100, BUFFER_SIZE, 4)){
-//            setupFailed = true;
-//        }
-//    }
-//    else {
     AudioIn.setup(this, 0, 8, 44100, BUFFER_SIZE, 1);
-//    }
     AudioIn.start();
     
     
@@ -40,6 +30,8 @@ void testApp::setup(){
     
 	Channel01_Analyzer.setup(44100, BUFFER_SIZE/2, 11);
     Channel02_Analyzer.setup(44100, BUFFER_SIZE/2, 11);
+    Channel03_Analyzer.setup(44100, BUFFER_SIZE/2, 11);
+    Channel04_Analyzer.setup(44100, BUFFER_SIZE/2, 11);
     
 //    Channel01_Analyzer.setup(44100, BUFFER_SIZE, 2);
 //    Channel02_Analyzer.setup(44100, BUFFER_SIZE, 2);
@@ -56,6 +48,8 @@ void testApp::setup(){
     
     Channel01_Aubio.setup();
     Channel02_Aubio.setup();
+    Channel03_Aubio.setup();
+    Channel04_Aubio.setup();
     
 	ofSetVerticalSync(true);
     
@@ -170,10 +164,14 @@ void testApp::audioReceived 	(float * input, int bufferSize, int nChannels){
 	for (int i = 0; i < bufferSize; i++){
 		Channel01[i] = input[i * nChannels];
 		Channel02[i] = input[i * nChannels + 1];
+        Channel03[i] = input[i * nChannels + 2];
+        Channel04[i] = input[i * nChannels + 3];
 	}
     
     Channel01_Aubio.processAudio(Channel01, BUFFER_SIZE);
     Channel02_Aubio.processAudio(Channel02, BUFFER_SIZE);
+    Channel03_Aubio.processAudio(Channel03, BUFFER_SIZE);
+    Channel04_Aubio.processAudio(Channel04, BUFFER_SIZE);
 }
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
@@ -291,25 +289,15 @@ void testApp::SentMessages(){
 //    Sender.sendMessage(Channel02);
 
     
-   // cout<<    sizeof(Channel01_Analyzer.nAverages) <<endl;
-//    cout << Channel02_FFT_size << endl;
-////    cout << sizeof(Channel01_Analyzer.spe2avg)<<endl;
-//    
-//    ofxOscMessage FFT01;
-//    FFT01.setAddress("/channel_01/FFT");
-////    FFT01.addIntArg(Channel01_Analyzer.nAverages);
-//    for (int i = 0; i < Channel01_Analyzer.nAverages; i++){
-//        FFT01.addIntArg(i);
-//        FFT01.addFloatArg(Channel01_Analyzer.averages[i]);
-//
-////        FFT01.addInt64Arg(Channel01_Analyzer.averages[i] * 10000);
-////      cout<< "ch01 analyzer: "<< i << " "<< Channel01_Analyzer.averages[i]<<endl;
-//    }
-//    Sender.sendMessage(FFT01);
+    cout << "chan1 amp: "<<Channel01_Aubio.amplitude;
+    cout << "\t\tchan2 amp: "<<Channel02_Aubio.amplitude;
+    cout << "\t\tchan3 amp: "<<Channel03_Aubio.amplitude;
+    cout << "\t\tchan4 amp: "<<Channel04_Aubio.amplitude<<endl;
+    
     
     for (int i = 0; i < Channel01_Analyzer.nAverages; i++){
         ofxOscMessage FFT01;
-        FFT01.setAddress("/channel_02/FFT");
+        FFT01.setAddress("/channel_01/FFT");
         FFT01.addIntArg(i);
         FFT01.addFloatArg(Channel01_Analyzer.averages[i]);
         Sender.sendMessage(FFT01);
@@ -323,6 +311,29 @@ void testApp::SentMessages(){
         FFT02.addFloatArg(Channel02_Analyzer.averages[i]);
         Sender.sendMessage(FFT02);
     }
+    
+    ofxOscMessage Channel01;
+    Channel01.setAddress("/channel_01/AMP");
+    Channel01.addFloatArg(Channel01_Aubio.amplitude);
+    Sender.sendMessage(Channel01);
+    
+    
+    ofxOscMessage Channel02;
+    Channel02.setAddress("/channel_02/AMP");
+    Channel02.addFloatArg(Channel02_Aubio.amplitude);
+    Sender.sendMessage(Channel02);
+
+    
+    ofxOscMessage Channel03;
+    Channel03.setAddress("/channel_03/AMP");
+    Channel03.addFloatArg(Channel03_Aubio.amplitude);
+    Sender.sendMessage(Channel03);
+
+    ofxOscMessage Channel04;
+    Channel04.setAddress("/channel_04/AMP");
+    Channel04.addFloatArg(Channel04_Aubio.amplitude);
+    Sender.sendMessage(Channel04);
+
 
 //    cout << "sent: "<<Channel02_Analyzer.nAverages << endl;
 }

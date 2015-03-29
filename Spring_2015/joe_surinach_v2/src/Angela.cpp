@@ -78,7 +78,7 @@ void Angela::update(float FFT[]){
 
 
 //--------------------------------------------------------------
-void Angela::draw(){
+void Angela::draw(float ampVal){
 //    ofBackground(0);
 //    ofSetColor(255, 170, 220);
 //    vidPlayer.draw(0,0,ofGetWidth(),ofGetHeight());
@@ -104,8 +104,11 @@ void Angela::draw(){
 //    ofDrawBitmapString("THIS IS YOUR APP, DO WHATEVER YOU WANT WITH THIS DATA!!"+ofToString(PORT), 25, ofGetHeight()-50);
     
     
-    colorDot.baseFft = receivedFft[refBandIndex];
-    bigDot.baseFft = receivedFft[refBandIndex];
+//    colorDot.baseFft = receivedFft[refBandIndex];
+//    bigDot.baseFft = receivedFft[refBandIndex];
+
+    colorDot.baseFft = ampVal*10;
+    bigDot.baseFft = ampVal*10;
 
     ofNoFill();
     ofEnableAlphaBlending();

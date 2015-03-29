@@ -13,7 +13,7 @@ class Angela {
 
 		void setup();
 		void update(float receivedFFT[]);
-		void draw();
+		void draw(float ampVal);
 
 		void keyPressed(int key);
 		void keyReleased(int key);

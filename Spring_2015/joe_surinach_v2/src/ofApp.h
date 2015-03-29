@@ -2,7 +2,7 @@
 
 
 #include "ofMain.h"
-#include "surinachOsc.h"
+//#include "surinachOsc.h"
 #include "oscFFT.h"
 
 //all other classes
@@ -30,11 +30,12 @@ class ofApp : public ofBaseApp {
     
     int movementNumber;
     
+    float chan1Amp;
+    
     kai_01 kai;
     santiSoundize santi;
     Angela angela;
     
-    surinachOsc oscRMS;
     surinachOscFft oscFFT;
 
 };

@@ -15,7 +15,7 @@ void santiSoundize::setup(){
     ofSetFrameRate(30);
 
   
-    m_nBandsToGet = 1024;
+    m_nBandsToGet = 2048;
     int * arr = new int[m_nBandsToGet*4];
     for (int i = 0; i < m_nBandsToGet*4; i++){
         arr[i] = i % m_nBandsToGet;
@@ -59,11 +59,20 @@ void santiSoundize::update(float receivedFft[] ){
 
     m_fftSmoothed = receivedFft;
     
-    float * val = ofSoundGetSpectrum(m_nBandsToGet * 2);        // request 1024 values for fft
-    for (int i = 0;i < m_nBandsToGet; i++){
-        m_fftSmoothed[i] *= (m_isPlaying) ? 0.96f : 0.5f;
-//        if (m_fftSmoothed[i] < val[i]) m_fftSmoothed[i] = val[i];
+    for(int i=0; i<m_nBandsToGet; i++){
+        m_fftSmoothed[i] = receivedFft[i];
+//        m_fftSmoothed[i] *= (m_isPlaying) ? 0.96f : 0.5f;
+        m_fftSmoothed[i] *= 0.1f;
+        //if (m_fftSmoothed[i] < val[i]) m_fftSmoothed[i] = val[i];
     }
+    
+
+    
+//    float * val = ofSoundGetSpectrum(m_nBandsToGet * 2);        // request 1024 values for fft
+//    for (int i = 0;i < m_nBandsToGet; i++){
+//        m_fftSmoothed[i] *= (m_isPlaying) ? 0.96f : 0.5f;
+//    //if (m_fftSmoothed[i] < val[i]) m_fftSmoothed[i] = val[i];
+//    }
 
    
     if (ofGetWidth() ==0 && ofGetHeight() == 0)
@@ -80,7 +89,7 @@ void santiSoundize::update(float receivedFft[] ){
 
 //--------------------------------------------------------------
 void santiSoundize::draw(){
-    ofBackgroundGradient(ofColor::grey,ofColor(ofRandom(1),ofRandom(1),ofRandom(1)), OF_GRADIENT_LINEAR);
+    ofBackground(0,0,50);
     for (int i = 0; i < m_balls.size(); i++){
         m_balls.at(i).draw();
     }   
