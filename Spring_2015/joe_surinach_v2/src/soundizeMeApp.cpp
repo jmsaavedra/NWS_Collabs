@@ -15,7 +15,7 @@ void santiSoundize::setup(){
     ofSetFrameRate(30);
 
   
-    m_nBandsToGet = 2048;
+    m_nBandsToGet = 1048;
     int * arr = new int[m_nBandsToGet*4];
     for (int i = 0; i < m_nBandsToGet*4; i++){
         arr[i] = i % m_nBandsToGet;
@@ -62,7 +62,7 @@ void santiSoundize::update(float receivedFft[] ){
     for(int i=0; i<m_nBandsToGet; i++){
         m_fftSmoothed[i] = receivedFft[i];
 //        m_fftSmoothed[i] *= (m_isPlaying) ? 0.96f : 0.5f;
-        m_fftSmoothed[i] *= 0.1f;
+        m_fftSmoothed[i] *= 0.9f;
         //if (m_fftSmoothed[i] < val[i]) m_fftSmoothed[i] = val[i];
     }
     

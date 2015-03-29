@@ -14,6 +14,8 @@
 		856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9604B925D32EE39065747725 /* ofxBaseGui.cpp */; };
 		B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECF8674C7975F1063C5E30CA /* ofxGuiGroup.cpp */; };
 		B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 802251BAF1B35B1D67B32FD0 /* ofxSliderGroup.cpp */; };
+		B97F81A51AC7B3D000DDE842 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97F81A41AC7B3D000DDE842 /* CoreVideo.framework */; };
+		B97F81AB1AC7B3EB00DDE842 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97F81AA1AC7B3EB00DDE842 /* CoreFoundation.framework */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		DB633EE71AC23C41003F5071 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB633EE51AC23C41003F5071 /* Particle.cpp */; };
 		E2B3A0531AC65EAF00A17726 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2B39FFB1AC65EAF00A17726 /* main.cpp */; };
@@ -160,6 +162,8 @@
 		907C5B5E104864A2D3A25745 /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxToggle.cpp; path = ../../../addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
 		9604B925D32EE39065747725 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxBaseGui.cpp; path = ../../../addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
 		B87C60311EC1FE841C1ECD89 /* ofxLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLabel.h; path = ../../../addons/ofxGui/src/ofxLabel.h; sourceTree = SOURCE_ROOT; };
+		B97F81A41AC7B3D000DDE842 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B97F81AA1AC7B3EB00DDE842 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		C70D8946940288799E82131E /* ofxSliderGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSliderGroup.h; path = ../../../addons/ofxGui/src/ofxSliderGroup.h; sourceTree = SOURCE_ROOT; };
 		C88333E71C9457E441C33474 /* ofxButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxButton.cpp; path = ../../../addons/ofxGui/src/ofxButton.cpp; sourceTree = SOURCE_ROOT; };
@@ -302,6 +306,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B97F81AB1AC7B3EB00DDE842 /* CoreFoundation.framework in Frameworks */,
+				B97F81A51AC7B3D000DDE842 /* CoreVideo.framework in Frameworks */,
 				E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */,
 				E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */,
 				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
@@ -898,6 +904,8 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
+				B97F81AA1AC7B3EB00DDE842 /* CoreFoundation.framework */,
+				B97F81A41AC7B3D000DDE842 /* CoreVideo.framework */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,

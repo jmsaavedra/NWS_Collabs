@@ -139,7 +139,7 @@ void kai_01::setup(){
     //***********************************************
     //***********************************************
     
-    
+    ofSetRectMode(OF_RECTMODE_CORNER);
     
     ofSetFrameRate( 60 );	//Set screen frame rate
     
@@ -174,7 +174,7 @@ void kai_01::setup(){
     interf.addSlider( "force", &param.force, -1000, 1000 );
     interf.addSlider( "friction", &param.friction, 0, 0.1 );
     
-    drawInterface = true;
+    drawInterface = false;
 }
 
 //--------------------------------------------------------------
@@ -433,16 +433,16 @@ void kai_01::keyPressed(int key){
         drawInterface = !drawInterface;
     }
     
-    if ( key == ' ' ) {		//Grab the screen image to file
-        ofImage image;
-        image.grabScreen( 0, 0, ofGetWidth(), ofGetHeight() );
-        
-        //Select random file name
-        int n = ofRandom( 0, 1000 );
-        string fileName = "screen" + ofToString( n ) + ".png";
-        
-        image.saveImage( fileName );
-    }
+//    if ( key == ' ' ) {		//Grab the screen image to file
+//        ofImage image;
+//        image.grabScreen( 0, 0, ofGetWidth(), ofGetHeight() );
+//        
+//        //Select random file name
+//        int n = ofRandom( 0, 1000 );
+//        string fileName = "screen" + ofToString( n ) + ".png";
+//        
+//        image.saveImage( fileName );
+//    }
     
     //Load presets
     if ( key == '1' ) { interf.load( 1 ); }

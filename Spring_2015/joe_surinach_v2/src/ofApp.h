@@ -9,7 +9,10 @@
 #include "kai_01.h"
 #include "soundizeMeApp.h"
 #include "Angela.h"
+#include "kiyo_circle.h"
+#include "yu.h"
 
+#define nBANDS 512
 
 class ofApp : public ofBaseApp {
 	public:
@@ -29,13 +32,21 @@ class ofApp : public ofBaseApp {
 		void gotMessage(ofMessage msg);
     
     int movementNumber;
-    
     float chan1Amp;
+    surinachOscFft oscFFT;
+    
+    float smoothedFft_01[nBANDS];
+    float smoothedFft_02[nBANDS];
+
+    float smoothedAmp[4];
+
+    
     
     kai_01 kai;
     santiSoundize santi;
     Angela angela;
-    
-    surinachOscFft oscFFT;
+    kiyoCircle kiyo1;
+    Yu yu;
+
 
 };

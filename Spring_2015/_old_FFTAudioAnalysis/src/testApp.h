@@ -88,6 +88,7 @@ class testApp : public ofBaseApp{
     ofColor pitched;
     
     ofxOscSender Sender;
+    ofxOscSender Sender2;
     
     int Channel01_FFT_size;
     int Channel02_FFT_size;

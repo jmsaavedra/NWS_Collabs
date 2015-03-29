@@ -4,6 +4,7 @@
 void testApp::setup(){
     
     Sender.setup(HOST, PORT);
+    Sender2.setup("192.168.1.138", PORT);
     
     ofSetFrameRate(30);
     ofSetVerticalSync(true);
@@ -16,7 +17,7 @@ void testApp::setup(){
 	
     ofSoundStreamListDevices();
     
-	AudioIn.setDeviceID(2); // !!! watch print for list of devices !!!
+	AudioIn.setDeviceID(3); // !!! watch print for list of devices !!!
     AudioIn.setup(this, 0, 8, 44100, BUFFER_SIZE, 1);
     AudioIn.start();
     
@@ -28,10 +29,10 @@ void testApp::setup(){
     
     avg_power  = 0.0f;
     
-	Channel01_Analyzer.setup(44100, BUFFER_SIZE/2, 11);
-    Channel02_Analyzer.setup(44100, BUFFER_SIZE/2, 11);
-    Channel03_Analyzer.setup(44100, BUFFER_SIZE/2, 11);
-    Channel04_Analyzer.setup(44100, BUFFER_SIZE/2, 11);
+	Channel01_Analyzer.setup(44100, BUFFER_SIZE/2, 40);
+    Channel02_Analyzer.setup(44100, BUFFER_SIZE/2, 40);
+    Channel03_Analyzer.setup(44100, BUFFER_SIZE/2, 40);
+    Channel04_Analyzer.setup(44100, BUFFER_SIZE/2, 40);
     
 //    Channel01_Analyzer.setup(44100, BUFFER_SIZE, 2);
 //    Channel02_Analyzer.setup(44100, BUFFER_SIZE, 2);
@@ -301,6 +302,7 @@ void testApp::SentMessages(){
         FFT01.addIntArg(i);
         FFT01.addFloatArg(Channel01_Analyzer.averages[i]);
         Sender.sendMessage(FFT01);
+        Sender2.sendMessage(FFT01);
     }
 
 
@@ -310,30 +312,36 @@ void testApp::SentMessages(){
         FFT02.addIntArg(i);
         FFT02.addFloatArg(Channel02_Analyzer.averages[i]);
         Sender.sendMessage(FFT02);
+        Sender2.sendMessage(FFT02);
     }
     
     ofxOscMessage Channel01;
     Channel01.setAddress("/channel_01/AMP");
     Channel01.addFloatArg(Channel01_Aubio.amplitude);
     Sender.sendMessage(Channel01);
+    Sender2.sendMessage(Channel01);
     
     
     ofxOscMessage Channel02;
     Channel02.setAddress("/channel_02/AMP");
     Channel02.addFloatArg(Channel02_Aubio.amplitude);
     Sender.sendMessage(Channel02);
+    Sender2.sendMessage(Channel02);
 
     
     ofxOscMessage Channel03;
     Channel03.setAddress("/channel_03/AMP");
     Channel03.addFloatArg(Channel03_Aubio.amplitude);
     Sender.sendMessage(Channel03);
-
+    Sender2.sendMessage(Channel03);
+    
     ofxOscMessage Channel04;
     Channel04.setAddress("/channel_04/AMP");
     Channel04.addFloatArg(Channel04_Aubio.amplitude);
     Sender.sendMessage(Channel04);
+    Sender2.sendMessage(Channel04);
 
+    
 
 //    cout << "sent: "<<Channel02_Analyzer.nAverages << endl;
 }

@@ -23,6 +23,8 @@
 		B97F817E1AC70B7200DDE842 /* Angela.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B97F817A1AC70B7200DDE842 /* Angela.cpp */; };
 		B97F817F1AC70B7200DDE842 /* Dot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B97F817C1AC70B7200DDE842 /* Dot.cpp */; };
 		B97F81941AC7944E00DDE842 /* oscFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B97F81921AC7944E00DDE842 /* oscFFT.cpp */; };
+		B97F81BA1AC7B44200DDE842 /* kiyo_circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B97F81B81AC7B44200DDE842 /* kiyo_circle.cpp */; };
+		B9F79B2B1AC7C2CD00B74905 /* yu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9F79B291AC7C2CD00B74905 /* yu.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		C4782ECC372420ACE0615B74 /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8881B3C8C0A1C45F042E7A /* OscPrintReceivedElements.cpp */; };
 		DCCC546B1AC5CB07001B8121 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCCC54671AC5CB07001B8121 /* ball.cpp */; };
@@ -119,6 +121,10 @@
 		B97F817D1AC70B7200DDE842 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		B97F81921AC7944E00DDE842 /* oscFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oscFFT.cpp; sourceTree = "<group>"; };
 		B97F81931AC7944E00DDE842 /* oscFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oscFFT.h; sourceTree = "<group>"; };
+		B97F81B81AC7B44200DDE842 /* kiyo_circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kiyo_circle.cpp; sourceTree = "<group>"; };
+		B97F81B91AC7B44200DDE842 /* kiyo_circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiyo_circle.h; sourceTree = "<group>"; };
+		B9F79B291AC7C2CD00B74905 /* yu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = yu.cpp; sourceTree = "<group>"; };
+		B9F79B2A1AC7C2CD00B74905 /* yu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yu.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		BC8881B3C8C0A1C45F042E7A /* OscPrintReceivedElements.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = OscPrintReceivedElements.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp; sourceTree = SOURCE_ROOT; };
 		C2FAC65C491D4231379F3298 /* ofxOscReceiver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscReceiver.cpp; path = ../../../addons/ofxOsc/src/ofxOscReceiver.cpp; sourceTree = SOURCE_ROOT; };
@@ -258,6 +264,24 @@
 				B97F817A1AC70B7200DDE842 /* Angela.cpp */,
 			);
 			name = angela;
+			sourceTree = "<group>";
+		};
+		B97F81BB1AC7B9C000DDE842 /* kiyo_1 */ = {
+			isa = PBXGroup;
+			children = (
+				B97F81B81AC7B44200DDE842 /* kiyo_circle.cpp */,
+				B97F81B91AC7B44200DDE842 /* kiyo_circle.h */,
+			);
+			name = kiyo_1;
+			sourceTree = "<group>";
+		};
+		B9F79B2C1AC7C2D500B74905 /* yu */ = {
+			isa = PBXGroup;
+			children = (
+				B9F79B291AC7C2CD00B74905 /* yu.cpp */,
+				B9F79B2A1AC7C2CD00B74905 /* yu.h */,
+			);
+			name = yu;
 			sourceTree = "<group>";
 		};
 		BA6760AC87647DD61A92BD41 /* win32 */ = {
@@ -436,9 +460,11 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				B9F79B2C1AC7C2D500B74905 /* yu */,
 				E208FDF91AC668010031F95E /* santi */,
 				B97F81801AC70B7800DDE842 /* angela */,
 				E208FDF81AC663E80031F95E /* kai */,
+				B97F81BB1AC7B9C000DDE842 /* kiyo_1 */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -576,6 +602,8 @@
 				62545D179C94265CA1389D4A /* OscOutboundPacketStream.cpp in Sources */,
 				DCCC546B1AC5CB07001B8121 /* ball.cpp in Sources */,
 				879A251454401BC0B6E4F238 /* OscTypes.cpp in Sources */,
+				B97F81BA1AC7B44200DDE842 /* kiyo_circle.cpp in Sources */,
+				B9F79B2B1AC7C2CD00B74905 /* yu.cpp in Sources */,
 				0546D1A38E13BD319CC9755B /* OscReceivedElements.cpp in Sources */,
 				E27EB1101AC5C02D00DF39B2 /* ofxToggle.cpp in Sources */,
 				B97F817F1AC70B7200DDE842 /* Dot.cpp in Sources */,
