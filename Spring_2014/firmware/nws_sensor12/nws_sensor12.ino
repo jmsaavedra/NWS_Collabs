@@ -17,8 +17,8 @@
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
 Adafruit_LSM303_Mag_Unified mag = Adafruit_LSM303_Mag_Unified(12345);
 
-#define ID "4" //THIS UNIT'S ID! EACH WILL NEED A UNIQUE ONE, THEY ARE LABELED
-#define HOST "10.0.1.14"
+#define ID "2" //THIS UNIT'S ID! EACH WILL NEED A UNIQUE ONE, THEY ARE LABELED
+#define HOST "192.168.1.12" //THIS IS THE IP ADDRESS OF YOUR COMPUTER
 #define PORT 11999
 
 
@@ -39,6 +39,8 @@ int MagneX;
 int MagneY;
 int MagneZ;
 
+int LED13 = 8;
+int GNDPIN = 11;
 
 const int accelLow  = -20;              // Constrained Accelerometer Values
 const int accelHigh = abs(accelLow);
@@ -47,8 +49,8 @@ const int magneHigh = abs(magneLow);
 int mapValue = 255;                     // Maximum output value (Set to byte data type)
 
 /* Change these to match your WiFi network */
-const char mySSID[] = "internetz";
-const char myPassword[] = "1nt3rn3tz";
+const char mySSID[] = "internet"; //network name
+const char myPassword[] = "America0nline!"; //password
 
 void terminal();
 
@@ -60,9 +62,9 @@ void setup()
 
   Serial.begin(115200);
   
-//  while(!Serial){ /*FOR TESTING*/
-//    ;
-//  }
+//  while(!Serial){ /* UNCOMMENT FOR SERIAL DATA TESTING */
+//    ; // Arduino will wait for Serial Monitor to be opened before continuing
+//  }   // with any of other code.
 
   Serial.println("Starting");
   Serial.print("Free memory: ");
@@ -111,9 +113,13 @@ void setup()
       Serial.println("Retrying join()");
     }
   }
-  //else {
+
   Serial.println("Already joined network");
-  //}
+
+  pinMode(LED13, OUTPUT);
+  pinMode(GNDPIN, OUTPUT);
+  digitalWrite(LED13, LOW);
+  digitalWrite(GNDPIN, LOW);
 
   /* Setup for UDP packets, sent automatically */
   wifly.setIpProtocol(WIFLY_PROTOCOL_UDP);
@@ -147,6 +153,32 @@ uint8_t tick=0;
 uint32_t lastSend = 0;  /* Last time message was sent */
 
 void loop() {
+  
+  
+  if (wifly.available() > 0) { // we got a message/command from HOST !
+    char thisCmd = wifly.read();
+    if(Serial.available()){
+      Serial.print("received char: ");
+      Serial.write(thisCmd);
+      Serial.println();
+    }
+    
+    if(thisCmd == 'L'){ //LEFT!
+      if(Serial.available())  Serial.println("\t LEFT command!");
+      digitalWrite(LED13, LOW);
+    }
+    else if(thisCmd == 'R'){ //RIGHT!
+      if(Serial.available())  Serial.println("\t RIGHT command!");
+      digitalWrite(LED13, HIGH);
+    }
+    else if(thisCmd == 'S'){ //STOP!
+      if(Serial.available())  Serial.println("\t STOP command!");
+      digitalWrite(LED13, LOW);  
+    }
+    else{
+      if(Serial.available())  Serial.println("\t unrecognized command!");
+    }   
+  } // wifly.available()
   
 //  wifly.print("Hello");
 //  delay(1000);
@@ -189,9 +221,8 @@ void loop() {
   data += MagneZ;
   
 //  data += "/";
-  wifly.print(data);
-  delay(35); //for now!
-  
+  wifly.print(data);  
+  delay(35); 
  }
  
  void terminal()

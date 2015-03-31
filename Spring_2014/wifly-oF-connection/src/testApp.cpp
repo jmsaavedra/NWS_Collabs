@@ -12,7 +12,7 @@ void testApp::setup(){
 	udpConnection.SetNonBlocking(true);
     
 	ofSetBackgroundAuto(false);
-	ofBackground(255, 255, 255);
+    ofBackground(50);
 }
 
 //--------------------------------------------------------------
@@ -48,21 +48,55 @@ void testApp::update(){
                     cout << "\tAccel: " << accel[accel.size()-1].x << ", " << accel[accel.size()-1].y << ", " << accel[accel.size()-1].z;
                     cout << "\t\tMagne: " << magne[accel.size()-1].x << ", " << magne[accel.size()-1].y << ", " << magne[accel.size()-1].z << endl;
                     
-                } else cout << "WRONG NUMBER OF DATAPOINTS RECEIVED: " << dataPoints.size() <<endl;
+                    recvdDataString = "received from WiFly id# "+ofToString(dataID)
+                    + "\n\nAccel: "+ ofToString(accel[accel.size()-1].x) +", "+ ofToString(accel[accel.size()-1].y) +", "+ ofToString(accel[accel.size()-1].z)
+                    + "\tMagne: " + ofToString(magne[accel.size()-1].x) +", "+ ofToString(magne[accel.size()-1].y) +", "+ ofToString(magne[accel.size()-1].z);
+
+                } else{
+                    cout << "WRONG NUMBER OF DATAPOINTS RECEIVED: " << dataPoints.size() <<endl;
+                    recvdDataString = "ERROR: Wrong Number of Datapoints Received !";
+                }
             }
-        } else cout << "WRONG NUMBER OF MSG STRINGS RECEIVED: "<< fullMsg.size() << endl;
+        } else {
+             cout << "WRONG NUMBER OF MSG STRINGS RECEIVED: "<< fullMsg.size() << endl;
+            recvdDataString = "ERROR: Wrong number of Msg Strings Received !";
+        }
 	}
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
+    ofBackground(50);
+    ofSetColor(255);
+    ofDrawBitmapString("total readings received: "+ofToString(accel.size()), 25, 50);
+    ofSetColor(50,255,50);
+    ofDrawBitmapString(recvdDataString, 25, 100);
     
+    ofSetColor(200, 200, 255);
+    ofDrawBitmapString("last command sent: "+sentDataString, 25, 250);
     
 }
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    char * toSend = new char;
     
+    switch (key) {
+        case OF_KEY_LEFT:
+            *toSend = 'L';
+            break;
+        case OF_KEY_RIGHT:
+            *toSend = 'R';
+            break;
+        case ' ': //space bar
+            *toSend = 'S';
+            break;
+        default:
+            cout << "ERROR: only LEFT, RIGHT, and SPACE are commands"<<endl;
+            break;
+    }
+    sentDataString = toSend;
+    udpConnection.Send(toSend, 1);
 }
 
 //--------------------------------------------------------------
